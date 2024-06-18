@@ -28,16 +28,16 @@ function Header() {
         {/* right */}
         <div className="flex gap-4 md:gap-8 items-center">
           <button
-            className="text-sm sm:text-lg font-medium hover:border-b-2 border-almostWhite"
+            className="text-sm sm:text-lg font-medium hover:border-b-2 duration-300 border-almostWhite"
             onClick={() => setOpen(true)}
           >
             Why?
           </button>
           <Link href={github} target="_blank">
-            <FaGithub className="text-lg md:text-2xl hover:scale-110" />
+            <FaGithub className="text-lg md:text-2xl hover:scale-110 duration-300 " />
           </Link>
           <Link href={frontEndMEntor} target="_blank">
-            <SiFrontendmentor className="text-lg md:text-2xl hover:scale-110" />
+            <SiFrontendmentor className="text-lg md:text-2xl hover:scale-110 duration-300" />
           </Link>
         </div>
       </div>
