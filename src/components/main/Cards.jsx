@@ -3,7 +3,7 @@ import Link from "next/link"
 
 function Cards({ title, difficulty, image, link }) {
   return (
-    <div className="bg-lightGray grid gap-2 px-4 py-4 rounded-md  ">
+    <div className="bg-lightGray grid gap-2 px-4 py-4 rounded-md text-darkGray min-w-[320px] max-w-[450px]">
       <Image
         src={image}
         alt=""
