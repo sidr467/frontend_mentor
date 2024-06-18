@@ -7,7 +7,7 @@ export default function Why({ showDialog }) {
   return (
     <div class="bg-darkGray fixed z-10 inset-0 bg-opacity-75">
       <div className="flex items-center justify-center h-full">
-        <div className="max-w-[700px] flex flex-col gap-4 bg-almostWhite p-2 md:p-4 rounded-lg ">
+        <div className="max-w-[700px] flex flex-col gap-4 mx-4 bg-almostWhite p-2 md:p-4 rounded-lg ">
           {/* MODAL HEADER */}
           <div className="flex items-center justify-between">
             <h1 className="text-base sm:text-lg md:text-2xl font-semibold text-darkBlue">
