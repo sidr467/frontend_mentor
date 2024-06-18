@@ -1,9 +1,29 @@
-function Why(showDialoag) {
-    return (
-        <div>
-            Enter
-        </div>
-    );
-}
+"use client"
 
-export default Why;
+import { IoCloseCircleSharp } from "react-icons/io5"
+import { useEffect } from "react"
+
+export default function Why({ showDialog }) {
+  return (
+    <div class="bg-darkGray fixed z-10 inset-0 bg-opacity-75">
+      <div className="flex items-center justify-center h-full">
+        <div className="max-w-[700px] flex flex-col gap-4 bg-almostWhite p-2 md:p-4 rounded-lg ">
+          {/* MODAL HEADER */}
+          <div className="flex items-center justify-between">
+            <h1 className="text-base sm:text-lg md:text-2xl font-semibold text-darkBlue">
+              Why?
+            </h1>
+            <IoCloseCircleSharp
+              onClick={showDialog}
+              className="text-lg md:text-2xl text-darkBlue"
+            />
+          </div>
+          <p className="font-medium text-darkGray text-sm md:text-base">
+            The main reason to create is from this my github profile will be
+            less populated by small repositories or small challanges.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
