@@ -6,6 +6,13 @@ export const challenges = [
     difficultyText: "Easy",
     image: "/qr-code/preview.png",
   },
+  {
+    title: "Blog preview card",
+    link: "challenges/blog-preview-card",
+    difficulty: 1,
+    difficultyText: "Easy",
+    image: "/blog-preview-card/preview.jpg",
+  },
   //   {
   //     title: "Blog Preview Card",
   //     link: "/challenges/blog-preview-card",
