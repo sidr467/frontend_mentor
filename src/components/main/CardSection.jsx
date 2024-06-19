@@ -10,6 +10,7 @@ function CardSection() {
           title={challenge.title}
           link={challenge.link}
           difficulty={challenge.difficulty}
+          difficultyText={challenge.difficultyText}
           image={challenge.image}
         />
       ))}
