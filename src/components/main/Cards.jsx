@@ -15,14 +15,20 @@ function Cards({ title, difficulty, image, link, difficultyText }) {
       </div>
       <div className="flex items-center justify-between">
         <Link href={link} className="hover:underline">
-          <h1 className="text-sm sm:text-base md:text-lg font-semibold">
+          <h1 className="text-base sm:text-lg md:text-xl font-semibold">
             {title}
           </h1>
         </Link>
-        <p className="font-semibold ring-2 ring-darkGray rounded-md">
-          <span className="bg-darkGray rounded-b-md rounded-t-md px-2 py-1 text-almostWhite ">{difficulty}</span>
-          <span className="px-4">{difficultyText}</span>
-        </p>
+        <div
+          className={`flex flex-row items-center justify-between outline outline-2 outline-almostBlack h-[23px] rounded-lg`}
+        >
+          <div
+            className={`w-6 bg-almostBlack flex items-center justify-center outline outline-2 outline-almostBlack rounded-l-lg`}
+          >
+            <p className={` text-sm font-bold text-white`}>{difficulty}</p>
+          </div>
+          <p className={`p-2 text-sm text-end font-bold`}>{difficultyText}</p>
+        </div>
       </div>
     </div>
   )
