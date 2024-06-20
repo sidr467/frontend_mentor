@@ -5,8 +5,6 @@
 /* recipe page */
 
 @layer base {
-  
-
   p {
     @apply ml-3;
   }

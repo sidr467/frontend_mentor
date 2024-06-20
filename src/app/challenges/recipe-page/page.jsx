@@ -18,7 +18,9 @@ const page = () => {
             height="1000"
             className="rounded-[2rem] w-full max-w-[1000px] h-auto object-center my-0 mx-auto"
           />
-          <h1 className="font-youngSerif text-recipe-DarkCharcoal text-4xl mt-10 font-bold">
+          <h1
+            className={`${youngSerif.className} font-youngSerif text-recipe-DarkCharcoal text-4xl mt-10 font-bold`}
+          >
             Simple Omelette Recipe
           </h1>
           <p className="mt-6 text-recipe-WengeBrown ">
@@ -28,11 +30,13 @@ const page = () => {
           </p>
         </div>
         <div className="bg-pink-100 container mx-auto p-8 rounded-xl mt-2">
-          <h2 className="text-xl font-bold font-youngSerif text-rose-800">
+          <h2
+            className={`${youngSerif.className}text-xl font-bold font-youngSerif text-rose-800`}
+          >
             Preparation time
           </h2>
           <div className=" ml-8 mt-6">
-            <ul className="">
+            <ul className=" list-disc">
               <li>
                 <p className="text-recipe-WengeBrown">
                   <strong className="text-recipe-WengeBrown">Total</strong>:
@@ -56,11 +60,13 @@ const page = () => {
             </ul>
           </div>
         </div>
-        <div class="ingredients-container container mx-auto mt-10 pb-12 border-b-[1px] border-recipe-LightGrey">
-          <h2 class="text-recipe-Nutmeg font-youngSerif text-2xl font-bold">
+        <div className="ingredients-container container mx-auto mt-10 pb-12 border-b-[1px] border-recipe-LightGrey">
+          <h2
+            className={`${youngSerif.className} text-recipe-Nutmeg font-youngSerif text-2xl font-bold`}
+          >
             Ingredients
           </h2>
-          <ul class="list-disc ml-8 mt-6">
+          <ul className=" list-disc ml-8 mt-6">
             <li>
               <p className="text-recipe-WengeBrown">2-3 large eggs</p>
             </li>
@@ -71,20 +77,24 @@ const page = () => {
               <p className="text-recipe-WengeBrown">Pepper to taste</p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">1 tablespoon of butter or oil</p>
+              <p className="text-recipe-WengeBrown">
+                1 tablespoon of butter or oil
+              </p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown" >
+              <p className="text-recipe-WengeBrown">
                 Optional fillings: cheese, diced vegetables, cooked meats, herbs
               </p>
             </li>
           </ul>
         </div>
-        <div class="instruction-container container mx-auto mt-10 pb-12 border-b-[1px] border-recipe-LightGrey">
-          <h2 class="text-recipe-Nutmeg font-youngSerif text-2xl font-bold">
+        <div className="instruction-container container mx-auto mt-10 pb-12 border-b-[1px] border-recipe-LightGrey">
+          <h2
+            className={`${youngSerif.className} text-recipe-Nutmeg font-youngSerif text-2xl font-bold`}
+          >
             Instructions
           </h2>
-          <ol class="list-decimal mt-6 ml-8">
+          <ol className="list-decimal mt-6 ml-8">
             <li>
               <p className="text-recipe-WengeBrown">
                 <strong className="text-recipe-WengeBrown">
@@ -140,7 +150,9 @@ const page = () => {
           </ol>
         </div>
         <div className="nutrition-container container mx-auto mt-10">
-          <h2 className="text-recipe-Nutmeg  font-youngSerif text-2xl font-bold">
+          <h2
+            className={`${youngSerif.className} text-recipe-Nutmeg font-youngSerif text-2xl font-bold`}
+          >
             Nutrition
           </h2>
           <div className="details mt-6">
