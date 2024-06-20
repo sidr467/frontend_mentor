@@ -11,7 +11,7 @@ export const challenges = [
     link: "challenges/blog-preview-card",
     difficulty: 1,
     difficultyText: "Easy",
-    image: "/blog-preview-card/preview.jpg",
+    image: "/blog-preview-card/preview.png",
   },
   //   {
   //     title: "Blog Preview Card",
