@@ -1,4 +1,4 @@
-const { Figtree } = require("next/font/google")
+const { Figtree, Inter } = require("next/font/google")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
         Figtree: ["Figtree", "sans-serif"],
+        "sl-inter": ["Inter", "sans-serif"],
       },
       colors: {
         //main
@@ -32,6 +33,13 @@ module.exports = {
         "bpc-pure-white": "#FFFFFF",
         "bpc-yellow": "#F4D04E",
         "bpc-grey": "#7F7F7F",
+
+        // Social Links
+        "sc-Green": "hsl(75, 94%, 57%)",
+        "sc-White": "hsl(0, 0%, 100%)",
+        "sc-Grey": "hsl(0, 0%, 20%)",
+        "sc-DarkGrey": "hsl(0, 0%, 12%)",
+        "sc-OffBlack": "hsl(0, 0%, 8%)",
       },
       boxShadow: {
         //Blog Preview Card

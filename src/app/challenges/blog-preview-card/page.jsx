@@ -4,7 +4,7 @@ const page = () => {
   return (
     <main className=" flex items-center justify-center min-h-screen bg-bpc-yellow font-Figtree">
       <div className="max-w-[340px] h-[530px] bg-bpc-pure-white border-bpc-black rounded-2xl border-[1px] flex flex-col items-center gap-6 shadow-custom">
-        <div class="mt-6">
+        <div className="mt-6">
           <Image
             src="/blog-preview-card/illustration-article.svg"
             alt="blog-img"
@@ -13,8 +13,8 @@ const page = () => {
             className=" rounded-2xl max-w-[300px]"
           />
         </div>
-        <div class="max-w-[380px] max-h-[250px] flex flex-col  gap-4 ml-8 text-[15px]">
-          <span class=" bg-bpc-yellow p-2.5 font-extrabold rounded-[0.2rem] w-fit">
+        <div className="max-w-[380px] max-h-[250px] flex flex-col  gap-4 ml-8 text-[15px]">
+          <span className=" bg-bpc-yellow p-2.5 font-extrabold rounded-[0.2rem] w-fit">
             Category
           </span>
           <p class="font-medium">Published 21 Dec 2024</p>

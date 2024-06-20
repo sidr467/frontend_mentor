@@ -13,6 +13,13 @@ export const challenges = [
     difficultyText: "Easy",
     image: "/blog-preview-card/preview.png",
   },
+  {
+    title: "Social Links",
+    link: "challenges/social-links",
+    difficulty: 1,
+    difficultyText: "Easy",
+    image: "/social-links/preview.png",
+  },
   //   {
   //     title: "Blog Preview Card",
   //     link: "/challenges/blog-preview-card",
