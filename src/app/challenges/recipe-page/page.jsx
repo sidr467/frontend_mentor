@@ -1,9 +1,14 @@
 import Image from "next/image"
-import { Outfit,Young_Serif } from "next/font/google"
+import { Outfit, Young_Serif } from "next/font/google"
+
+const outfit = Outfit({ subsets: ["latin"], weight: "400" })
+const youngSerif = Young_Serif({ subsets: ["latin"], weight: "400" })
 
 const page = () => {
   return (
-    <main className="font-Outfit w-full max-w-[1440px] p-4 my-8 mx-auto">
+    <main
+      className={`${outfit.className} w-full max-w-[1440px] p-4 my-8 mx-auto`}
+    >
       <div className=" flex flex-col items-center justify-center">
         <div className="container mx-auto p-4">
           <Image
@@ -13,7 +18,7 @@ const page = () => {
             height="1000"
             className="rounded-[2rem] w-full max-w-[1000px] h-auto object-center my-0 mx-auto"
           />
-          <h1 className="font-youngserif text-recipe-DarkCharcoal text-4xl mt-10 font-bold">
+          <h1 className="font-youngSerif text-recipe-DarkCharcoal text-4xl mt-10 font-bold">
             Simple Omelette Recipe
           </h1>
           <p className="mt-6">
@@ -23,7 +28,9 @@ const page = () => {
           </p>
         </div>
         <div className="bg-pink-100 container mx-auto p-8 rounded-xl mt-2">
-          <h2 className="text-xl font-bold text-rose-800">Preparation time</h2>
+          <h2 className="text-xl font-bold font-youngSerif text-rose-800">
+            Preparation time
+          </h2>
           <div className=" ml-8 mt-6">
             <ul className="">
               <li>
@@ -50,7 +57,9 @@ const page = () => {
           </div>
         </div>
         <div class="ingredients-container container mx-auto mt-10 pb-12 border-b-[1px] border-recipe-LightGrey">
-          <h2 class="text-recipe-Nutmeg text-2xl font-bold">Ingredients</h2>
+          <h2 class="text-recipe-Nutmeg font-youngSerif text-2xl font-bold">
+            Ingredients
+          </h2>
           <ul class="list-disc ml-8 mt-6">
             <li>
               <p>2-3 large eggs</p>
@@ -72,7 +81,9 @@ const page = () => {
           </ul>
         </div>
         <div class="instruction-container container mx-auto mt-10 pb-12 border-b-[1px] border-recipe-LightGrey">
-          <h2 class="text-recipe-Nutmeg text-2xl font-bold">Instructions</h2>
+          <h2 class="text-recipe-Nutmeg font-youngSerif text-2xl font-bold">
+            Instructions
+          </h2>
           <ol class="list-decimal mt-6 ml-8">
             <li>
               <p>
@@ -129,7 +140,9 @@ const page = () => {
           </ol>
         </div>
         <div class="nutrition-container container mx-auto mt-10">
-          <h2 class="text-recipe-Nutmeg text-2xl font-bold">Nutrition</h2>
+          <h2 class="text-recipe-Nutmeg  font-youngSerif text-2xl font-bold">
+            Nutrition
+          </h2>
           <div class="details mt-6">
             <p>
               The table below shows nutritional values per serving without the

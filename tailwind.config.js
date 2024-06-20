@@ -9,10 +9,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Outfit: ["Outfit", "sans-serif"],
+        // Outfit: ["Outfit", "sans-serif"],
+        // youngserif: ["Young Serif", "serif"],
         Figtree: ["Figtree", "sans-serif"],
         "sl-inter": ["Inter", "sans-serif"],
-        youngserif: ["Young Serif", "serif"],
       },
       colors: {
         //main
