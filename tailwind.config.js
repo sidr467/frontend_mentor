@@ -40,6 +40,16 @@ module.exports = {
         "sc-Grey": "hsl(0, 0%, 20%)",
         "sc-DarkGrey": "hsl(0, 0%, 12%)",
         "sc-OffBlack": "hsl(0, 0%, 8%)",
+
+        //Recipe-page
+        "recipe-Nutmeg": "hsl(14, 45%, 36%)",
+        "recipe-DarkRaspberry": "hsl(332, 51%, 32%)",
+        "recipe-White": " hsl(0, 0%, 100%)",
+        "recipe-RoseWhite": "hsl(330, 100%, 98%)",
+        "recipe-Eggshell": "hsl(30, 54%, 90%)",
+        "recipe-WengeBrown": " hsl(30, 10%, 34%)",
+        "recipe-DarkCharcoal": " hsl(24, 5%, 18%)",
+        "recipe-LightGrey": " hsl(30, 18%, 87%)",
       },
       boxShadow: {
         //Blog Preview Card
