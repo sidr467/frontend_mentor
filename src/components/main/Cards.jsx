@@ -4,15 +4,17 @@ import Link from "next/link"
 function Cards({ title, difficulty, image, link, difficultyText }) {
   return (
     <div className="bg-lightGray grid gap-2 px-4 py-4 rounded-md text-darkGray min-w-[320px] max-w-[450px]">
-      <div className="">
-        <Image
-          src={image}
-          alt=""
-          width={400}
-          height={400}
-          className="hover:scale-105 duration-300 mb-4 object-cover"
-        ></Image>
-      </div>
+      <Link href={link}>
+        <div className="overflow-hidden">
+          <Image
+            src={image}
+            alt=""
+            width={1000}
+            height={1000}
+            className="hover:scale-105 duration-300 mb-4 object-cover w-full"
+          ></Image>
+        </div>
+      </Link>
       <div className="flex items-center justify-between">
         <Link href={link} className="hover:underline">
           <h1 className="text-base sm:text-lg md:text-xl font-semibold">
