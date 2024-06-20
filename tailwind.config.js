@@ -1,5 +1,3 @@
-const { Figtree, Inter } = require("next/font/google")
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -14,6 +12,7 @@ module.exports = {
         Outfit: ["Outfit", "sans-serif"],
         Figtree: ["Figtree", "sans-serif"],
         "sl-inter": ["Inter", "sans-serif"],
+        youngserif: ["Young Serif", "serif"],
       },
       colors: {
         //main
