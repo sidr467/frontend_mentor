@@ -21,7 +21,7 @@ const page = () => {
           <h1 className="font-youngSerif text-recipe-DarkCharcoal text-4xl mt-10 font-bold">
             Simple Omelette Recipe
           </h1>
-          <p className="mt-6">
+          <p className="mt-6 text-recipe-WengeBrown ">
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
@@ -34,13 +34,13 @@ const page = () => {
           <div className=" ml-8 mt-6">
             <ul className="">
               <li>
-                <p>
+                <p className="text-recipe-WengeBrown">
                   <strong className="text-recipe-WengeBrown">Total</strong>:
                   Approximately 10 minutes
                 </p>
               </li>
               <li>
-                <p>
+                <p className="text-recipe-WengeBrown">
                   <strong className="text-recipe-WengeBrown">
                     Preparation
                   </strong>
@@ -48,7 +48,7 @@ const page = () => {
                 </p>
               </li>
               <li>
-                <p>
+                <p className="text-recipe-WengeBrown">
                   <strong className="text-recipe-WengeBrown">Cooking</strong>: 5
                   minutes
                 </p>
@@ -62,19 +62,19 @@ const page = () => {
           </h2>
           <ul class="list-disc ml-8 mt-6">
             <li>
-              <p>2-3 large eggs</p>
+              <p className="text-recipe-WengeBrown">2-3 large eggs</p>
             </li>
             <li>
-              <p>Salt to taste</p>
+              <p className="text-recipe-WengeBrown">Salt to taste</p>
             </li>
             <li>
-              <p>Pepper to taste</p>
+              <p className="text-recipe-WengeBrown">Pepper to taste</p>
             </li>
             <li>
-              <p>1 tablespoon of butter or oil</p>
+              <p className="text-recipe-WengeBrown">1 tablespoon of butter or oil</p>
             </li>
             <li>
-              <p>
+              <p className="text-recipe-WengeBrown" >
                 Optional fillings: cheese, diced vegetables, cooked meats, herbs
               </p>
             </li>
@@ -86,7 +86,7 @@ const page = () => {
           </h2>
           <ol class="list-decimal mt-6 ml-8">
             <li>
-              <p>
+              <p className="text-recipe-WengeBrown">
                 <strong className="text-recipe-WengeBrown">
                   Beat the eggs
                 </strong>
@@ -96,14 +96,14 @@ const page = () => {
               </p>
             </li>
             <li>
-              <p>
+              <p className="text-recipe-WengeBrown">
                 <strong className="text-recipe-WengeBrown">Heat the pan</strong>
                 : Place a non-stick frying pan over medium heat and add butter
                 or oil.
               </p>
             </li>
             <li>
-              <p>
+              <p className="text-recipe-WengeBrown">
                 <strong className="text-recipe-WengeBrown">
                   Cook the omelette
                 </strong>
@@ -112,7 +112,7 @@ const page = () => {
               </p>
             </li>
             <li>
-              <p>
+              <p className="text-recipe-WengeBrown">
                 <strong className="text-recipe-WengeBrown">
                   Add fillings (optional)
                 </strong>
@@ -122,7 +122,7 @@ const page = () => {
               </p>
             </li>
             <li>
-              <p>
+              <p className="text-recipe-WengeBrown">
                 <strong className="text-recipe-WengeBrown">
                   Fold and serve
                 </strong>
@@ -132,39 +132,55 @@ const page = () => {
               </p>
             </li>
             <li>
-              <p>
+              <p className="text-recipe-WengeBrown">
                 <strong className="text-recipe-WengeBrown">Enjoy</strong>: Serve
                 hot, with additional salt and pepper if needed.
               </p>
             </li>
           </ol>
         </div>
-        <div class="nutrition-container container mx-auto mt-10">
-          <h2 class="text-recipe-Nutmeg  font-youngSerif text-2xl font-bold">
+        <div className="nutrition-container container mx-auto mt-10">
+          <h2 className="text-recipe-Nutmeg  font-youngSerif text-2xl font-bold">
             Nutrition
           </h2>
-          <div class="details mt-6">
-            <p>
+          <div className="details mt-6">
+            <p className="text-recipe-WengeBrown">
               The table below shows nutritional values per serving without the
               additional fillings.
             </p>
-            <table class="table-auto mt-6 ml-8">
+            <table className="table-auto mt-6 ml-8 py-2 px-4 border-b-[1px] border-recipe-LightGrey">
               <tbody>
                 <tr>
-                  <td>Calories</td>
-                  <th>277kcal</th>
+                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown">
+                    Calories
+                  </td>
+                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg">
+                    277kcal
+                  </th>
                 </tr>
                 <tr>
-                  <td>Carbs</td>
-                  <th>0g</th>
+                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown">
+                    Carbs
+                  </td>
+                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg">
+                    0g
+                  </th>
                 </tr>
                 <tr>
-                  <td>Protein</td>
-                  <th>20g</th>
+                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown">
+                    Protein
+                  </td>
+                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg">
+                    20g
+                  </th>
                 </tr>
                 <tr>
-                  <td>Fat</td>
-                  <th>22g</th>
+                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown">
+                    Fat
+                  </td>
+                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg">
+                    22g
+                  </th>
                 </tr>
               </tbody>
             </table>

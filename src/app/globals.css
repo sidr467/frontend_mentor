@@ -5,20 +5,7 @@
 /* recipe page */
 
 @layer base {
-  table,
-  td,
-  th {
-    @apply py-2 px-4 border-b-[1px] border-recipe-LightGrey;
-  }
-
-  th {
-    @apply text-recipe-Nutmeg;
-  }
-
-  td,
-  p {
-    @apply text-recipe-WengeBrown;
-  }
+  
 
   p {
     @apply ml-3;
