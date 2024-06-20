@@ -1,3 +1,5 @@
+const { Figtree } = require("next/font/google")
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -10,6 +12,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
+        Figtree: ["Figtree", "sans-serif"],
       },
       colors: {
         //main
@@ -23,6 +26,16 @@ module.exports = {
         "qr-dark-navy": "#1F314F",
         "qr-gray": "#7D889E",
         "qr-light-gray": "#D5E1EF",
+
+        //Blog Preview Card
+        "bpc-black": "#111111",
+        "bpc-pure-white": "#FFFFFF",
+        "bpc-yellow": "#F4D04E",
+        "bpc-grey": "#7F7F7F",
+      },
+      boxShadow: {
+        //Blog Preview Card
+        custom: "8px 8px 0 0 black",
       },
     },
   },
