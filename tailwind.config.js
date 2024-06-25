@@ -16,6 +16,8 @@ module.exports = {
         fraunces: ["Fraunces", "serif"],
         montserrat: ["Montserrat", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        barlow: ["Barlow Semi Condensed", "sans-serif"],
+        FontHanken: ["Hanken Grotesk", "sans-serif"],
       },
       colors: {
         //main
@@ -68,6 +70,28 @@ module.exports = {
         "cf-VeryDarkBlue": "hsl(234, 12%, 34%)",
         "cf-GrayishBlue": "hsl(229, 6%, 66%)",
         "cf-VeryLightGray": " hsl(0, 0%, 98%)",
+
+        //testimonials grid sections
+        "tgs-Moderateviolet": "hsl(263, 55%, 52%)",
+        "tgs-Verydarkgrayishblue": "hsl(217, 19%, 35%)",
+        "tgs-Verydarkblackishblue": "hsl(219, 29%, 14%)",
+        "tgs-White": "hsl(0, 0%, 100%)",
+        "tgs-Lightgray": "hsl(0, 0%, 81%)",
+        "tgs-Lightgrayishblue": "hsl(210, 46%, 95%)",
+
+        //result summary component
+        "rsc-PrimaryLightRed": "hsl(0, 100%, 67%)",
+        "rsc-PrimaryOrangeyYellow": " hsl(39, 100%, 56%)",
+        "rsc-PrimaryGreenTeal": "hsl(166, 100%, 37%)",
+        "rsc-PrimaryCobaltblue": "hsl(234, 85%, 45%)",
+        "rsc-BgLightslateBlue": "hsl(252, 100%, 67%)",
+        "rsc-BgLightroyalBlue": "hsl(241, 81%, 54%)",
+        "rsc-CircleVioletBlue": "hsla(256, 72%, 46%, 1)",
+        "rsc-CirclePersianBlue": "hsla(241, 72%, 46%, 1)",
+        "rsc-White": "hsl(0, 0%, 100%)",
+        "rsc-PaleBlue": "hsl(221, 100%, 96%)",
+        "rsc-LightLavender": "hsl(241, 100%, 89%)",
+        "rsc-DarkgrayBlue": "hsl(224, 30%, 27%)",
       },
       boxShadow: {
         //Blog Preview Card
