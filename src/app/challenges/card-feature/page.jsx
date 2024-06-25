@@ -20,7 +20,7 @@ const page = () => {
           </p>
         </div>
         {/* <!-- Cards Container --> */}
-        <div class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-8 lg:mt-[-20vh] md:gap-10 lg:gap-12 items-center justify-center">
+        <div class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-8 lg:mt-[-20vh] md:gap-10 lg:gap-12  items-center justify-center">
           <div class="flex flex-col gap-4 w-full lg:w-auto max-w-sm shadow-xl px-6 py-8 border-t-4 lg:mt-[40vh] border-cf-Cyan rounded-md bg-white">
             {/* <!-- Card Text  --> */}
             <div class="mb-2 w-full">
