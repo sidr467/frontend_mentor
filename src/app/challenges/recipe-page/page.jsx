@@ -7,7 +7,7 @@ const youngSerif = Young_Serif({ subsets: ["latin"], weight: "400" })
 const page = () => {
   return (
     <main
-      className={`${outfit.className} w-full max-w-[1440px] p-4 my-8 mx-auto`}
+      className={`${outfit.className} w-full max-w-[1440px] p-4 my-8 mx-auto md:px-8 md:py-4 lg:px-16 lg:py-4`}
     >
       <div className=" flex flex-col items-center justify-center">
         <div className="container mx-auto p-4">
@@ -23,7 +23,7 @@ const page = () => {
           >
             Simple Omelette Recipe
           </h1>
-          <p className="mt-6 text-recipe-WengeBrown ">
+          <p className="mt-6  ml-3 text-recipe-WengeBrown ">
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
@@ -38,13 +38,13 @@ const page = () => {
           <div className=" ml-8 mt-6">
             <ul className=" list-disc">
               <li>
-                <p className="text-recipe-WengeBrown">
+                <p className="text-recipe-WengeBrown ml-3">
                   <strong className="text-recipe-WengeBrown">Total</strong>:
                   Approximately 10 minutes
                 </p>
               </li>
               <li>
-                <p className="text-recipe-WengeBrown">
+                <p className="text-recipe-WengeBrown ml-3">
                   <strong className="text-recipe-WengeBrown">
                     Preparation
                   </strong>
@@ -52,7 +52,7 @@ const page = () => {
                 </p>
               </li>
               <li>
-                <p className="text-recipe-WengeBrown">
+                <p className="text-recipe-WengeBrown ml-3">
                   <strong className="text-recipe-WengeBrown">Cooking</strong>: 5
                   minutes
                 </p>
@@ -68,21 +68,21 @@ const page = () => {
           </h2>
           <ul className=" list-disc ml-8 mt-6">
             <li>
-              <p className="text-recipe-WengeBrown">2-3 large eggs</p>
+              <p className="text-recipe-WengeBrown ml-3">2-3 large eggs</p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">Salt to taste</p>
+              <p className="text-recipe-WengeBrown ml-3">Salt to taste</p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">Pepper to taste</p>
+              <p className="text-recipe-WengeBrown ml-3">Pepper to taste</p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">
+              <p className="text-recipe-WengeBrown ml-3">
                 1 tablespoon of butter or oil
               </p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">
+              <p className="text-recipe-WengeBrown ml-3">
                 Optional fillings: cheese, diced vegetables, cooked meats, herbs
               </p>
             </li>
@@ -96,7 +96,7 @@ const page = () => {
           </h2>
           <ol className="list-decimal mt-6 ml-8">
             <li>
-              <p className="text-recipe-WengeBrown">
+              <p className="text-recipe-WengeBrown ml-3">
                 <strong className="text-recipe-WengeBrown">
                   Beat the eggs
                 </strong>
@@ -106,14 +106,14 @@ const page = () => {
               </p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">
+              <p className="text-recipe-WengeBrown ml-3">
                 <strong className="text-recipe-WengeBrown">Heat the pan</strong>
                 : Place a non-stick frying pan over medium heat and add butter
                 or oil.
               </p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">
+              <p className="text-recipe-WengeBrown ml-3">
                 <strong className="text-recipe-WengeBrown">
                   Cook the omelette
                 </strong>
@@ -122,7 +122,7 @@ const page = () => {
               </p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">
+              <p className="text-recipe-WengeBrown ml-3">
                 <strong className="text-recipe-WengeBrown">
                   Add fillings (optional)
                 </strong>
@@ -132,7 +132,7 @@ const page = () => {
               </p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">
+              <p className="text-recipe-WengeBrown ml-3">
                 <strong className="text-recipe-WengeBrown">
                   Fold and serve
                 </strong>
@@ -142,7 +142,7 @@ const page = () => {
               </p>
             </li>
             <li>
-              <p className="text-recipe-WengeBrown">
+              <p className="text-recipe-WengeBrown ml-3">
                 <strong className="text-recipe-WengeBrown">Enjoy</strong>: Serve
                 hot, with additional salt and pepper if needed.
               </p>
@@ -156,41 +156,41 @@ const page = () => {
             Nutrition
           </h2>
           <div className="details mt-6">
-            <p className="text-recipe-WengeBrown">
+            <p className="text-recipe-WengeBrown ml-3">
               The table below shows nutritional values per serving without the
               additional fillings.
             </p>
-            <table className="table-auto mt-6 ml-8 py-2 px-4 border-b-[1px] border-recipe-LightGrey">
+            <table className="table-auto mt-6 ml-8 py-2 px-4 border-b-[1px] border-recipe-LightGrey md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
               <tbody>
                 <tr>
-                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown">
+                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
                     Calories
                   </td>
-                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg">
+                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
                     277kcal
                   </th>
                 </tr>
                 <tr>
-                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown">
+                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
                     Carbs
                   </td>
-                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg">
+                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
                     0g
                   </th>
                 </tr>
                 <tr>
-                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown">
+                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
                     Protein
                   </td>
-                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg">
+                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
                     20g
                   </th>
                 </tr>
                 <tr>
-                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown">
+                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
                     Fat
                   </td>
-                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg">
+                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
                     22g
                   </th>
                 </tr>

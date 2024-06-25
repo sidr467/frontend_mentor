@@ -4,32 +4,3 @@
 
 /* recipe page */
 
-@layer base {
-  p {
-    @apply ml-3;
-  }
-
-  @media (min-width: 786px) {
-    main {
-      @apply px-8 py-4;
-    }
-
-    table,
-    th,
-    td {
-      @apply px-20 py-4;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    main {
-      @apply px-16 py-4;
-    }
-
-    table,
-    th,
-    td {
-      @apply px-[10rem] py-4;
-    }
-  }
-}
