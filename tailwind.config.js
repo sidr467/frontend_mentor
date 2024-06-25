@@ -13,6 +13,8 @@ module.exports = {
         // youngserif: ["Young Serif", "serif"],
         Figtree: ["Figtree", "sans-serif"],
         "sl-inter": ["Inter", "sans-serif"],
+        fraunces: ["Fraunces", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
         //main
@@ -49,6 +51,13 @@ module.exports = {
         "recipe-WengeBrown": " hsl(30, 10%, 34%)",
         "recipe-DarkCharcoal": " hsl(24, 5%, 18%)",
         "recipe-LightGrey": " hsl(30, 18%, 87%)",
+
+        //product card
+        darkcyan: "hsl(158, 36%, 37%)",
+        cream: "hsl(30, 38%, 92%)",
+        verydarkblue: "hsl(212, 21%, 14%)",
+        darkgrayishblue: "hsl(228, 12%, 48%)",
+        white: "hsl(0, 0%, 100%)",
       },
       boxShadow: {
         //Blog Preview Card
