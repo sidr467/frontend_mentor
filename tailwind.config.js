@@ -15,6 +15,7 @@ module.exports = {
         "sl-inter": ["Inter", "sans-serif"],
         fraunces: ["Fraunces", "serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         //main
@@ -53,11 +54,20 @@ module.exports = {
         "recipe-LightGrey": " hsl(30, 18%, 87%)",
 
         //product card
-        darkcyan: "hsl(158, 36%, 37%)",
-        cream: "hsl(30, 38%, 92%)",
-        verydarkblue: "hsl(212, 21%, 14%)",
-        darkgrayishblue: "hsl(228, 12%, 48%)",
-        white: "hsl(0, 0%, 100%)",
+        "pc-darkcyan": "hsl(158, 36%, 37%)",
+        "pc-cream": "hsl(30, 38%, 92%)",
+        "pc-verydarkblue": "hsl(212, 21%, 14%)",
+        "pc-darkgrayishblue": "hsl(228, 12%, 48%)",
+        "pc-white": "hsl(0, 0%, 100%)",
+
+        //card feature
+        "cf-Red": "hsl(0, 78%, 62%)",
+        "cf-Orange": "hsl(34, 97%, 64%)",
+        "cf-Cyan": "hsl(180, 62%, 55%)",
+        "cf-Blue": "hsl(212, 86%, 64%)",
+        "cf-VeryDarkBlue": "hsl(234, 12%, 34%)",
+        "cf-GrayishBlue": "hsl(229, 6%, 66%)",
+        "cf-VeryLightGray": " hsl(0, 0%, 98%)",
       },
       boxShadow: {
         //Blog Preview Card

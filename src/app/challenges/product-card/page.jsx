@@ -2,8 +2,8 @@ import Image from "next/image"
 
 const page = () => {
   return (
-    <main className="flex items-center justify-center min-h-screen bg-cream">
-      <div className="bg-white rounded-lg shadow-lg max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2">
+    <main className="flex items-center justify-center min-h-screen bg-pc-cream">
+      <div className="bg-pc-white rounded-lg shadow-lg max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2">
         <div className="md:max-w-screen-md mx-auto">
           <picture>
             <source
@@ -23,28 +23,28 @@ const page = () => {
         </div>
         <div className={` p-6 flex flex-col justify-center gap-6`}>
           <p
-            className={`tracking-widest font-montserrat text-sm uppercase text-gray-500`}
+            className={`tracking-widest font-montserrat text-sm uppercase text-pc-darkgrayishblue`}
           >
             Perfume
           </p>
-          <h1 className="product-name font-fraunces text-3xl font-extrabold mt-1 text-verydarkblue">
+          <h1 className="product-name font-fraunces text-3xl font-extrabold mt-1 text-pc-verydarkblue">
             Gabrielle Essence Eau De Parfum
           </h1>
-          <p className="product-description mt-3 font-fraunces text-darkgrayishblue">
+          <p className="product-description mt-3 font-fraunces text-pc-darkgrayishblue">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
           <div className="price-container flex items-center mt-2 gap-6">
-            <p className="price font-fraunces text-4xl text-darkcyan">
+            <p className="price font-fraunces text-4xl text-pc-darkcyan">
               $149.99
             </p>
-            <p className="st-price text-xs pt-1 font-bold line-through text-darkgrayishblue">
+            <p className="st-price text-xs pt-1 font-bold line-through text-pc-darkgrayishblue">
               $169.99
             </p>
           </div>
           <div className="button-container flex">
             <button
-              className="rounded-md flex justify-center items-center gap-4 w-full pt-3 pb-3 bg-darkcyan text-white hover:bg-green-950 transition"
+              className="rounded-md flex justify-center items-center gap-4 w-full pt-3 pb-3 bg-pc-darkcyan text-pc-white hover:bg-green-950 transition"
               aria-label="Add Gabrielle Essence Eau De Parfum to cart"
             >
               <Image
