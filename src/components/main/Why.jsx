@@ -18,8 +18,10 @@ export default function Why({ showDialog }) {
             />
           </div>
           <p className="font-medium text-darkGray text-sm md:text-base">
+            I like doing small UI challanges or frontend challanges from
+            Frontend mentor and there is tons of challanges available on site.
             The main reason to create is from this my github profile will be
-            less populated by small repositories or small challanges.
+            less populated by small repositories.
           </p>
         </div>
       </div>
