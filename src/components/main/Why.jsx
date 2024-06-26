@@ -1,11 +1,10 @@
 "use client"
 
 import { IoCloseCircleSharp } from "react-icons/io5"
-import { useEffect } from "react"
 
 export default function Why({ showDialog }) {
   return (
-    <div class="bg-darkGray fixed z-10 inset-0 bg-opacity-75">
+    <div className="bg-darkGray fixed z-10 inset-0 bg-opacity-75">
       <div className="flex items-center justify-center h-full">
         <div className="max-w-[700px] flex flex-col gap-4 mx-4 bg-almostWhite p-2 md:p-4 rounded-lg ">
           {/* MODAL HEADER */}
