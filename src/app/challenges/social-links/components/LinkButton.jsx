@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const LinkButton = ({name}) => {
+const LinkButton = ({ name }) => {
   return (
     <Link
       href="#"
