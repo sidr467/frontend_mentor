@@ -20,7 +20,7 @@
 
 A Frontend Mentor challanges page where all of my challanges will be showcased. From this my github profile will be less populated by small repositories.
 
-- Live : https://portfolio-rsidd467.vercel.app
+- Live : https://frontend-mentor-rsidd467.vercel.app/
 
 ## 📷 Screenshot <a name = "ss"></a>
 
@@ -28,14 +28,14 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 
 ## 📷 Challenges <a name = "challenges"></a>
 
-- [Qr-code]()
-- [Blog preview card]()
-- [Social links]()
-- [Recipe page]()
-- [Product card]()
-- [Card feature]()
-- [Testimonials grid]()
-- [Result summary component]()
+- [Qr-code](https://frontend-mentor-rsidd467.vercel.app/challenges/qr-code)
+- [Blog preview card](https://frontend-mentor-rsidd467.vercel.app/challenges/blog-preview-card)
+- [Social links](https://frontend-mentor-rsidd467.vercel.app/challenges/social-links)
+- [Recipe page](https://frontend-mentor-rsidd467.vercel.app/challenges/recipe-page)
+- [Product card](https://frontend-mentor-rsidd467.vercel.app/challenges/product-card)
+- [Card feature](https://frontend-mentor-rsidd467.vercel.app/challenges/card-feature)
+- [Testimonials grid](https://frontend-mentor-rsidd467.vercel.app/challenges/testimonials-grid-section)
+- [Result summary component](https://frontend-mentor-rsidd467.vercel.app/challenges/result-summary-component)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
