@@ -8,10 +8,10 @@ export default function Home() {
       <Header />
       <div className="p-2 sm:px-4 md:px-8 lg:px-16 xl:px-32 grid gap-2 text-almostWhite">
         <h1 className="text-xl md:text-2xl lg:text-3xl  font-bold tracking-wide ">
-          All Challanges
+          All Challenges
         </h1>
         <p className="text-xs md:text-sm lg:text-base font-medium">
-          List of challanges from Frontend Mentor which I&apos;ve completed.
+          List of challenges from Frontend Mentor which I&apos;ve completed.
         </p>
       </div>
       <CardSection></CardSection>
