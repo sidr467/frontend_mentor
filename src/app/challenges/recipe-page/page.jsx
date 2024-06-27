@@ -4,6 +4,73 @@ import { Outfit, Young_Serif } from "next/font/google"
 const outfit = Outfit({ subsets: ["latin"], weight: "400" })
 const youngSerif = Young_Serif({ subsets: ["latin"], weight: "400" })
 
+//Data
+
+const DartPreparation = [
+  { strong: "Total", time: "Approximately 10 minutes" },
+  { strong: "Preparation", time: "5 minutes" },
+  { strong: "Cooking", time: "5 minutes" },
+]
+
+const Ingredients = [
+  "2-3 large eggs",
+  "Salt to taste",
+  "Pepper to taste",
+  "1 tablespoon of butter or oil",
+  "Optional fillings: cheese, diced vegetables, cooked meats, herbs",
+]
+
+const Instructions = [
+  {
+    strong: "Beat the eggs",
+    descriprtion:
+      "In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
+  },
+  {
+    strong: "Heat the pan",
+    descriprtion:
+      "Place a non-stick frying pan over medium heat and add butter or oil.",
+  },
+  {
+    strong: "Cook the omelette",
+    descriprtion:
+      "Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.",
+  },
+  {
+    strong: "Add fillings (optional):",
+    descriprtion:
+      "When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.",
+  },
+  {
+    strong: "Fold and serve",
+    descriprtion:
+      "As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
+  },
+  {
+    strong: "Enjoy",
+    descriprtion: "Serve hot, with additional salt and pepper if needed.",
+  },
+]
+
+const Nutrition = [
+  {
+    name: "Calories",
+    amount: "277kcal",
+  },
+  {
+    name: "Carbs",
+    amount: "0g",
+  },
+  {
+    name: "Protein",
+    amount: "20g",
+  },
+  {
+    name: "Fat",
+    amount: "22g",
+  },
+]
+
 const page = () => {
   return (
     <main
@@ -37,26 +104,16 @@ const page = () => {
           </h2>
           <div className=" ml-8 mt-6">
             <ul className=" list-disc">
-              <li>
-                <p className="text-recipe-WengeBrown ml-3">
-                  <strong className="text-recipe-WengeBrown">Total</strong>:
-                  Approximately 10 minutes
-                </p>
-              </li>
-              <li>
-                <p className="text-recipe-WengeBrown ml-3">
-                  <strong className="text-recipe-WengeBrown">
-                    Preparation
-                  </strong>
-                  : 5 minutes
-                </p>
-              </li>
-              <li>
-                <p className="text-recipe-WengeBrown ml-3">
-                  <strong className="text-recipe-WengeBrown">Cooking</strong>: 5
-                  minutes
-                </p>
-              </li>
+              {DartPreparation.map((data) => (
+                <li key={data}>
+                  <p className="text-recipe-WengeBrown ml-3">
+                    <strong className="text-recipe-WengeBrown">
+                      {data.strong}
+                    </strong>
+                    :{data.time}
+                  </p>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -67,25 +124,11 @@ const page = () => {
             Ingredients
           </h2>
           <ul className=" list-disc ml-8 mt-6">
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">2-3 large eggs</p>
-            </li>
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">Salt to taste</p>
-            </li>
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">Pepper to taste</p>
-            </li>
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">
-                1 tablespoon of butter or oil
-              </p>
-            </li>
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">
-                Optional fillings: cheese, diced vegetables, cooked meats, herbs
-              </p>
-            </li>
+            {Ingredients.map((data) => (
+              <li key={data}>
+                <p className="text-recipe-WengeBrown ml-3">{data}</p>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="instruction-container container mx-auto mt-10 pb-12 border-b-[1px] border-recipe-LightGrey">
@@ -95,58 +138,16 @@ const page = () => {
             Instructions
           </h2>
           <ol className="list-decimal mt-6 ml-8">
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">
-                <strong className="text-recipe-WengeBrown">
-                  Beat the eggs
-                </strong>
-                : In a bowl, beat the eggs with a pinch of salt and pepper until
-                they are well mixed. You can add a tablespoon of water or milk
-                for a fluffier texture.
-              </p>
-            </li>
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">
-                <strong className="text-recipe-WengeBrown">Heat the pan</strong>
-                : Place a non-stick frying pan over medium heat and add butter
-                or oil.
-              </p>
-            </li>
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">
-                <strong className="text-recipe-WengeBrown">
-                  Cook the omelette
-                </strong>
-                : Once the butter is melted and bubbling, pour in the eggs. Tilt
-                the pan to ensure the eggs evenly coat the surface.
-              </p>
-            </li>
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">
-                <strong className="text-recipe-WengeBrown">
-                  Add fillings (optional)
-                </strong>
-                : When the eggs begin to set at the edges but are still slightly
-                runny in the middle, sprinkle your chosen fillings over one half
-                of the omelette.
-              </p>
-            </li>
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">
-                <strong className="text-recipe-WengeBrown">
-                  Fold and serve
-                </strong>
-                : As the omelette continues to cook, carefully lift one edge and
-                fold it over the fillings. Let it cook for another minute, then
-                slide it onto a plate.
-              </p>
-            </li>
-            <li>
-              <p className="text-recipe-WengeBrown ml-3">
-                <strong className="text-recipe-WengeBrown">Enjoy</strong>: Serve
-                hot, with additional salt and pepper if needed.
-              </p>
-            </li>
+            {Instructions.map((data) => (
+              <li key={data}>
+                <p className="text-recipe-WengeBrown ml-3">
+                  <strong className="text-recipe-WengeBrown">
+                    {data.strong}
+                  </strong>
+                  :{data.descriprtion}{" "}
+                </p>
+              </li>
+            ))}
           </ol>
         </div>
         <div className="nutrition-container container mx-auto mt-10">
@@ -162,38 +163,16 @@ const page = () => {
             </p>
             <table className="table-auto mt-6 ml-8 py-2 px-4 border-b-[1px] border-recipe-LightGrey md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
               <tbody>
-                <tr>
-                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
-                    Calories
-                  </td>
-                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
-                    277kcal
-                  </th>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
-                    Carbs
-                  </td>
-                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
-                    0g
-                  </th>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
-                    Protein
-                  </td>
-                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
-                    20g
-                  </th>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
-                    Fat
-                  </td>
-                  <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
-                    22g
-                  </th>
-                </tr>
+                {Nutrition.map((data) => (
+                  <tr key={data}>
+                    <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
+                      {data.name}
+                    </td>
+                    <th className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-Nutmeg md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
+                      {data.amount}
+                    </th>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

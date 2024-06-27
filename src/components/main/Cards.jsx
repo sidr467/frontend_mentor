@@ -17,7 +17,7 @@ function Cards({ title, difficulty, image, link, difficultyText }) {
       </Link>
       <div className="flex items-center justify-between">
         <Link href={link} className="hover:underline">
-          <h1 className="text-base sm:text-lg md:text-xl font-semibold">
+          <h1 className="text-base sm:text-base md:text-lg font-semibold">
             {title}
           </h1>
         </Link>

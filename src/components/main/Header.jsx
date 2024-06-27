@@ -17,12 +17,12 @@ function Header() {
   }
 
   return (
-    <header className="md:my-4 md:mx-4 h-20 bg-darkBlue p-2 sm:px-4 md:px-8 lg:px-16 xl:px-32 md:rounded-lg grid items-center">
+    <header className=" h-20 bg-darkBlue p-2 sm:px-4 md:px-8 lg:px-16 xl:px-32 grid items-center">
       {/* Display dialoag */}
       {open && <Why showDialog={showDialog} />}
       <div className="flex justify-between items-center text-almostWhite">
         {/* left */}
-        <h1 className="text-base sm:text-lg md:text-2xl font-semibold">
+        <h1 className="text-base sm:text-lg md:text-2xl font-bold">
           Frontend Mentor Solutions
         </h1>
         {/* right */}
