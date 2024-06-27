@@ -1,5 +1,32 @@
 import Image from "next/image"
 
+const Marks = [
+  {
+    image: "/result-summary-component/icon-reaction.svg",
+    color: "rsc-PrimaryLightRed",
+    name: "Reaction",
+    marks: "80",
+  },
+  {
+    image: "/result-summary-component/icon-memory.svg",
+    color: "rsc-PrimaryOrangeyYellow",
+    name: "Memory",
+    marks: "92",
+  },
+  {
+    image: "/result-summary-component/icon-verbal.svg",
+    color: "rsc-PrimaryGreenTeal",
+    name: "Verbal",
+    marks: "61",
+  },
+  {
+    image: "/result-summary-component/icon-visual.svg",
+    color: "rsc-PrimaryCobaltblue",
+    name: "Visual",
+    marks: "72",
+  },
+]
+
 const page = () => {
   return (
     <main class="font-FontHanken h-screen md:grid items-center justify-center">
@@ -20,70 +47,26 @@ const page = () => {
         </section>
         <section class="flex flex-col items-start justify-center gap-4 px-8 py-4">
           <h1 class="text-rsc-DarkgrayBlue font-extrabold mb-4">Summary</h1>
-          <div class="flex justify-between w-full bg-rsc-PrimaryLightRed bg-opacity-10 px-2 py-4 rounded-xl">
-            <div class="flex gap-2">
-              <Image
-                src="/result-summary-component/icon-reaction.svg"
-                alt="icon-reaction"
-                width={20}
-                height={20}
-              />
-              <p class="text-rsc-PrimaryLightRed font-semibold">Reaction</p>
+          {Marks.map((data) => (
+            <div
+              key={data}
+              class={` bg-${data.color} flex justify-between w-full bg-opacity-10 px-2 py-4 rounded-xl`}
+            >
+              <div class="flex gap-2">
+                <Image
+                  src={data.image}
+                  alt="icon-reaction"
+                  width={20}
+                  height={20}
+                />
+                <p class={` text-${data.color} font-semibold`}>{data.name}</p>
+              </div>
+              <p class="text-rsc-DarkgrayBlue font-extrabold">
+                <span>{data.marks} </span>
+                <span class="opacity-55"> / 100</span>
+              </p>
             </div>
-            <p class="text-rsc-DarkgrayBlue font-extrabold">
-              <span>80 </span>
-              <span class="opacity-55"> / 100</span>
-            </p>
-          </div>
-
-          <div class="flex justify-between w-full bg-rsc-PrimaryOrangeyYellow bg-opacity-10 px-2 py-4 rounded-xl">
-            <div class="flex gap-2">
-              <Image
-                src="/result-summary-component/icon-memory.svg"
-                alt="icon-memory"
-                width={20}
-                height={20}
-              />
-              <p class="text-rsc-PrimaryOrangeyYellow font-semibold">Memory</p>
-            </div>
-            <p class="text-rsc-DarkgrayBlue font-extrabold">
-              <span>92 </span>
-              <span class="opacity-55"> / 100</span>
-            </p>
-          </div>
-
-          <div class="flex justify-between w-full bg-rsc-PrimaryGreenTeal bg-opacity-10 px-2 py-4 rounded-xl">
-            <div class="flex gap-2">
-              <Image
-                src="/result-summary-component/icon-verbal.svg"
-                alt="icon-verbal"
-                width={20}
-                height={20}
-              />
-              <p class="text-rsc-PrimaryGreenTeal font-semibold">Verbal</p>
-            </div>
-            <p class="text-rsc-DarkgrayBlue font-extrabold">
-              <span>61 </span>
-              <span class="opacity-55"> / 100</span>
-            </p>
-          </div>
-
-          <div class="flex justify-between w-full bg-rsc-PrimaryCobaltblue bg-opacity-10 px-2 py-4 rounded-xl">
-            <div class="flex gap-2">
-              <Image
-                src="/result-summary-component/icon-visual.svg"
-                alt="icon-visual"
-                width={20}
-                height={20}
-              />
-              <p class="text-rsc-PrimaryCobaltblue font-semibold">Visual</p>
-            </div>
-            <p class="text-rsc-DarkgrayBlue font-extrabold">
-              <span>72 </span>
-              <span class="opacity-55"> / 100</span>
-            </p>
-          </div>
-
+          ))}
           <button class="w-full bg-rsc-DarkgrayBlue text-white py-3 rounded-3xl hover:bg-gradient-to-b from-rsc-CircleVioletBlue to-rsc-CirclePersianBlue">
             Continue
           </button>
