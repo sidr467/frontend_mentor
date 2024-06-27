@@ -1,4 +1,59 @@
-# frontend_mentor
+<p align="center"><img src="https://socialify.git.ci/sidr467/frontend_mentor/image?language=1&name=1&owner=1&theme=Light" alt="frontend_mentor" width="640" height="320" />
+</p>
+
+---
+
+<p align="center"> Frontend Mentor Challanges
+    <br> 
+</p>
+
+## 📝 Table of Contents
+
+- [About](#about)
+- [ScreenShot](#ss)
+- [Challenges](#challenges)
+- [Deployment](#deployment)
+- [Built Using](#built_using)
+- [Authors](#authors)
+
+## 🧐 About <a name = "about"></a>
+
+A Frontend Mentor challanges page where all of my challanges will be showcased. From this my github profile will be less populated by small repositories.
+
+- Live : https://portfolio-rsidd467.vercel.app
+
+## 📷 Screenshot <a name = "ss"></a>
+
+![ScreenShot](./public/Readme/preview.png)
+
+## 📷 Challenges <a name = "challenges"></a>
+
+- [Qr-code]()
+- [Blog preview card]()
+- [Social links]()
+- [Recipe page]()
+- [Product card]()
+- [Card feature]()
+- [Testimonials grid]()
+- [Result summary component]()
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+This project is deployed using [Vercel](https://vercel.com).
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [NextJs](https://nextjs.org/) - React Framework
+- [Tailwind](https://tailwindcss.com/) - CSS Framework
+- [Javascript](https://www.typescriptlang.org/) - Programming language
+- [React](https://react.dev/) - Web library
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@sidr467](https://github.com/sidr467) - Idea & Initial work
+
+<!-- # frontend_mentor
 
 A Frontend Mentor challanges page where all of my challanges of will be showcased. From this my github profile will be less populated by small repositories.
 
@@ -37,4 +92,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details. -->
