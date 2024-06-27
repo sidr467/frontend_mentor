@@ -12,6 +12,7 @@ function Cards({ title, difficulty, image, link, difficultyText }) {
             width={1000}
             height={1000}
             className="hover:scale-105 duration-300 mb-4 object-cover w-full"
+            priority
           ></Image>
         </div>
       </Link>

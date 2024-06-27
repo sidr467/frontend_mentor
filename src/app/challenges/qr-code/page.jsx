@@ -13,6 +13,7 @@ const Page = () => {
             height={300}
             width={300}
             className="my-4 mx-auto rounded-2xl "
+            priority
           />
         </div>
 

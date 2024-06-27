@@ -11,6 +11,7 @@ const Page = () => {
             width={300}
             height={300}
             className=" rounded-2xl max-w-[300px]"
+            priority
           />
         </div>
         <div className="max-w-[380px] max-h-[250px] flex flex-col  gap-4 ml-8 text-[15px]">

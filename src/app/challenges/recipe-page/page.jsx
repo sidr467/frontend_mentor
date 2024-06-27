@@ -84,6 +84,7 @@ const page = () => {
             width="1000"
             height="1000"
             className="rounded-[2rem] w-full max-w-[1000px] h-auto object-center my-0 mx-auto"
+            priority
           />
           <h1
             className={`${youngSerif.className} font-youngSerif text-recipe-DarkCharcoal text-4xl mt-10 font-bold`}
@@ -104,8 +105,8 @@ const page = () => {
           </h2>
           <div className=" ml-8 mt-6">
             <ul className=" list-disc">
-              {DartPreparation.map((data) => (
-                <li key={data}>
+              {DartPreparation.map((data, index) => (
+                <li key={index}>
                   <p className="text-recipe-WengeBrown ml-3">
                     <strong className="text-recipe-WengeBrown">
                       {data.strong}
@@ -124,8 +125,8 @@ const page = () => {
             Ingredients
           </h2>
           <ul className=" list-disc ml-8 mt-6">
-            {Ingredients.map((data) => (
-              <li key={data}>
+            {Ingredients.map((data, index) => (
+              <li key={index}>
                 <p className="text-recipe-WengeBrown ml-3">{data}</p>
               </li>
             ))}
@@ -138,8 +139,8 @@ const page = () => {
             Instructions
           </h2>
           <ol className="list-decimal mt-6 ml-8">
-            {Instructions.map((data) => (
-              <li key={data}>
+            {Instructions.map((data, index) => (
+              <li key={index}>
                 <p className="text-recipe-WengeBrown ml-3">
                   <strong className="text-recipe-WengeBrown">
                     {data.strong}
@@ -163,8 +164,8 @@ const page = () => {
             </p>
             <table className="table-auto mt-6 ml-8 py-2 px-4 border-b-[1px] border-recipe-LightGrey md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
               <tbody>
-                {Nutrition.map((data) => (
-                  <tr key={data}>
+                {Nutrition.map((data, index) => (
+                  <tr key={index}>
                     <td className="py-2 px-4 border-b-[1px] border-recipe-LightGrey text-recipe-WengeBrown md:px-20 md:py-4 lg:px-[10rem] lg:py-4">
                       {data.name}
                     </td>

@@ -44,8 +44,8 @@ const page = () => {
           </p>
         </div>
         <div className="my-[1.4rem] mx-auto grid grid-cols-1 gap-y-4">
-          {Links.map((Link) => (
-            <LinkButton key={Link.id} name={Link.name}>
+          {Links.map((Link,index) => (
+            <LinkButton key={index} name={Link.name}>
               Github
             </LinkButton>
           ))}
