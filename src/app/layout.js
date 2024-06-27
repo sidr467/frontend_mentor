@@ -1,7 +1,7 @@
-import { Fira_Sans } from "next/font/google"
+import { Roboto_Mono } from "next/font/google"
 import "./globals.css"
 
-const inter = Fira_Sans({ weight: "400", subsets: ["latin"] })
+const inter = Roboto_Mono({ weight: "400", subsets: ["latin"] })
 
 export const metadata = {
   title: "Frontend Mentor Solutions",
