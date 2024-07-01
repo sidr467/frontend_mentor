@@ -55,12 +55,13 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/result-summary-component/preview.png",
   },
-  //   {
-  //     title: "Blog Preview Card",
-  //     link: "/challenges/blog-preview-card",
-  //     difficulty: 1,
-  //     image: "/blog-preview-card/blog-preview-card.jpg",
-  //   },
+  {
+    title: "FAQ Accordian",
+    link: "/challenges/faq-accordion-main",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/faq-accordion-main/preview.jpg",
+  },
   //   {
   //     title: "Newsletter Signup",
   //     link: "/challenges/newsletter-signup",
