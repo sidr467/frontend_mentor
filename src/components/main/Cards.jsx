@@ -26,7 +26,7 @@ function Cards({ title, difficulty, image, link, difficultyText }) {
           className={`flex flex-row items-center justify-between outline outline-2 outline-darkGray h-[23px] rounded-lg`}
         >
           <div
-            className={`w-4 h-5 md:w-6 bg-darkGray flex items-center justify-center outline outline-2 outline-darkGray rounded-l-lg`}
+            className={`h-5 w-5 md:w-6 bg-darkGray flex items-center justify-center outline outline-2 outline-darkGray rounded-l-lg`}
           >
             <p className={`text-xs md:text-sm font-bold text-white`}>
               {difficulty}
