@@ -26,11 +26,15 @@ function Cards({ title, difficulty, image, link, difficultyText }) {
           className={`flex flex-row items-center justify-between outline outline-2 outline-darkGray h-[23px] rounded-lg`}
         >
           <div
-            className={`w-6 bg-darkGray flex items-center justify-center outline outline-2 outline-darkGray rounded-l-lg`}
+            className={`w-4 h-5 md:w-6 bg-darkGray flex items-center justify-center outline outline-2 outline-darkGray rounded-l-lg`}
           >
-            <p className={` text-sm font-bold text-white`}>{difficulty}</p>
+            <p className={`text-xs md:text-sm font-bold text-white`}>
+              {difficulty}
+            </p>
           </div>
-          <p className={`p-2 text-sm text-end font-bold`}>{difficultyText}</p>
+          <p className={`p-2 text-xs md:text-sm text-end font-bold`}>
+            {difficultyText}
+          </p>
         </div>
       </div>
     </div>
