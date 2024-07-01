@@ -26,7 +26,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 
 ![ScreenShot](./public/Readme/preview.png)
 
-## 📷 Challenges <a name = "challenges"></a>
+## ✅ Challenges <a name = "challenges"></a>
 
 - [Qr-code](https://frontend-mentor-rsidd467.vercel.app/challenges/qr-code)
 - [Blog preview card](https://frontend-mentor-rsidd467.vercel.app/challenges/blog-preview-card)
