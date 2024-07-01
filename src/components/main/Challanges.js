@@ -56,7 +56,7 @@ export const challenges = [
     image: "/result-summary-component/preview.png",
   },
   {
-    title: "FAQ Accordian",
+    title: "FAQ Accordion",
     link: "/challenges/faq-accordion-main",
     difficulty: 1,
     difficultyText: "Newbie",
