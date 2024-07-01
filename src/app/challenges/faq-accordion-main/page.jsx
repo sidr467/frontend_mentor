@@ -32,43 +32,41 @@ const faqs = [
 const page = () => {
   return (
     <>
-      <div className=" bg-fam-Light-pink h-screen">
-        <div className="">
-          <Image
-            src="/faq-accordion-main/background-pattern-mobile.svg"
-            alt="bgmobile"
-            height={640}
-            width={640}
-            className="sm:hidden"
-          ></Image>
-          <Image
-            src="/faq-accordion-main/background-pattern-desktop.svg"
-            alt="bgmobile"
-            height={300}
-            width={1400}
-            className="hidden sm:flex w-screen"
-          ></Image>
-        </div>
-        <main className={`${workSans.className} relative mx-6`}>
-          <div className="border-2 border-black  flex flex-col items-center absolute -top-20 z-10 bg-fam-White ">
-            <h1>FAQs</h1>
-            {faqs.map((faq, index) => (
-              <div key={index}>
-                <div>
-                  <h2>{faq.question}</h2>
-                  <Image
-                    src="/faq-accordion-main/icon-plus.svg"
-                    alt="iconPlus"
-                    width={20}
-                    height={20}
-                  ></Image>
-                </div>
-                <p>{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </main>
+      <div className="">
+        <Image
+          src="/faq-accordion-main/background-pattern-mobile.svg"
+          alt="bgmobile"
+          height={640}
+          width={640}
+          className="sm:hidden"
+        ></Image>
+        <Image
+          src="/faq-accordion-main/background-pattern-desktop.svg"
+          alt="bgmobile"
+          height={300}
+          width={1400}
+          className="hidden sm:flex w-screen"
+        ></Image>
       </div>
+      <main className={`${workSans.className} relative mx-6`}>
+        <div className="border-2 border-black  flex flex-col items-center absolute -top-20 z-10 bg-fam-White ">
+          <h1>FAQs</h1>
+          {faqs.map((faq, index) => (
+            <div key={index}>
+              <div>
+                <h2>{faq.question}</h2>
+                <Image
+                  src="/faq-accordion-main/icon-plus.svg"
+                  alt="iconPlus"
+                  width={20}
+                  height={20}
+                ></Image>
+              </div>
+              <p>{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </main>
     </>
   )
 }
