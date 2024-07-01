@@ -1,12 +1,19 @@
+import { Work_Sans } from "next/font/google"
+
+const workSans = Work_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+})
+
 const page = () => {
-    return (
-        <main>
-            FAQs
+  return (
+    <main className={`${workSans.className}`}>
+      FAQs
 
 What is Frontend Mentor, and how will it help me?
 
 Frontend Mentor offers realistic coding challenges to help developers improve their 
-frontend coding skills with projects in HTML, CSS, and JavaScript. It&apos;s suitable for 
+frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
 all levels and ideal for portfolio building.
 
 Is Frontend Mentor free?
@@ -16,16 +23,16 @@ option providing access to a range of projects suitable for all skill levels.
 
 Can I use Frontend Mentor projects in my portfolio?
 
-Yes, you can use projects completed on Frontend Mentor in your portfolio. It&apos;s an excellent
+Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
 way to showcase your skills to potential employers!
 
-How can I get help if I&apos;m stuck on a Frontend Mentor challenge?
+How can I get help if I'm stuck on a Frontend Mentor challenge?
 
-The best place to get help is inside Frontend Mentor&apos;s Discord community. There&apos;s a help 
+The best place to get help is inside Frontend Mentor's Discord community. There's a help 
 channel where you can ask questions and seek support from other community members.
 
-        </main>
-    );
+    </main>
+  )
 }
 
-export default page;
+export default page

@@ -94,6 +94,12 @@ module.exports = {
         "rsc-PaleBlue": "hsl(221, 100%, 96%)",
         "rsc-LightLavender": "hsl(241, 100%, 89%)",
         "rsc-DarkgrayBlue": "hsl(224, 30%, 27%)",
+
+        //FAQ accordian main
+        "fam-White": "hsl(0, 0%, 100%)",
+        "fam-Light-pink": "hsl(275, 100%, 97%)",
+        "fam-Grayish-purple": "hsl(292, 16%, 49%)",
+        "fam-Dark-purple": "hsl(292, 42%, 14%)",
       },
       boxShadow: {
         //Blog Preview Card
