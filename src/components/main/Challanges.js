@@ -62,4 +62,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/faq-accordion-main/preview.png",
   },
+  {
+    title: "Interactive rating",
+    link: "/challenges/interactive-rating-component",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/interactive-rating-component/preview.png",
+  },
 ]
