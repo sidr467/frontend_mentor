@@ -36,6 +36,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Card feature](https://frontend-mentor-rsidd467.vercel.app/challenges/card-feature)
 - [Testimonials grid](https://frontend-mentor-rsidd467.vercel.app/challenges/testimonials-grid-section)
 - [Result summary component](https://frontend-mentor-rsidd467.vercel.app/challenges/result-summary-component)
+- [FAQ Accordion ](https://frontend-mentor-rsidd467.vercel.app/challenges/faq-accordion-main)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
