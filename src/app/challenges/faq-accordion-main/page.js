@@ -1,5 +1,5 @@
-import { Work_Sans } from "next/font/google"
 import Image from "next/image"
+import { Work_Sans } from "next/font/google"
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -31,7 +31,7 @@ const faqs = [
 
 const page = () => {
   return (
-    <>
+    <div className=" bg-fam-Light-pink max-h-max min-h-screen" >
       <div className="">
         <Image
           src="/faq-accordion-main/background-pattern-mobile.svg"
@@ -39,31 +39,35 @@ const page = () => {
           height={640}
           width={640}
           className="sm:hidden"
+          priority={true}
         ></Image>
         <Image
           src="/faq-accordion-main/background-pattern-desktop.svg"
           alt="bgmobile"
           height={300}
           width={1400}
+          priority={true}
           className="hidden sm:flex w-screen"
         ></Image>
       </div>
       <main className={`${workSans.className} relative mx-6`}>
-        <div className="border-2 border-black  flex flex-col px-4 py-4 absolute -top-20 z-10 bg-fam-White ">
-          <div className="flex gap-6 items-center text-3xl font-extrabold mb-6">
+        <div className="rounded-md flex flex-col px-4 py-4 absolute -top-20 z-10 bg-fam-White ">
+          <div className="flex gap-6 items-center text-3xl font-bold mb-6">
             <Image
               src="/faq-accordion-main/icon-star.svg"
               alt="icon-star"
               height={25}
               width={25}
             ></Image>
-            <h1>FAQs</h1>
+            <h1 className="text-fam-Dark-purple">FAQs</h1>
           </div>
           <div className="grid gap-6">
             {faqs.map((faq, index) => (
-              <div key={index}>
-                <div className="flex justify-between">
-                  <h2 className="font-semibold">{faq.question}</h2>
+              <div key={index} className="grid gap-4">
+                <div className="flex justify-between gap-6">
+                  <h2 className="font-bold text-fam-Dark-purple ">
+                    {faq.question}
+                  </h2>
                   <Image
                     src="/faq-accordion-main/icon-plus.svg"
                     alt="iconPlus"
@@ -77,7 +81,7 @@ const page = () => {
           </div>
         </div>
       </main>
-    </>
+    </div>
   )
 }
 
