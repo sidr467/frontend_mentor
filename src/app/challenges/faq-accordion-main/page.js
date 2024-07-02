@@ -1,5 +1,8 @@
+"use client"
+
 import Image from "next/image"
 import { Work_Sans } from "next/font/google"
+import { useState } from "react"
 
 const workSans = Work_Sans({
   subsets: ["latin"],
@@ -29,10 +32,16 @@ const faqs = [
   },
 ]
 
-const page = () => {
+const Page = () => {
+  const [open, setOpen] = useState(null)
+
+  function toggleFaq(index) {
+    setOpen(open === index ? null : index)
+  }
+
   return (
-    <div className=" bg-fam-Light-pink max-h-max min-h-screen" >
-      <div className="">
+    <div className=" bg-fam-Light-pink max-h-max min-h-screen ">
+      <div className="h-[300px]">
         <Image
           src="/faq-accordion-main/background-pattern-mobile.svg"
           alt="bgmobile"
@@ -50,32 +59,52 @@ const page = () => {
           className="hidden sm:flex w-screen"
         ></Image>
       </div>
-      <main className={`${workSans.className} relative mx-6`}>
-        <div className="rounded-md flex flex-col px-4 py-4 absolute -top-20 z-10 bg-fam-White ">
-          <div className="flex gap-6 items-center text-3xl font-bold mb-6">
+      <main
+        className={`${workSans.className} mx-6 bg-fam-Light-pink relative flex items-center justify-center`}
+      >
+        <div className="rounded-md flex flex-col px-4 py-4 bg-fam-White absolute -top-28 sm:-top-16 md:-top-36  max-w-[640px] ">
+          <div className="flex gap-6 items-center text-3xl md:text-5xl font-bold mb-6">
             <Image
               src="/faq-accordion-main/icon-star.svg"
               alt="icon-star"
               height={25}
               width={25}
             ></Image>
-            <h1 className="text-fam-Dark-purple">FAQs</h1>
+            <h1 className="text-fam-Dark-purple ">FAQs</h1>
           </div>
           <div className="grid gap-6">
             {faqs.map((faq, index) => (
               <div key={index} className="grid gap-4">
-                <div className="flex justify-between gap-6">
-                  <h2 className="font-bold text-fam-Dark-purple ">
+                <div
+                  className="flex justify-between gap-6"
+                  onClick={() => toggleFaq(index)}
+                >
+                  <h2 className="font-bold md:text-lg text-fam-Dark-purple ">
                     {faq.question}
                   </h2>
-                  <Image
-                    src="/faq-accordion-main/icon-plus.svg"
-                    alt="iconPlus"
-                    width={30}
-                    height={30}
-                  ></Image>
+                  <button className="cursor-pointer">
+                    {open === index ? (
+                      <Image
+                        src="/faq-accordion-main/icon-minus.svg"
+                        alt="iconPlus"
+                        width={30}
+                        height={30}
+                      ></Image>
+                    ) : (
+                      <Image
+                        src="/faq-accordion-main/icon-plus.svg"
+                        alt="iconPlus"
+                        width={30}
+                        height={30}
+                      ></Image>
+                    )}
+                  </button>
                 </div>
-                <p className=" text-fam-Grayish-purple">{faq.answer}</p>
+                {open === index && (
+                  <p className="text-sm md:text-base text-fam-Grayish-purple">
+                    {faq.answer}
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -85,4 +114,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
