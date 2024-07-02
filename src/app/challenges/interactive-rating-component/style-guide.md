@@ -13,14 +13,14 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Orange: hsl(25, 97%, 53%)
 
 ### Neutral
 
-- White: hsl(0, 0%, 100%)
-- Light Grey: hsl(217, 12%, 63%)
-- Dark Blue: hsl(213, 19%, 18%)
-- Very Dark Blue: hsl(216, 12%, 8%)
+"iac-Orange": "hsl(25, 97%, 53%)",
+"iac-White": "hsl(0, 0%, 100%)",
+"iac-LightGrey": "hsl(217, 12%, 63%)",
+"iac-DarkBlue": "hsl(213, 19%, 18%)",
+"iac-VeryDarkBlue": "hsl(216, 12%, 8%)",
 
 ## Typography
 
