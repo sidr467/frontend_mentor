@@ -1,20 +1,12 @@
 import { Overpass } from "next/font/google"
-import Image from "next/image"
+import RatingCard from "./components/RatingCard"
 
 const overpass = Overpass({ subsets: ["latin"], weight: ["400", "700"] })
 
 const page = () => {
   return (
-    <main className={`${overpass.className}`}>
-      {/* <!-- Rating state start --> */}
-
-     
-      {/* <!-- Rating state end --> */}
-
-      {/* <!-- Thank you state start --> */}
-
-     
-      {/* <!-- Thank you state end --> */}
+    <main className={`${overpass.className} flex items-center justify-center h-screen bg-iac-VeryDarkBlue`}>
+      <RatingCard />
     </main>
   )
 }

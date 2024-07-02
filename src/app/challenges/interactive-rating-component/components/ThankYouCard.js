@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const ThankYouCard = () => {
   return (
-    <div>
+    <div className="max-w-[350px] bg-iac-DarkBlue rounded-lg grid gap-4 p-4">
       <Image
         src="/interactive-rating-component/illustration-thank-you.svg"
         width={150}
