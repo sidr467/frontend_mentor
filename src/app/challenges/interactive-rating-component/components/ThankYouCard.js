@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image"
 
 const ThankYouCard = ({ rating }) => {
@@ -13,7 +11,7 @@ const ThankYouCard = ({ rating }) => {
           alt="thankyou"
         ></Image>
       </div>
-      <p className="bg-iac-LightGrey bg-opacity-10 rounded-full text-sm px-6 py-0.5 text-iac-Orange ">
+      <p className="bg-iac-LightGrey bg-opacity-10 rounded-full text-sm px-6 py-1 pt-1.5 text-iac-Orange ">
         You selected {rating} of 5
       </p>
       <h2 className="text-iac-White text-2xl font-bold">Thank you!</h2>

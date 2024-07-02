@@ -1,12 +1,9 @@
-"use client"
-
 import Image from "next/image"
-import ThankYouCard from "./ThankYouCard"
 import { useState } from "react"
 
 const ratings = [1, 2, 3, 4, 5]
 
-const RatingCard = ({onSubmit}) => {
+const RatingCard = ({ onSubmit }) => {
   const [selectedRating, setSelectedRating] = useState(null)
 
   const handleSubmit = (e) => {
@@ -39,6 +36,7 @@ const RatingCard = ({onSubmit}) => {
         <div className="text-iac-White text-sm flex justify-between gap-6">
           {ratings.map((rating, index) => (
             <button
+              type="button"
               key={index}
               onClick={() => setSelectedRating(rating)}
               className=" bg-iac-LightGrey hover:bg-iac-Orange active:bg-iac-White active:text-iac-VeryDarkBlue pt-1 w-10 h-10 text-center rounded-full bg-opacity-10"
