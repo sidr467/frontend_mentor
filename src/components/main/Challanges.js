@@ -60,7 +60,7 @@ export const challenges = [
     link: "/challenges/faq-accordion-main",
     difficulty: 1,
     difficultyText: "Newbie",
-    image: "/faq-accordion-main/preview.jpg",
+    image: "/faq-accordion-main/preview.png",
   },
   //   {
   //     title: "Newsletter Signup",

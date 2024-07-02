@@ -62,7 +62,7 @@ const Page = () => {
       <main
         className={`${workSans.className} mx-6 bg-fam-Light-pink relative flex items-center justify-center`}
       >
-        <div className="rounded-md flex flex-col px-4 py-4 bg-fam-White absolute -top-28 sm:-top-16 md:-top-36  max-w-[640px] ">
+        <div className="rounded-md flex flex-col px-4 py-4 bg-fam-White absolute -top-32 sm:-top-16 md:-top-36  max-w-[640px] ">
           <div className="flex gap-6 items-center text-3xl md:text-5xl font-bold mb-6">
             <Image
               src="/faq-accordion-main/icon-star.svg"
@@ -75,33 +75,36 @@ const Page = () => {
           <div className="grid gap-6">
             {faqs.map((faq, index) => (
               <div key={index} className="grid gap-4">
-                <div
-                  className="flex justify-between gap-6"
-                  onClick={() => toggleFaq(index)}
-                >
-                  <h2 className="font-bold md:text-lg text-fam-Dark-purple ">
+                <div className="flex items-center justify-between gap-6">
+                  <h2 className="font-bold md:text-lg w-60 sm:w-full text-fam-Dark-purple ">
                     {faq.question}
                   </h2>
-                  <button className="cursor-pointer">
+
+                  <button
+                    className="cursor-pointer flex items-center"
+                    onClick={() => toggleFaq(index)}
+                  >
                     {open === index ? (
                       <Image
                         src="/faq-accordion-main/icon-minus.svg"
-                        alt="iconPlus"
+                        alt="iconMinus"
                         width={30}
                         height={30}
-                      ></Image>
+                        className="w-8 h-8"
+                      />
                     ) : (
                       <Image
                         src="/faq-accordion-main/icon-plus.svg"
                         alt="iconPlus"
                         width={30}
                         height={30}
-                      ></Image>
+                        className="w-8 h-8"
+                      />
                     )}
                   </button>
                 </div>
                 {open === index && (
-                  <p className="text-sm md:text-base text-fam-Grayish-purple">
+                  <p className="text-sm md:text-base text-fam-Grayish-purple ">
                     {faq.answer}
                   </p>
                 )}
