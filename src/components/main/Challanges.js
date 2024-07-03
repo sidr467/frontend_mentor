@@ -44,8 +44,8 @@ export const challenges = [
   {
     title: "Testimonials grid section",
     link: "challenges/testimonials-grid-section",
-    difficulty: 1,
-    difficultyText: "Newbie",
+    difficulty: 2,
+    difficultyText: "Junior",
     image: "/testimonials-grid-section/preview.png",
   },
   {
