@@ -114,7 +114,7 @@ module.exports = {
         "nft-Cyan": "hsl(178, 100%, 50%)",
         "nft-Very-dark-blue-main-BG": "hsl(217, 54%, 11%)",
         "nft-Very-dark-blue-card-BG": " hsl(216, 50%, 16%)",
-        "nft-Very dark blue": "hsl(215, 32%, 27%)",
+        "nft-Very-dark-blue": "hsl(215, 32%, 27%)",
         "nft-White": "hsl(0, 0%, 100%)",
 
         
