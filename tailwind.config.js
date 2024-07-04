@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        eyeSVG: "url('/nft-card/icon-view.svg')",
+      },
       fontFamily: {
         // Outfit: ["Outfit", "sans-serif"],
         // youngserif: ["Young Serif", "serif"],
@@ -116,8 +119,6 @@ module.exports = {
         "nft-Very-dark-blue-card-BG": " hsl(216, 50%, 16%)",
         "nft-Very-dark-blue": "hsl(215, 32%, 27%)",
         "nft-White": "hsl(0, 0%, 100%)",
-
-        
       },
       boxShadow: {
         //Blog Preview Card

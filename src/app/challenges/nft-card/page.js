@@ -9,16 +9,27 @@ const page = () => {
       className={`${outfit.className} h-screen flex flex-col items-center justify-center  bg-nft-Very-dark-blue-main-BG`}
     >
       <div className="max-w-[350px] bg-nft-Very-dark-blue-card-BG flex flex-col gap-4 justify-center p-6 m-6 rounded-lg">
-        <section className="flex justify-center w-full ">
+        <section className="flex justify-center w-full relative rounded-lg group ">
           <Image
             src="/nft-card/image-equilibrium.jpg"
             alt="nft-card"
             height={200}
             width={200}
-            className="rounded-lg w-full"
+            className="rounded-lg w-full hover:bg-eyeSVG hover:opacity-50 "
           ></Image>
+          <div className="rounded-lg absolute inset-0 bg-nft-Cyan bg-opacity-40 w-full h-full flex items-center justify-center opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+            <Image
+              src="/nft-card/icon-view.svg"
+              alt="icon-view"
+              height={50}
+              width={50}
+              className=" "
+            ></Image>
+          </div>
         </section>
-        <h1 className="text-nft-White font-semibold text-xl hover:text-nft-Cyan">Equilibrium #3429</h1>
+        <h1 className="text-nft-White font-semibold text-xl hover:text-nft-Cyan">
+          Equilibrium #3429
+        </h1>
         <p className="text-nft-Soft-blue font-light">
           Our Equilibrium collection promotes balance and calm.
         </p>
@@ -55,7 +66,10 @@ const page = () => {
           ></Image>
           <p>
             <span className="text-nft-Soft-blue font-light">Creation of</span>
-            <span className="text-nft-White font-normal hover:text-nft-Cyan"> Jules Wyvern</span>
+            <span className="text-nft-White font-normal hover:text-nft-Cyan">
+              {" "}
+              Jules Wyvern
+            </span>
           </p>
         </section>
       </div>
