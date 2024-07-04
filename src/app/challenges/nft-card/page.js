@@ -8,7 +8,7 @@ const page = () => {
     <main
       className={`${outfit.className} h-screen flex flex-col items-center justify-center  bg-nft-Very-dark-blue-main-BG`}
     >
-      <div className="max-w-[350px] bg-nft-Very-dark-blue-card-BG flex flex-col gap-4 justify-center p-4 m-4 rounded-lg">
+      <div className="max-w-[350px] bg-nft-Very-dark-blue-card-BG flex flex-col gap-4 justify-center p-6 m-6 rounded-lg">
         <section className="flex justify-center w-full ">
           <Image
             src="/nft-card/image-equilibrium.jpg"
@@ -18,8 +18,8 @@ const page = () => {
             className="rounded-lg w-full"
           ></Image>
         </section>
-        <h1 className="text-nft-White font-semibold">Equilibrium #3429</h1>
-        <p className="text-nft-Soft-blue">
+        <h1 className="text-nft-White font-semibold text-xl hover:text-nft-Cyan">Equilibrium #3429</h1>
+        <p className="text-nft-Soft-blue font-light">
           Our Equilibrium collection promotes balance and calm.
         </p>
         <section className="flex justify-between">
@@ -31,7 +31,7 @@ const page = () => {
               width={12}
               className="object-contain"
             ></Image>
-            <span className="text-nft-Cyan">0.041 ETH</span>
+            <span className="text-nft-Cyan font-semibold">0.041 ETH</span>
           </div>{" "}
           <div className="flex gap-2 items-center">
             <Image
@@ -41,20 +41,22 @@ const page = () => {
               width={18}
               className="object-contain"
             ></Image>
-            <span className="text-nft-Soft-blue">3 days left</span>
+            <span className="text-nft-Soft-blue font-light">3 days left</span>
           </div>
         </section>
-        <div className="bg-nft-Very-dark-blue">
-          <hr className="bg-nft-Very-dark-blue" />
-        </div>
+        <hr className="border-nft-Very-dark-blue" />
         <section className="flex gap-4 items-center">
           <Image
             src="/nft-card/image-avatar.png"
             alt="Image-avatar"
             height={30}
             width={30}
+            className="rounded-full ring-1 ring-nft-White"
           ></Image>
-          <span>Creation of Jules Wyvern</span>
+          <p>
+            <span className="text-nft-Soft-blue font-light">Creation of</span>
+            <span className="text-nft-White font-normal hover:text-nft-Cyan"> Jules Wyvern</span>
+          </p>
         </section>
       </div>
     </main>
