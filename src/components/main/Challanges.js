@@ -69,4 +69,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/interactive-rating-component/preview.png",
   },
+  {
+    title: "NFT card",
+    link: "/challenges/nft-card",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/nft-card/preview.png",
+  },
 ]

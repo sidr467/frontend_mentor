@@ -107,6 +107,17 @@ module.exports = {
         "iac-LightGrey": "hsl(217, 12%, 63%)",
         "iac-DarkBlue": "hsl(213, 19%, 18%)",
         "iac-VeryDarkBlue": "hsl(216, 12%, 8%)",
+
+        //NFT card
+
+        "nft-Soft-blue": " hsl(215, 51%, 70%)",
+        "nft-Cyan": "hsl(178, 100%, 50%)",
+        "nft-Very-dark-blue-main-BG": "hsl(217, 54%, 11%)",
+        "nft-Very-dark-blue-card-BG": " hsl(216, 50%, 16%)",
+        "nft-Very dark blue": "hsl(215, 32%, 27%)",
+        "nft-White": "hsl(0, 0%, 100%)",
+
+        
       },
       boxShadow: {
         //Blog Preview Card
