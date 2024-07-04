@@ -38,6 +38,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Result summary component](https://frontend-mentor-rsidd467.vercel.app/challenges/result-summary-component)
 - [FAQ Accordion ](https://frontend-mentor-rsidd467.vercel.app/challenges/faq-accordion-main)
 - [Interactive Rating Component ](https://frontend-mentor-rsidd467.vercel.app/challenges/interactive-rating-component)
+- [NFT Card Component ](https://frontend-mentor-rsidd467.vercel.app/challenges/nft-card)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
