@@ -119,6 +119,13 @@ module.exports = {
         "nft-Very-dark-blue-card-BG": " hsl(216, 50%, 16%)",
         "nft-Very-dark-blue": "hsl(215, 32%, 27%)",
         "nft-White": "hsl(0, 0%, 100%)",
+
+        //Order summary component
+        "osc-Pale-blue": " hsl(225, 100%, 94%)",
+        "osc-Bright-blue": "hsl(245, 75%, 52%)",
+        "osc-Very-pale-blue": "hsl(225, 100%, 98%)",
+        "osc-Desaturated-blue": "hsl(224, 23%, 55%)",
+        "osc-Dark-blue": "hsl(223, 47%, 23%)",
       },
       boxShadow: {
         //Blog Preview Card

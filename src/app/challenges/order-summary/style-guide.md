@@ -13,14 +13,11 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Pale blue: hsl(225, 100%, 94%)
-- Bright blue: hsl(245, 75%, 52%)
-
-### Neutral
-
-- Very pale blue: hsl(225, 100%, 98%)
-- Desaturated blue: hsl(224, 23%, 55%)
-- Dark blue: hsl(223, 47%, 23%)
+"osc-Pale-blue":" hsl(225, 100%, 94%)",
+"osc-Bright-blue": "hsl(245, 75%, 52%)",
+"osc-Very-pale-blue": "hsl(225, 100%, 98%)",
+"osc-Desaturated-blue": "hsl(224, 23%, 55%)",
+"osc-Dark-blue": "hsl(223, 47%, 23%)",
 
 ## Typography
 
