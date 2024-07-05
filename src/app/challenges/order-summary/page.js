@@ -1,5 +1,6 @@
 import { Red_Hat_Display } from "next/font/google"
 import Image from "next/image"
+import Link from "next/link"
 
 const redHat = Red_Hat_Display({
   subsets: ["latin"],
@@ -50,14 +51,14 @@ const page = () => {
               </div>
             </div>
             <div>
-              <p className="font-bold underline text-osc-Bright-blue">Change</p>
+              <Link href={""} className="font-bold underline text-osc-Bright-blue hover:text-opacity-70">Change</Link>
             </div>
           </section>
           <section className="text-sm font-bold flex gap-4 flex-col mb-8">
-            <button className="text-osc-Pale-blue bg-osc-Bright-blue w-[280px] px-4 py-4 sm:w-[320px] rounded-xl shadow-xl">
+            <button className="text-osc-Pale-blue bg-osc-Bright-blue w-[280px] px-4 py-4 sm:w-[320px] rounded-xl shadow-xl hover:bg-opacity-70">
               Proceed to Payment
             </button>
-            <button className="text-osc-Desaturated-blue">Cancel Order</button>
+            <button className="text-osc-Desaturated-blue hover:text-osc-Dark-blue">Cancel Order</button>
           </section>
         </div>
       </div>
