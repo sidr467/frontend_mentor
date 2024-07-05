@@ -61,7 +61,7 @@ const page = () => {
               <div>
                 <Link
                   href={""}
-                  className="font-bold underline text-osc-Bright-blue hover:text-opacity-70"
+                  className="font-bold underline text-osc-Bright-blue hover:text-opacity-70 hover:no-underline"
                 >
                   Change
                 </Link>
