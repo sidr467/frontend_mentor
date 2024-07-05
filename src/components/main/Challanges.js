@@ -76,4 +76,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/nft-card/preview.png",
   },
+  {
+    title: "Order summary",
+    link: "/challenges/order-summary",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/order-summary/preview.png",
+  },
 ]
