@@ -24,19 +24,26 @@ const page = () => {
     <main
       className={`${inter.className} text-[15px] min-h-screen max-h-fit flex flex-col justify-center items-center bg-spc-Very-dark-blue`}
     >
-      <div className="bg-spc-Dark-desaturated-blue max-w-[350px] flex flex-col justify-center gap-8 mx-8 rounded-lg my-16 ">
-        <section className="">
+      <div className="bg-spc-Dark-desaturated-blue max-w-[350px] flex flex-col lg:flex-row lg:max-w-[1000px] lg:max-h-[500px] justify-center gap-8 mx-8 rounded-lg my-16 ">
+        <section className="lg:order-2 w-full">
           <Image
             src="/stats-preview/image-header-mobile.jpg"
             width={200}
             height={200}
             alt=""
-            className="w-full object-cover rounded-t-lg"
+            className="w-full object-cover rounded-t-lg lg:hidden"
+          ></Image>
+          <Image
+            src="/stats-preview/image-header-desktop.jpg"
+            width={400}
+            height={400}
+            alt=""
+            className="w-fit h-full object-cover rounded-tr-lg rounded-br-lg hidden lg:flex"
           ></Image>
         </section>
-        <section className="flex flex-col items-center justify-center gap-8">
-          <div className="text-center px-8 flex flex-col gap-4">
-            <h1 className="text-spc-White text-2xl font-bold">
+        <section className="flex flex-col items-center justify-center gap-8 lg:gap-16">
+          <div className="text-center px-8 lg:px-16 flex flex-col gap-4 lg:text-start">
+            <h1 className="text-spc-White text-2xl font-bold lg:text-3xl">
               Get <span className="text-spc-Soft-violet">insights</span> that
               help your business grow.
             </h1>{" "}
@@ -45,11 +52,11 @@ const page = () => {
               regarding revenue, customer experience, and overall efficiency.
             </p>{" "}
           </div>
-          <div className="flex flex-col gap-6 mb-6 ">
+          <div className="flex flex-col gap-6 mb-6 lg:flex-row lg:gap-20 ">
             {Stats.map((stat, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-center items-center"
+                className="flex flex-col justify-center items-center lg:items-start"
               >
                 <span className="text-spc-White text-xl font-bold">
                   {stat.stats}
