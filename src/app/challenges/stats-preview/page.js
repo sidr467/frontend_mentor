@@ -25,7 +25,7 @@ const page = () => {
       className={`${inter.className} text-[15px] min-h-screen max-h-fit flex flex-col justify-center items-center bg-spc-Very-dark-blue`}
     >
       <div className="bg-spc-Dark-desaturated-blue max-w-[350px] flex flex-col lg:flex-row lg:max-w-[1000px] justify-center gap-8 mx-8 rounded-lg my-16 ">
-        <section className="lg:order-2 w-full relative bg-spc-Soft-violet ">
+        <section className="lg:order-2 w-full bg-spc-Soft-violet rounded-tr-lg rounded-br-lg ">
           <Image
             src="/stats-preview/image-header-mobile.jpg"
             width={200}
@@ -39,7 +39,7 @@ const page = () => {
             width={400}
             height={400}
             alt=""
-            className="w-full h-full object-cover rounded-tr-lg rounded-br-lg hidden lg:flex mix-blend-multiply"
+            className="w-full h-full object-cover hidden lg:flex mix-blend-multiply"
             priority={true}
           ></Image>
         </section>
