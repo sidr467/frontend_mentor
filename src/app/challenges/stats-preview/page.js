@@ -31,7 +31,7 @@ const page = () => {
             width={200}
             height={200}
             alt=""
-            className="w-full object-cover rounded-t-lg lg:hidden"
+            className="w-full object-cover rounded-t-lg lg:hidden mix-blend-multiply"
             priority={true}
           ></Image>
           <Image
