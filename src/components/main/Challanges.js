@@ -83,4 +83,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/order-summary/preview.png",
   },
+  {
+    title: "Stats Preview",
+    link: "/challenges/stats-preview",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/stats-preview/preview.png",
+  },
 ]
