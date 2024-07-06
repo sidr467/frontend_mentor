@@ -126,6 +126,14 @@ module.exports = {
         "osc-Very-pale-blue": "hsl(225, 100%, 98%)",
         "osc-Desaturated-blue": "hsl(224, 23%, 55%)",
         "osc-Dark-blue": "hsl(223, 47%, 23%)",
+
+        //Stats preview card
+        "spc-Very-dark-blue": " hsl(233, 47%, 7%)",
+        "spc-Dark-desaturated-blue": "hsl(244, 38%, 16%)",
+        "spc-Soft-violet": "hsl(277, 64%, 61%)",
+        "spc-White": "hsl(0, 0%, 100%)",
+        "spc-Slightly-transparent-white-mainPara": "hsla(0, 0%, 100%, 0.75)",
+        "spc-Slightly-transparent-white-statHead": " hsla(0, 0%, 100%, 0.6)",
       },
       boxShadow: {
         //Blog Preview Card

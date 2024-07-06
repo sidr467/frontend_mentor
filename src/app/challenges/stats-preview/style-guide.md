@@ -13,15 +13,19 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Very dark blue (main background): hsl(233, 47%, 7%)
-- Dark desaturated blue (card background): hsl(244, 38%, 16%)
-- Soft violet (accent): hsl(277, 64%, 61%)
+"spc-Very-dark-blue (main background)":" hsl(233, 47%, 7%)",
+"spc-Dark desaturated blue (card background)": "hsl(244, 38%, 16%)",
+"spc-Soft violet (accent)": "hsl(277, 64%, 61%)",
+"spc-White (main heading, stats)":" hsl(0, 0%, 100%)",
+"spc-Slightly transparent white (main paragraph)": "hsla(0, 0%, 100%, 0.75)",
+"spc-Slightly transparent white (stat headings)":" hsla(0, 0%, 100%, 0.6)",
 
-### Neutral
-
-- White (main heading, stats): hsl(0, 0%, 100%)
-- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
-- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+"spc-Very-dark-blue":" hsl(233, 47%, 7%)",
+"spc-Dark-desaturated-blue": "hsl(244, 38%, 16%)",
+"spc-Soft-violet": "hsl(277, 64%, 61%)",
+"spc-White":" hsl(0, 0%, 100%)",
+"spc-Slightly-transparent-white-mainPara": "hsla(0, 0%, 100%, 0.75)",
+"spc-Slightly-transparent-white-statHead":" hsla(0, 0%, 100%, 0.6)",
 
 ## Typography
 
