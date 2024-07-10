@@ -90,4 +90,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/stats-preview/preview.png",
   },
+  {
+    title: "3 Column card",
+    link: "/challenges/3-column-card",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/3-column-card/preview.png",
+  },
 ]
