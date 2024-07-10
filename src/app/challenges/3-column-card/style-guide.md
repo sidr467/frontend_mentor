@@ -13,14 +13,14 @@ The designs were created to the following widths:
 
 ### Primary
 
-Bright orange: hsl(31, 77%, 52%)
-Dark cyan: hsl(184, 100%, 22%)
-Very dark cyan: hsl(179, 100%, 13%)
+"3col-Bright-orange": "hsl(31, 77%, 52%)",
+"3col-Dark-cyan": "hsl(184, 100%, 22%)",
+"3col-Very-dark-cyan": "hsl(179, 100%, 13%)",
 
 ### Neutral
 
-Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
-Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+"3col-Transparent-white": "hsla(0, 0%, 100%, 0.75)",
+"3col-Very-light-gray": "hsl(0, 0%, 95%)",
 
 ## Typography
 
