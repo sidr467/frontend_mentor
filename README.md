@@ -41,6 +41,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [NFT Card Component ](https://frontend-mentor-rsidd467.vercel.app/challenges/nft-card)
 - [Order Summary Component ](https://frontend-mentor-rsidd467.vercel.app/challenges/order-summary)
 - [Stats Preview Card ](https://frontend-mentor-rsidd467.vercel.app/challenges/stats-preview)
+- [3 Column Card ](https://frontend-mentor-rsidd467.vercel.app/challenges/3-column-card)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
