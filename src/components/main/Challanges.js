@@ -97,4 +97,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/3-column-card/preview.png",
   },
+  {
+    title: "Profile card",
+    link: "/challenges/profile-card",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/profile-card/preview.png",
+  },
 ]

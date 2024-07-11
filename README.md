@@ -42,6 +42,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Order Summary Component ](https://frontend-mentor-rsidd467.vercel.app/challenges/order-summary)
 - [Stats Preview Card ](https://frontend-mentor-rsidd467.vercel.app/challenges/stats-preview)
 - [3 Column Card ](https://frontend-mentor-rsidd467.vercel.app/challenges/3-column-card)
+- [Profile Card ](https://frontend-mentor-rsidd467.vercel.app/challenges/profile-card)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 

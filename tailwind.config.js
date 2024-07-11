@@ -136,12 +136,18 @@ module.exports = {
         "spc-Slightly-transparent-white-statHead": " hsla(0, 0%, 100%, 0.6)",
 
         //3 column card
-
         "3col-Bright-orange": "hsl(31, 77%, 52%)",
         "3col-Dark-cyan": "hsl(184, 100%, 22%)",
         "3col-Very-dark-cyan": "hsl(179, 100%, 13%)",
         "3col-Transparent-white": "hsla(0, 0%, 100%, 0.75)",
         "3col-Very-light-gray": "hsl(0, 0%, 95%)",
+
+        //Profile Card
+
+        "pc-Dark-cyan": "hsl(185, 75%, 39%)",
+        "pc-Very-dark-desaturated-blue": "hsl(229, 23%, 23%)",
+        "pc-Dark-grayishblue": "hsl(227, 10%, 46%)",
+        "pc-Dark-gray": "hsl(0, 0%, 59%)",
       },
       boxShadow: {
         //Blog Preview Card

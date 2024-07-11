@@ -13,27 +13,20 @@ The designs were created to the following widths:
 
 ### Primary
 
-"3col-Bright-orange": "hsl(31, 77%, 52%)",
-"3col-Dark-cyan": "hsl(184, 100%, 22%)",
-"3col-Very-dark-cyan": "hsl(179, 100%, 13%)",
-
-### Neutral
-
-"3col-Transparent-white": "hsla(0, 0%, 100%, 0.75)",
-"3col-Very-light-gray": "hsl(0, 0%, 95%)",
+"pc-Dark-cyan": "hsl(185, 75%, 39%)",
+"pc-Very-dark" desaturated blue: "hsl(229, 23%, 23%)",
+"pc-Dark-grayishblue": "hsl(227, 10%, 46%)",
+"pc-Dark-gray": "hsl(0, 0%, 59%)",
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 15px
+- Font size (name and stats): 18px
 
 ### Font
 
-- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
-- Weights: 400
-
-- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
-- Weights: 700
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
