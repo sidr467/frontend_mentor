@@ -144,10 +144,10 @@ module.exports = {
 
         //Profile Card
 
-        "pc-Dark-cyan": "hsl(185, 75%, 39%)",
-        "pc-Very-dark-desaturated-blue": "hsl(229, 23%, 23%)",
-        "pc-Dark-grayishblue": "hsl(227, 10%, 46%)",
-        "pc-Dark-gray": "hsl(0, 0%, 59%)",
+        "pfc-Dark-cyan": "hsl(185, 75%, 39%)",
+        "pfc-Very-dark-desaturated-blue": "hsl(229, 23%, 23%)",
+        "pfc-Dark-grayishblue": "hsl(227, 10%, 46%)",
+        "pfc-Dark-gray": "hsl(0, 0%, 59%)",
       },
       boxShadow: {
         //Blog Preview Card
