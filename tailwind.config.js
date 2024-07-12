@@ -154,6 +154,12 @@ module.exports = {
         "sps-Dark-Grayish-Magenta": "hsl(303, 10%, 53%)",
         "sps-Light-Grayish-Magenta": "hsl(300, 24%, 96%)",
         "sps-White": "hsl(0, 0%, 100%)",
+
+        //Article Component Preview
+        "acp-Very-Dark-Grayish-Blue": "hsl(217, 19%, 35%)",
+        "acp-Desaturated-Dark-Blue": "hsl(214, 17%, 51%)",
+        "acp-Grayish-Blue": "hsl(212, 23%, 69%)",
+        "acp-Light-Grayish-Blue": "hsl(210, 46%, 95%)",
       },
       boxShadow: {
         //Blog Preview Card

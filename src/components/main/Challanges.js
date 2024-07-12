@@ -111,4 +111,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/social-proof-section/preview.png",
   },
+  {
+    title: "Article component",
+    link: "/challenges/article-component",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/article-component/preview.png",
+  },
 ]
