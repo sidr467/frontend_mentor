@@ -143,11 +143,17 @@ module.exports = {
         "3col-Very-light-gray": "hsl(0, 0%, 95%)",
 
         //Profile Card
-
         "pfc-Dark-cyan": "hsl(185, 75%, 39%)",
         "pfc-Very-dark-desaturated-blue": "hsl(229, 23%, 23%)",
         "pfc-Dark-grayishblue": "hsl(227, 10%, 46%)",
         "pfc-Dark-gray": "hsl(0, 0%, 59%)",
+
+        //Social Proof section master
+        "sps-Very-Dark-Magenta": "hsl(300, 43%, 22%)",
+        "sps-Soft-Pink": "hsl(333, 80%, 67%)",
+        "sps-Dark-Grayish-Magenta": "hsl(303, 10%, 53%)",
+        "sps-Light-Grayish-Magenta": "hsl(300, 24%, 96%)",
+        "sps-White": "hsl(0, 0%, 100%)",
       },
       boxShadow: {
         //Blog Preview Card

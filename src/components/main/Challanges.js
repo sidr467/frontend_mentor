@@ -104,4 +104,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/profile-card/preview.png",
   },
+  {
+    title: "Social proof section",
+    link: "/challenges/social-proof-section",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/social-proof-section/preview.png",
+  },
 ]
