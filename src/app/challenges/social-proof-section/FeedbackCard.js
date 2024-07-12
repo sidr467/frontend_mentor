@@ -26,11 +26,11 @@ const feedbacks = [
 
 const FeedbackCard = () => {
   return (
-    <div className="w-full px-8 grid grid-cols-1 gap-4">
+    <div className="w-full lg:col-span-2 px-8 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:mt-12 ">
       {feedbacks.map((data, index) => (
         <div
           key={index}
-          className="max-w-[340px] bg-sps-Very-Dark-Magenta rounded-lg px-8 py-8 grid grid-cols-1 gap-4"
+          className="lg:max-w-[340px] lg:h-[240px] bg-sps-Very-Dark-Magenta rounded-lg px-8 py-8 grid grid-cols-1 gap-4 lg:first-of-type:mb-16 lg:even:mt-8 lg:last-of-type:mt-16"
         >
           <div className="flex gap-6 items-center">
             <Image
@@ -41,7 +41,7 @@ const FeedbackCard = () => {
               className="rounded-full"
             ></Image>
             <div>
-              <h2 className="text-sps-White">{data.name}</h2>
+              <h2 className="text-sps-White font-medium">{data.name}</h2>
               <p className="text-sps-Soft-Pink">{data.status}</p>
             </div>
           </div>
