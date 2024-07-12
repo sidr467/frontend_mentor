@@ -1,5 +1,6 @@
 import { League_Spartan } from "next/font/google"
 import FeedbackCard from "./FeedbackCard"
+import RatingCard from "./RatingCard"
 
 const spartan = League_Spartan({
   subsets: ["latin"],
@@ -15,7 +16,8 @@ We only provide great products combined with excellent customer service.
 See what our satisfied customers are saying about our services.
 </main> */}
 
-      <FeedbackCard></FeedbackCard>
+      {/* <FeedbackCard></FeedbackCard> */}
+      <RatingCard></RatingCard>
     </div>
   )
 }
