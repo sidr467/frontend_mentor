@@ -1,4 +1,5 @@
 import { League_Spartan } from "next/font/google"
+import FeedbackCard from "./FeedbackCard"
 
 const spartan = League_Spartan({
   subsets: ["latin"],
@@ -8,7 +9,13 @@ const spartan = League_Spartan({
 const page = () => {
   return (
     <div className={`${spartan.className} min-h-screen`}>
-      <main>Enter</main>
+      {/* <main>10,000+ of our users love our products.
+
+We only provide great products combined with excellent customer service.
+See what our satisfied customers are saying about our services.
+</main> */}
+
+      <FeedbackCard></FeedbackCard>
     </div>
   )
 }
