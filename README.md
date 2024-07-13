@@ -44,6 +44,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [3 Column Card ](https://frontend-mentor-rsidd467.vercel.app/challenges/3-column-card)
 - [Profile Card ](https://frontend-mentor-rsidd467.vercel.app/challenges/profile-card)
 - [Social Proof Section ](https://frontend-mentor-rsidd467.vercel.app/challenges/social-proof-section)
+- [Article Component ](https://frontend-mentor-rsidd467.vercel.app/challenges/article-component)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
