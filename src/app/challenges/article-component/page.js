@@ -1,10 +1,19 @@
+"use client"
+
 import { Manrope } from "next/font/google"
 import Image from "next/image"
 import SharingHover from "./SharingHover"
+import { useState } from "react"
 
 const manRope = Manrope({ subsets: ["latin"], weight: ["500", "700"] })
 
-const page = () => {
+const Page = () => {
+  const [show, setShow] = useState(false)
+
+  const handleShow = () => {
+    setShow(!show)
+  }
+
   return (
     <div
       className={`${manRope.className} text-[13px] flex justify-center items-center min-h-screen bg-acp-Light-Grayish-Blue`}
@@ -21,7 +30,7 @@ const page = () => {
         </div>
         <div className="flex flex-col gap-8 md:justify-center">
           <div className="px-10 flex flex-col gap-4">
-            <h1 className="text-acp-Very-Dark-Grayish-Blue text-base md:text-lg font-bold">
+            <h1 className="text-acp-Very-Dark-Grayish-Blue text-base md:text-lg font-bold tracking-widest">
               Shift the overall look and feel by adding these wonderful touches
               to furniture in your home
             </h1>
@@ -31,32 +40,36 @@ const page = () => {
               tips to help you make any room feel complete.
             </p>
           </div>
-          <div className="px-10 flex items-center justify-between mb-4 md:mb-0">
-            <div className="flex gap-4 items-center">
-              <Image
-                src="/article-component/avatar-michelle.jpg"
-                width={40}
-                height={40}
-                alt="Avatar"
-                className="rounded-full"
-              ></Image>
-              <div className="flex flex-col">
-                <span className="text-acp-Very-Dark-Grayish-Blue font-bold">
-                  Michelle Appleton
-                </span>
-                <span className="text-acp-Grayish-Blue">28 Jun 2020</span>
+          <div className="relative">
+            <div className="px-10 flex items-center justify-between mb-4 pt-4 md:mb-0">
+              <div className="flex gap-4 items-center">
+                <Image
+                  src="/article-component/avatar-michelle.jpg"
+                  width={40}
+                  height={40}
+                  alt="Avatar"
+                  className="rounded-full"
+                ></Image>
+                <div className="flex flex-col">
+                  <span className="text-acp-Very-Dark-Grayish-Blue font-bold">
+                    Michelle Appleton
+                  </span>
+                  <span className="text-acp-Grayish-Blue">28 Jun 2020</span>
+                </div>
               </div>
+              <button
+                className={`rounded-full bg-acp-Light-Grayish-Blue p-2 `}
+                onClick={handleShow}
+              >
+                <Image
+                  src="/article-component/icon-share.svg"
+                  width={15}
+                  height={15}
+                  alt="Icon Share"
+                ></Image>
+              </button>
             </div>
-            <div
-              className={`w-fit rounded-full bg-acp-Light-Grayish-Blue p-2 `}
-            >
-              <Image
-                src="/article-component/icon-share.svg"
-                width={15}
-                height={15}
-                alt="Icon Share"
-              ></Image>
-            </div>
+            {show && <SharingHover handleShow={handleShow} />}
           </div>
         </div>
       </main>
@@ -64,4 +77,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
