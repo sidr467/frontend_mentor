@@ -30,7 +30,7 @@ const Page = () => {
         </div>
         <div className="flex flex-col gap-8 md:justify-center">
           <div className="px-10 flex flex-col gap-4">
-            <h1 className="text-acp-Very-Dark-Grayish-Blue text-base md:text-xl font-bold tracking-wide md:tracking-wider">
+            <h1 className="text-acp-Very-Dark-Grayish-Blue text-base md:text-xl font-bold tracking-[0.5px] md:tracking-[1px]">
               Shift the overall look and feel by adding these wonderful touches
               to furniture in your home
             </h1>
@@ -51,7 +51,7 @@ const Page = () => {
                   className="rounded-full"
                 ></Image>
                 <div className="flex flex-col">
-                  <span className="text-acp-Very-Dark-Grayish-Blue text-xs md:text-sm font-bold tracking-widest">
+                  <span className="text-acp-Very-Dark-Grayish-Blue text-xs md:text-sm font-bold tracking-[0.5px] md:tracking-[1px]">
                     Michelle Appleton
                   </span>
                   <span className="text-acp-Grayish-Blue text-xs md:text-sm">
