@@ -63,6 +63,17 @@ const SharingHover = ({ handleShow }) => {
         <div className="relative flex justify-center items-center">
           <div className="absolute top-4 left-[110px] w-0 h-0 border-t-[14px] border-l-[13px] border-l-transparent border-r-[13px] border-r-transparent border-t-acp-Very-Dark-Grayish-Blue "></div>
         </div>
+        <button
+          className=" absolute w-fit top-[74px] left-[140px] rounded-full bg-acp-Desaturated-Dark-Blue p-2"
+          onClick={handleShow}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+            <path
+              fill="hsl(210, 46%, 95%)"
+              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+            />
+          </svg>
+        </button>
       </div>
     </>
   )
