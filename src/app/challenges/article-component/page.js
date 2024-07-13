@@ -34,7 +34,7 @@ const Page = () => {
               Shift the overall look and feel by adding these wonderful touches
               to furniture in your home
             </h1>
-            <p className="text-acp-Desaturated-Dark-Blue font-medium">
+            <p className="text-acp-Desaturated-Dark-Blue font-medium leading-5 text-sm">
               Ever been in a room and felt like something was missing? Perhaps
               it felt slightly bare and uninviting. I&apos;ve got some simple
               tips to help you make any room feel complete.
@@ -51,10 +51,12 @@ const Page = () => {
                   className="rounded-full"
                 ></Image>
                 <div className="flex flex-col">
-                  <span className="text-acp-Very-Dark-Grayish-Blue font-bold">
+                  <span className="text-acp-Very-Dark-Grayish-Blue text-xs md:text-sm font-bold tracking-widest">
                     Michelle Appleton
                   </span>
-                  <span className="text-acp-Grayish-Blue">28 Jun 2020</span>
+                  <span className="text-acp-Grayish-Blue text-xs md:text-sm">
+                    28 Jun 2020
+                  </span>
                 </div>
               </div>
               <button
