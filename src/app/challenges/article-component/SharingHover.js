@@ -45,7 +45,7 @@ const SharingHover = ({ handleShow }) => {
           </svg>
         </button>
       </div>
-      <div className="w-72 hidden z-10 absolute bottom-14 left-60 lg:block bg-acp-Very-Dark-Grayish-Blue px-8 py-4 rounded-lg">
+      <div className="w-72 hidden z-10 absolute bottom-14 left-64 lg:block bg-acp-Very-Dark-Grayish-Blue px-8 py-4 rounded-lg">
         <div className="flex items-center justify-center gap-4">
           <p className="uppercase text-acp-Grayish-Blue tracking-[4px] font-medium">
             Share
@@ -61,10 +61,10 @@ const SharingHover = ({ handleShow }) => {
           ))}
         </div>
         <div className="relative flex justify-center items-center">
-          <div className="absolute top-4 left-[110px] w-0 h-0 border-t-[14px] border-l-[13px] border-l-transparent border-r-[13px] border-r-transparent border-t-acp-Very-Dark-Grayish-Blue "></div>
+          <div className="absolute top-4 left-[106px] w-0 h-0 border-t-[14px] border-l-[13px] border-l-transparent border-r-[13px] border-r-transparent border-t-acp-Very-Dark-Grayish-Blue "></div>
         </div>
         <button
-          className=" absolute w-fit top-[74px] left-[140px] rounded-full bg-acp-Desaturated-Dark-Blue p-2"
+          className=" absolute w-fit top-[74px] left-[135px] rounded-full bg-acp-Desaturated-Dark-Blue p-2"
           onClick={handleShow}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
