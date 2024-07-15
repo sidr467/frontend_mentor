@@ -9,72 +9,92 @@ const josefin = Josefin_Sans({
 const page = () => {
   return (
     <div
-      className={`${josefin.className} text-[16px] flex items-center justify-center w-full bg-black min-h-screen pt-8 md:p-0 `}
+      className={`${josefin.className} text-[16px] flex items-center justify-center w-full min-h-screen pt-8 md:p-0 `}
     >
-      <main className="md:min-h-screen w-full h-full bg-pink-500 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-0 mb-8 md:m-0">
-        <div className="flex flex-col gap-8 md:gap-0 md:order-2 w-full h-full bg-slate-400 md:col-span-1">
-          <Image
-            src="/base-apparel/logo.svg"
-            width={120}
-            height={120}
-            alt="logo"
-            className="ml-8 md:hidden"
-          ></Image>
-          <Image
-            src="/base-apparel/hero-mobile.jpg"
-            width={300}
-            height={300}
-            alt="hero-mobile"
-            className="w-full md:hidden"
-          ></Image>
-          <Image
-            src="/base-apparel/hero-desktop.jpg"
-            width={300}
-            height={300}
-            alt="hero-desktop"
-            className="hidden md:block w-full max-h-screen object-contain"
-          ></Image>
+      <main className="md:min-h-screen w-full h-full flex flex-col md:flex-row gap-10 md:gap-0 mb-8 md:m-0">
+        <div className="md:gap-0 md:order-2 w-full h-full">
+          {/* Mobile */}
+          <div className="flex flex-col gap-8">
+            <Image
+              src="/base-apparel/logo.svg"
+              width={120}
+              height={120}
+              alt="logo"
+              quality={100}
+              className="ml-8 md:hidden"
+            ></Image>
+            <Image
+              src="/base-apparel/hero-mobile.jpg"
+              width={300}
+              height={300}
+              quality={100}
+              alt="hero-mobile"
+              className="w-full md:hidden"
+            ></Image>
+          </div>
+          {/* Desktop */}
+          <div className="md:flex hidden min-h-screen items-center justify-center relative">
+            <Image
+              src="/base-apparel/hero-desktop.jpg"
+              alt="hero-desktop"
+              layout="fill"
+              quality={100}
+              className="hidden md:block w-full max-h-screen object-cover absolute inset-0"
+            ></Image>
+          </div>
         </div>
-        <div className="flex flex-col gap-8 md:justify-center max-h-full md:max-h-screen w-full bg-gray-500 md:col-span-2">
+        <div className="relative h-screen w-full flex items-center justify-center">
           <Image
-            src="/base-apparel/logo.svg"
-            width={120}
-            height={120}
-            alt="logo"
-            className="ml-8 md:flex hidden"
+            src="/base-apparel/bg-pattern-desktop.svg"
+            layout="fill"
+            alt="bg"
+            objectFit="cover"
           ></Image>
-          <h1 className="uppercase text-5xl text-center md:text-start px-4 tracking-[10px]">
-            <span className="text-bacs-Desaturated-Red font-light ">
-              We&apos;re
-            </span>{" "}
-            <span className="text-bacs-Dark-Grayish-Red font-semibold ">
-              coming soon
-            </span>
-          </h1>
-          <p className="text-bacs-Desaturated-Red text-center md:text-start mx-4">
-            Hello fellow shoppers! We&apos;re currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-          <form
-            action=""
-            className="flex items-center justify-between ring-1  ring-bacs-Desaturated-Red rounded-full mx-4 relative "
-          >
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="px-6 py-4 rounded-full w-full h-full text-base focus:outline-none focus:ring-2 focus:ring-bacs-g2t text-bacs-Desaturated-Red  "
-            ></input>
-            <button className="absolute right-0 h-full w-20 px-4 flex items-center justify-center rounded-full shadow-bacs-Desaturated-Red hover:shadow-2xl  bg-gradient-to-tl from-bacs-g2t to-bacs-g2f">
+          <div className="md:pl-40 flex flex-col gap-8 md:gap-24 justify-center max-h-full md:max-h-screen w-full z-10 ">
+            <div>
               <Image
-                src="/base-apparel/icon-arrow.svg"
-                width={13}
-                height={13}
-                alt="icon-Arrow"
-                className=" "
+                src="/base-apparel/logo.svg"
+                width={120}
+                height={120}
+                alt="logo"
+                className="mx-4 md:flex hidden w-[150px]"
               ></Image>
-            </button>
-          </form>
+            </div>
+            <div className="flex flex-col gap-8 md:gap-10 md:max-w-[500px]">
+              <h1 className="uppercase text-5xl md:text-7xl text-center md:text-start px-4 tracking-[10px]">
+                <span className="text-bacs-Desaturated-Red font-light ">
+                  We&apos;re
+                </span>{" "}
+                <span className="text-bacs-Dark-Grayish-Red font-semibold ">
+                  coming soon
+                </span>
+              </h1>
+              <p className="text-bacs-Desaturated-Red text-center md:text-base md:text-start mx-4 md:pr-8">
+                Hello fellow shoppers! We&apos;re currently building our new
+                fashion store. Add your email below to stay up-to-date with
+                announcements and our launch deals.
+              </p>
+              <form
+                action=""
+                className="flex items-center justify-between rounded-full mx-4 relative "
+              >
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="px-6 py-4 rounded-full w-full h-full text-base focus:outline-none focus:ring-2 ring-1 ring-bacs-Desaturated-Red focus:ring-bacs-g2t text-bacs-Desaturated-Red  "
+                ></input>
+                <button className="absolute right-0 h-full w-20 px-4 flex items-center justify-center rounded-full shadow-bacs bg-gradient-to-tl from-bacs-g2t to-bacs-g2f">
+                  <Image
+                    src="/base-apparel/icon-arrow.svg"
+                    width={13}
+                    height={13}
+                    alt="icon-Arrow"
+                    className=" "
+                  ></Image>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </main>
     </div>

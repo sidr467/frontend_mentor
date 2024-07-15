@@ -173,6 +173,8 @@ module.exports = {
       boxShadow: {
         //Blog Preview Card
         custom: "8px 8px 0 0 black",
+        //base apparel
+        bacs: "0 5px 20px 2px hsl(0, 36%, 70%)",
       },
     },
   },
