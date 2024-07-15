@@ -9,27 +9,41 @@ const josefin = Josefin_Sans({
 const page = () => {
   return (
     <div
-      className={`${josefin.className} text-[16px] flex items-center justify-center min-h-screen mt-8 `}
+      className={`${josefin.className} text-[16px] flex items-center justify-center w-full bg-black min-h-screen pt-8 md:p-0 `}
     >
-      <main className="grid grid-cols-1 gap-16 mb-8">
-        <div className="flex flex-col gap-8">
+      <main className="md:min-h-screen w-full h-full bg-pink-500 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-0 mb-8 md:m-0">
+        <div className="flex flex-col gap-8 md:gap-0 md:order-2 w-full h-full bg-slate-400 md:col-span-1">
           <Image
             src="/base-apparel/logo.svg"
             width={120}
             height={120}
             alt="logo"
-            className="ml-8"
+            className="ml-8 md:hidden"
           ></Image>
           <Image
             src="/base-apparel/hero-mobile.jpg"
             width={300}
             height={300}
             alt="hero-mobile"
-            className="w-full"
+            className="w-full md:hidden"
+          ></Image>
+          <Image
+            src="/base-apparel/hero-desktop.jpg"
+            width={300}
+            height={300}
+            alt="hero-desktop"
+            className="hidden md:block w-full max-h-screen object-contain"
           ></Image>
         </div>
-        <div className="flex flex-col gap-8">
-          <h1 className="uppercase text-5xl text-center px-4 tracking-[10px]">
+        <div className="flex flex-col gap-8 md:justify-center max-h-full md:max-h-screen w-full bg-gray-500 md:col-span-2">
+          <Image
+            src="/base-apparel/logo.svg"
+            width={120}
+            height={120}
+            alt="logo"
+            className="ml-8 md:flex hidden"
+          ></Image>
+          <h1 className="uppercase text-5xl text-center md:text-start px-4 tracking-[10px]">
             <span className="text-bacs-Desaturated-Red font-light ">
               We&apos;re
             </span>{" "}
@@ -37,8 +51,7 @@ const page = () => {
               coming soon
             </span>
           </h1>
-
-          <p className="text-bacs-Desaturated-Red text-center mx-4">
+          <p className="text-bacs-Desaturated-Red text-center md:text-start mx-4">
             Hello fellow shoppers! We&apos;re currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
@@ -52,11 +65,11 @@ const page = () => {
               placeholder="Email Address"
               className="px-6 py-4 rounded-full w-full h-full text-base focus:outline-none focus:ring-2 focus:ring-bacs-g2t text-bacs-Desaturated-Red  "
             ></input>
-            <button className="absolute right-0 h-full w-20 px-4 flex items-center justify-center rounded-full  bg-gradient-to-tl from-bacs-g2t to-bacs-g2f">
+            <button className="absolute right-0 h-full w-20 px-4 flex items-center justify-center rounded-full shadow-bacs-Desaturated-Red hover:shadow-2xl  bg-gradient-to-tl from-bacs-g2t to-bacs-g2f">
               <Image
                 src="/base-apparel/icon-arrow.svg"
-                width={10}
-                height={10}
+                width={13}
+                height={13}
                 alt="icon-Arrow"
                 className=" "
               ></Image>
