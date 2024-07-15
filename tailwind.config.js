@@ -165,6 +165,10 @@ module.exports = {
         "bacs-Desaturated-Red": "hsl(0, 36%, 70%)",
         "bacs-Soft-Red": "hsl(0, 93%, 68%)",
         "bacs-Dark-Grayish-Red": "hsl(0, 6%, 24%)",
+        "bacs-g1f": "hsl(0, 0%, 100%)",
+        "bacs-g1t": "hsl(0, 100%, 98%)",
+        "bacs-g2f": "hsl(0, 80%, 86%)",
+        "bacs-g2t": "hsl(0, 74%, 74%)",
       },
       boxShadow: {
         //Blog Preview Card
