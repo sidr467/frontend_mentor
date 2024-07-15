@@ -81,15 +81,16 @@ const page = () => {
                 <input
                   type="email"
                   placeholder="Email Address"
+                  aria-label="Email Address"
                   className="px-6 py-4 rounded-full w-full h-full text-base focus:outline-none focus:ring-2 ring-1 ring-bacs-Desaturated-Red focus:ring-bacs-g2t text-bacs-Desaturated-Red  "
                 ></input>
-                <button className="absolute right-0 h-full w-20 px-4 flex items-center justify-center rounded-full shadow-bacs bg-gradient-to-tl from-bacs-g2t to-bacs-g2f">
+                <button className="absolute right-0 h-full w-20 px-4 flex items-center justify-center rounded-full shadow-bacs bg-gradient-to-tl hover:scale-110 from-bacs-g2t to-bacs-g2f">
                   <Image
                     src="/base-apparel/icon-arrow.svg"
                     width={13}
                     height={13}
                     alt="icon-Arrow"
-                    className=" "
+                    className=""
                   ></Image>
                 </button>
               </form>
