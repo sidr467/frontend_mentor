@@ -160,6 +160,11 @@ module.exports = {
         "acp-Desaturated-Dark-Blue": "hsl(214, 17%, 51%)",
         "acp-Grayish-Blue": "hsl(212, 23%, 69%)",
         "acp-Light-Grayish-Blue": "hsl(210, 46%, 95%)",
+
+        //Base apparel coming soon
+        "bacs-Desaturated-Red": "hsl(0, 36%, 70%)",
+        "bacs-Soft-Red": "hsl(0, 93%, 68%)",
+        "bacs-Dark-Grayish-Red": "hsl(0, 6%, 24%)",
       },
       boxShadow: {
         //Blog Preview Card
