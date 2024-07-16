@@ -119,7 +119,7 @@ export const challenges = [
     image: "/article-component/preview.png",
   },
   {
-    title: "Base Apparel coming soon",
+    title: "Base Apparel",
     link: "/challenges/base-apparel",
     difficulty: 1,
     difficultyText: "Newbie",

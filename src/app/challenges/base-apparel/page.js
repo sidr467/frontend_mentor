@@ -13,7 +13,7 @@ const page = () => {
       className={`${josefin.className} text-[16px] flex items-center justify-center w-full min-h-screen pt-8 md:p-0 `}
     >
       <main className="md:min-h-screen w-full h-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 mb-8 md:m-0">
-        <div className="md:gap-0 md:order-2 w-full h-screen">
+        <div className="md:gap-0 md:order-2 w-full h-full">
           {/* Mobile */}
           <div className="flex flex-col gap-8">
             <Image
@@ -34,14 +34,13 @@ const page = () => {
             ></Image>
           </div>
           {/* Desktop */}
-          <div className="md:flex hidden h-screen items-center justify-center relative">
+          <div className="md:flex hidden min-h-screen items-center justify-center relative">
             <Image
               src="/base-apparel/hero-desktop.jpg"
               alt="hero-desktop"
               layout="fill"
               quality={100}
-              objectPosition="center"
-              className="hidden md:block w-full max-h-screen object-cover absolute"
+              className="hidden md:block w-full max-h-screen object-cover absolute inset-0"
             ></Image>
           </div>
         </div>
@@ -50,7 +49,6 @@ const page = () => {
             src="/base-apparel/bg-pattern-desktop.svg"
             layout="fill"
             alt="bg"
-            objectFit="cover"
             className="hidden md:flex"
           ></Image>
           <div className="flex md:justify-center md:items-center max-h-full md:max-h-screen w-full z-10 ">
