@@ -12,8 +12,8 @@ const page = () => {
     <div
       className={`${josefin.className} text-[16px] flex items-center justify-center w-full min-h-screen pt-8 md:p-0 `}
     >
-      <main className="md:min-h-screen w-full h-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 mb-8 md:m-0">
-        <div className="md:gap-0 md:order-2 w-full h-full">
+      <main className="md:min-h-screen w-screen h-full grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-0 mb-8 md:m-0 md:relative">
+        <div className="md:gap-0 md:order-2 md:w-[34vw] w-full h-full md:absolute md:right-0">
           {/* Mobile */}
           <div className="flex flex-col gap-8">
             <Image
@@ -44,7 +44,8 @@ const page = () => {
             ></Image>
           </div>
         </div>
-        <div className="relative h-fit md:h-screen w-full flex items-center justify-center">
+        {/* Form Section */}
+        <div className="relative h-fit w-full md:h-screen md:w-[66vw]  flex items-center justify-center">
           <Image
             src="/base-apparel/bg-pattern-desktop.svg"
             layout="fill"
