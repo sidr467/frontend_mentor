@@ -1,10 +1,10 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
+import { useRef, useState } from "react"
 
 const EmailForm = () => {
-  const emailRef = useState(null)
+  const emailRef = useRef(null)
   const [error, setError] = useState("")
 
   const handleSubmit = (e) => {
