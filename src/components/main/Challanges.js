@@ -125,4 +125,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/base-apparel/preview.png",
   },
+  {
+    title: "Signup Form",
+    link: "/challenges/signup-form",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/signup-form/preview.png",
+  },
 ]

@@ -169,6 +169,13 @@ module.exports = {
         "bacs-g1t": "hsl(0, 100%, 98%)",
         "bacs-g2f": "hsl(0, 80%, 86%)",
         "bacs-g2t": "hsl(0, 74%, 74%)",
+
+        //intro component signup form
+        "icsf-red": "hsl(0, 100%, 74%)",
+        "icsf-green": "hsl(154, 59%, 51%)",
+        "icsf-blue": "hsl(248, 32%, 49%)",
+        "icsf-dark-blue": "hsl(249, 10%, 26%)",
+        "icsf-grayish-blue": "hsl(246, 25%, 77%)",
       },
       boxShadow: {
         //Blog Preview Card
