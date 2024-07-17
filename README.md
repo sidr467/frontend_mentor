@@ -46,6 +46,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Social Proof Section ](https://frontend-mentor-rsidd467.vercel.app/challenges/social-proof-section)
 - [Article Component ](https://frontend-mentor-rsidd467.vercel.app/challenges/article-component)
 - [Base Apparel ](https://frontend-mentor-rsidd467.vercel.app/challenges/base-apparel)
+- [SignUp Form ](https://frontend-mentor-rsidd467.vercel.app/challenges/signup-form)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
