@@ -38,7 +38,7 @@ const page = () => {
             Sign Up
           </button>
         </div>
-        <div className="bg-spg-cyan bg-opacity-50 rounded-b-lg md:rounded-bl-none p-6 md:p-12 grid gap-4 grid-cols-1">
+        <div className="bg-spg-cyan bg-opacity-70 rounded-b-lg md:rounded-bl-none p-6 md:p-12 grid gap-4 grid-cols-1">
           <h2 className="text-white font-bold md:text-xl">Why Us</h2>
           <p className="text-spg-light-gray text-sm font-normal pr-20 md:text-base">
             Tutorials by industry experts Peer &amp; expert code review Coding
