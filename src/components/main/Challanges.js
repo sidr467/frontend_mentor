@@ -139,4 +139,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/single-price-grid/preview.png",
   },
+  {
+    title: "Ping coming soon",
+    link: "/challenges/ping-coming-soon",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/ping-coming-soon/preview.png",
+  },
 ]
