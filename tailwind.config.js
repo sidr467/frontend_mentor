@@ -182,6 +182,13 @@ module.exports = {
         "spg-bright-yellow": "hsl(71, 73%, 54%)",
         "spg-light-gray": "hsl(204, 43%, 93%)",
         "spg-grayish-blue": "hsl(218, 22%, 67%)",
+
+        //Ping coming soon page
+        "pcs-blue": "hsl(223, 87%, 63%)",
+        "pcs-pale-blue": "hsl(223, 100%, 88%)",
+        "pcs-light-red": "hsl(354, 100%, 66%)",
+        "pcs-gray": "hsl(0, 0%, 59%)",
+        "pcs-very-dark-blue": "hsl(209, 33%, 12%)",
       },
       boxShadow: {
         //Blog Preview Card
