@@ -133,7 +133,7 @@ export const challenges = [
     image: "/signup-form/preview.png",
   },
   {
-    title: "Signup Form",
+    title: "Single price grid",
     link: "/challenges/single-price-grid",
     difficulty: 1,
     difficultyText: "Newbie",
