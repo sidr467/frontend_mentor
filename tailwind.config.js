@@ -176,6 +176,12 @@ module.exports = {
         "icsf-blue": "hsl(248, 32%, 49%)",
         "icsf-dark-blue": "hsl(249, 10%, 26%)",
         "icsf-grayish-blue": "hsl(246, 25%, 77%)",
+
+        //single price grid
+        "spg-cyan": "hsl(179, 62%, 43%)",
+        "spg-bright-yellow": "hsl(71, 73%, 54%)",
+        "spg-light-gray": "hsl(204, 43%, 93%)",
+        "spg-grayish-blue": "hsl(218, 22%, 67%)",
       },
       boxShadow: {
         //Blog Preview Card
