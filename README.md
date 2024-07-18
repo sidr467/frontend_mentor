@@ -48,6 +48,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Base Apparel ](https://frontend-mentor-rsidd467.vercel.app/challenges/base-apparel)
 - [SignUp Form ](https://frontend-mentor-rsidd467.vercel.app/challenges/signup-form)
 - [Single Price Grid ](https://frontend-mentor-rsidd467.vercel.app/challenges/single-price-grid)
+- [Ping Coming Soon ](https://frontend-mentor-rsidd467.vercel.app/challenges/ping-coming-soon)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
