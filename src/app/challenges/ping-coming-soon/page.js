@@ -8,9 +8,9 @@ const lf = Libre_Franklin({ subsets: ["latin"], weight: ["300", "600", "700"] })
 const page = () => {
   return (
     <div
-      className={`${lf.className} min-h-screen w-full h-full flex justify-center my-20`}
+      className={`${lf.className} min-h-screen w-full h-full flex justify-center mt-20`}
     >
-      <main className="flex flex-col justify-center w-full h-full px-8">
+      <main className="flex flex-col justify-center w-full h-full gap-16 px-8 max-w-[600px]">
         <div className="flex flex-col gap-8  md:gap-12 w-full h-full">
           <section className="flex items-center justify-center">
             <Image
@@ -40,15 +40,17 @@ const page = () => {
             width={300}
             height={300}
             alt="Dashboard_Image"
-            className="max-w-[600px] w-full px-4 h-auto"
+            className="max-w-[500px] w-full h-auto"
+            quality={100}
+            priority={true}
           ></Image>
         </section>
-        <section className="flex flex-col items-center justify-center gap-8">
+        <footer className="flex flex-col items-center justify-center place-content-end gap-8">
           <IconsComp />
           <p className="text-xs text-pcs-gray">
             &copy; Copyright Ping. All rights reserved.
           </p>
-        </section>
+        </footer>
       </main>
     </div>
   )

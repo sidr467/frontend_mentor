@@ -9,9 +9,9 @@ const EmailForm = () => {
         <input
           type="text"
           placeholder="Your Email address..."
-          className="ring-1 rounded-full py-3 px-8 w-full ring-pcs-pale-blue text-sm "
+          className="ring-1 rounded-full py-3 px-8 w-full md:w-96 ring-pcs-pale-blue text-sm "
         />
-        <button type="submit" className="rounded-full py-3 w-full md:w-52 bg-pcs-blue text-white text-sm font-semibold">
+        <button type="submit" className="rounded-full py-3 w-full md:w-52 bg-pcs-blue text-white text-sm font-semibold shadow-xl">
           Notify me
         </button>
       </form>
