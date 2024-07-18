@@ -11,7 +11,7 @@ const page = () => {
     <div
       className={`${poppins.className} text-[16px] min-h-screen bg-icsf-red bg-[url('/signup-form/bg-intro-mobile.png')] md:bg-[url('/signup-form/bg-intro-desktop.png')] flex items-center justify-center`}
     >
-      <div className="mx-4 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[1200px] py-12">
+      <main className="mx-4 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[1200px] py-12">
         <section className="flex items-center justify-center px-8">
           <div className="grid gap-6">
             <h1 className="text-2xl md:text-5xl font-bold text-white text-center md:text-start">
@@ -35,7 +35,7 @@ const page = () => {
           </div>
           <SignupForm />
         </section>
-      </div>
+      </main>
     </div>
   )
 }
