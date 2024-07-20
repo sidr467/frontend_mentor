@@ -146,4 +146,11 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/ping-coming-soon/preview.png",
   },
+  {
+    title: "Huddle landing page",
+    link: "/challenges/huddle-landing-page",
+    difficulty: 1,
+    difficultyText: "Newbie",
+    image: "/huddle-landing-page/preview.png",
+  },
 ]

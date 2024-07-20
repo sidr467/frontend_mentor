@@ -189,6 +189,10 @@ module.exports = {
         "pcs-light-red": "hsl(354, 100%, 66%)",
         "pcs-gray": "hsl(0, 0%, 59%)",
         "pcs-very-dark-blue": "hsl(209, 33%, 12%)",
+
+        //Huddle landing page
+        "hlp-Violet": "hsl(257, 40%, 49%)",
+        "hlp-SoftMagenta": "hsl(300, 69%, 71%)",
       },
       boxShadow: {
         //Blog Preview Card
