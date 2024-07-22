@@ -8,7 +8,7 @@ const openSans = Open_Sans({ subsets: ["latin"], weight: ["400"] })
 
 const Page = () => {
   return (
-    <div className="bg-hlp-Violet bg-[url('/huddle-landing-page/bg-mobile.svg')] md:bg-[url('/huddle-landing-page/bg-desktop.svg')] bg-no-repeat bg-contain flex justify-center py-12">
+    <div className="min-h-screen bg-hlp-Violet bg-[url('/huddle-landing-page/bg-mobile.svg')] md:bg-[url('/huddle-landing-page/bg-desktop.svg')] bg-no-repeat bg-contain flex justify-center py-12">
       <main className="flex justify-center items-center flex-col gap-12 md:gap-20 px-8 md:px-16 lg:px-24">
         <div className="place-self-start">
           <Image
