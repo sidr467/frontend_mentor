@@ -33,8 +33,8 @@ const Page = () => {
             <h1
               className={`${poppins.className} flex flex-col gap-2 md:gap-4 text-center md:text-start text-2xl md:text-5xl text-white font-semibold`}
             >
-              <span>Build The Community</span>
-              <span> Your Fans Will Love</span>
+              <span className="text-nowrap">Build The Community</span>
+              <span className="text-nowrap"> Your Fans Will Love</span>
             </h1>
             <p
               className={`${openSans.className} text-white font-normal -mx-1 md:mx-0 md:text-lg text-center md:text-start `}

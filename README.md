@@ -49,6 +49,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [SignUp Form ](https://frontend-mentor-rsidd467.vercel.app/challenges/signup-form)
 - [Single Price Grid ](https://frontend-mentor-rsidd467.vercel.app/challenges/single-price-grid)
 - [Ping Coming Soon ](https://frontend-mentor-rsidd467.vercel.app/challenges/ping-coming-soon)
+- [Huddle Landing Page ](https://frontend-mentor-rsidd467.vercel.app/challenges/huddle-landing-page)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
