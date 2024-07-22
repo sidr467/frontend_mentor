@@ -8,7 +8,7 @@ const openSans = Open_Sans({ subsets: ["latin"], weight: ["400"] })
 
 const Page = () => {
   return (
-    <div className="bg-hlp-Violet bg-[url('/huddle-landing-page/bg-mobile.svg')] md:bg-[url('/huddle-landing-page/bg-desktop.svg')] bg-no-repeat bg-contain  flex justify-center py-12">
+    <div className="bg-hlp-Violet bg-[url('/huddle-landing-page/bg-mobile.svg')] md:bg-[url('/huddle-landing-page/bg-desktop.svg')] bg-no-repeat bg-contain flex justify-center py-12">
       <main className="flex justify-center items-center flex-col gap-12 md:gap-20 px-8 md:px-16 lg:px-24">
         <div className="place-self-start">
           <Image
@@ -19,14 +19,14 @@ const Page = () => {
             className="md:w-48"
           />
         </div>
-        <div className="grid gap-12 grid-cols-1 md:grid-cols-2 w-full h-full">
-          <div className="flex items-center justify-center md:justify-start w-full h-full">
+        <div className="grid gap-12 grid-cols-1 lg:grid-cols-2 w-full h-full">
+          <div className="flex items-center justify-center md:justify-start w-full h-full mx-auto">
             <Image
               src="/huddle-landing-page/illustration-mockups.svg"
               width={300}
               height={300}
               alt="illustration"
-              className="md:max-w-[550px] lg:max-w-[720px] w-full h-full object-contain"
+              className="md:max-w-[550px] mx-auto lg:max-w-[720px] w-full h-full object-contain"
             />
           </div>
           <div className="flex items-center justify-center md:items-start flex-col gap-6 md:gap-10 w-full h-full">
