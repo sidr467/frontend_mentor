@@ -46,8 +46,8 @@ const Product = () => {
           </div>
           <div className="flex flex-col">
             <p className="text-plc-rose-500">{product.category}</p>
-            <h2 className="text-plc-rose-900 ">{product.name}</h2>
-            <span className="text-plc-red">${product.price}</span>
+            <h2 className="text-plc-rose-900 font-bold">{product.name}</h2>
+            <span className="text-plc-red font-semibold">${product.price}</span>
           </div>
         </div>
       ))}
