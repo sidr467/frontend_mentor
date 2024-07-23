@@ -153,4 +153,13 @@ export const challenges = [
     difficultyText: "Newbie",
     image: "/huddle-landing-page/preview.png",
   },
+  {
+    title: "Product List Cart",
+    link: "/challenges/product-list-cart",
+    difficulty: 2,
+    difficultyText: "Junior",
+    image: "/product-list-cart/preview.png",
+  },
+  
+
 ]

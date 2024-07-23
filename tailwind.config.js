@@ -193,6 +193,16 @@ module.exports = {
         //Huddle landing page
         "hlp-Violet": "hsl(257, 40%, 49%)",
         "hlp-SoftMagenta": "hsl(300, 69%, 71%)",
+
+        //product list cart
+        "plc-red": "hsl(14, 86%, 42%)",
+        "plc-green": "hsl(159, 69%, 38%)",
+        "plc-rose-50": "hsl(20, 50%, 98%)",
+        "plc-rose-100": "hsl(13, 31%, 94%)",
+        "plc-rose-300": "hsl(14, 25%, 72%)",
+        "plc-rose-400": "hsl(7, 20%, 60%)",
+        "plc-rose-500": "hsl(12, 20%, 44%)",
+        "plc-rose-900": "hsl(14, 65%, 9%)",
       },
       boxShadow: {
         //Blog Preview Card
