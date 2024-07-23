@@ -1,10 +1,19 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
+import AddToCartButton from "./AddToCartButton"
+import NumberButton from "./NumberButton"
 
 const Product = () => {
+  const [showButton, setShowButton] = useState({})
   const [products, setProducts] = useState([])
+
+  function buttonShowNumber(index) {
+    setShowButton((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }))
+  }
 
   useEffect(() => {
     fetch("/product-list-cart/json/data.json")
@@ -15,8 +24,12 @@ const Product = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
       {products.map((product, index) => (
-        <div key={index} className="flex flex-col gap-8">
-          <div className="relative flex flex-col justify-center items-center">
+        <div key={index} className="flex flex-col gap-10">
+          <div
+            className={`${
+              showButton[index] ? "ring-2 ring-plc-red rounded-lg " : ""
+            } relative flex flex-col justify-center items-center`}
+          >
             <picture>
               <source
                 srcSet={product.image.desktop}
@@ -31,18 +44,13 @@ const Product = () => {
                 alt="Product Image"
                 width={300}
                 height={300}
-                className="w-full rounded-lg"
+                className="w-full rounded-lg object-contain"
               />
             </picture>
-            <button className="absolute -bottom-6 bg-plc-rose-50 py-3 px-9 rounded-full text-center flex items-center gap-2 ring-1 ring-plc-rose-500">
-              <Image
-                src="/product-list-cart/icon-add-to-cart.svg"
-                width={20}
-                height={20}
-                alt="Add to Cart Icon"
-              ></Image>
-              <span>Add to Cart</span>
-            </button>
+            <AddToCartButton
+              buttonShowNumber={() => buttonShowNumber(index)}
+            ></AddToCartButton>
+            {showButton[index] && <NumberButton />}
           </div>
           <div className="flex flex-col">
             <p className="text-plc-rose-500">{product.category}</p>
@@ -52,22 +60,6 @@ const Product = () => {
         </div>
       ))}
     </div>
-    // <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-    //   {products.map((product, index) => (
-    //     <div key={index} className="border p-4 rounded-lg shadow">
-    //       <Image
-    //         src={product.image.thumbnail}
-    //         alt={product.name}
-    //         width={150}
-    //         height={150}
-    //         className="w-full h-auto"
-    //       />
-    //       <h2 className="text-xl font-semibold mt-2">{product.name}</h2>
-    //       <p className="text-gray-600">{product.category}</p>
-    //       <p className="text-lg font-bold">${product.price.toFixed(2)}</p>
-    //     </div>
-    //   ))}
-    // </div>
   )
 }
 
