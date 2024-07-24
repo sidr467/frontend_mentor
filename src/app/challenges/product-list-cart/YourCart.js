@@ -25,36 +25,37 @@ const YourCart = ({ cart, setCart, products, onConfirm }) => {
                 const product = products[index]
                 return (
                   <>
-                  <div
-                    key={index}
-                    className="flex items-center justify-between"
-                  >
-                    <div className="flex flex-col gap-1 lg:text-sm">
-                      <h3 className="text-plc-rose-900 font-semibold">
-                        {product.name}
-                      </h3>
-                      <p className="flex gap-4">
-                        <span className="text-plc-red font-semibold">
-                          {cart[index]}x
-                        </span>
-                        <span className="text-plc-rose-500">
-                          @ ${product.price}
-                        </span>
-                        <span className="text-plc-rose-900">
-                          ${(cart[index] * product.price).toFixed(2)}
-                        </span>
-                      </p>
+                    <div
+                      key={index}
+                      className="flex items-center justify-between"
+                    >
+                      <div className="flex flex-col gap-1 lg:text-sm">
+                        <h3 className="text-plc-rose-900 font-semibold">
+                          {product.name}
+                        </h3>
+                        <p className="flex gap-4">
+                          <span className="text-plc-red font-semibold">
+                            {cart[index]}x
+                          </span>
+                          <span className="text-plc-rose-500">
+                            @ ${product.price}
+                          </span>
+                          <span className="text-plc-rose-900">
+                            ${(cart[index] * product.price).toFixed(2)}
+                          </span>
+                        </p>
+                      </div>
+                      <button onClick={() => handleRemoveItem(index)}>
+                        <Image
+                          src="/product-list-cart/icon-remove-item.svg"
+                          width={20}
+                          height={20}
+                          alt="Icon remove"
+                          className="lg:w-4 ring-1 rounded-full p-1 ring-plc-rose-300"
+                        />
+                      </button>
                     </div>
-                    <Image
-                      src="/product-list-cart/icon-remove-item.svg"
-                      width={20}
-                      height={20}
-                      alt="Icon remove"
-                      className="lg:w-4 ring-1 rounded-full p-1 ring-plc-rose-300"
-                      onClick={() => handleRemoveItem(index)}
-                    />
-                  </div>
-                  <hr />
+                    <hr />
                   </>
                 )
               })}
@@ -64,6 +65,15 @@ const YourCart = ({ cart, setCart, products, onConfirm }) => {
               <p className="text-plc-rose-900 font-bold text-3xl md:text-4xl lg:text-xl">
                 ${totalAmount.toFixed(2)}
               </p>
+            </div>
+            <div className="flex gap-2 text-sm items-center justify-center bg-plc-rose-100 w-full p-4 rounded-lg ">
+              <Image
+                src="/product-list-cart/icon-carbon-neutral.svg"
+                width={20}
+                height={20}
+                alt="icon"
+              ></Image>
+              <p className="">This is a <span className="text-plc-rose-900 font-semibold ">carbon-neutral</span> delivery</p>
             </div>
             <div className="w-full">
               <button
