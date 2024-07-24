@@ -1,13 +1,13 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import AddToCartButton from "./AddToCartButton"
 import NumberButton from "./NumberButton"
 
-const Product = () => {
+const Product = ({cart,setCart,products}) => {
   const [showButton, setShowButton] = useState({})
-  const [products, setProducts] = useState([])
 
+  //button show for adding item counter
   function buttonShowNumber(index) {
     setShowButton((prev) => ({
       ...prev,
@@ -15,11 +15,18 @@ const Product = () => {
     }))
   }
 
-  useEffect(() => {
-    fetch("/product-list-cart/json/data.json")
-      .then((response) => response.json())
-      .then((data) => setProducts(data))
-  }, [])
+  //cart update
+  const updateCart = (index, quantity) => {
+    setCart((prevCart) => {
+      const newCart = {...prevCart}
+      if (quantity === 0) {
+        delete newCart[index]
+      } else {
+        newCart[index] = quantity
+      }
+      return newCart
+    })
+  }
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
@@ -50,7 +57,12 @@ const Product = () => {
             <AddToCartButton
               buttonShowNumber={() => buttonShowNumber(index)}
             ></AddToCartButton>
-            {showButton[index] && <NumberButton />}
+            {showButton[index] && (
+              <NumberButton
+                initialCount={cart[index] || 0}
+                onCountChange={(count) => updateCart(index, count)}
+              />
+            )}
           </div>
           <div className="flex flex-col">
             <p className="text-plc-rose-500">{product.category}</p>
