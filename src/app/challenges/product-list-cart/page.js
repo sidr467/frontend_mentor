@@ -1,4 +1,5 @@
 'use client'
+
 import { useState, useEffect } from "react";
 import Product from "./Product";
 import YourCart from "./YourCart";
@@ -44,4 +45,3 @@ const Page = () => {
 };
 
 export default Page;
-
