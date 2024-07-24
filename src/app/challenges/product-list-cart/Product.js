@@ -1,40 +1,47 @@
-"use client"
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import AddToCartButton from "./AddToCartButton";
+import NumberButton from "./NumberButton";
 
-import { useState } from "react"
-import AddToCartButton from "./AddToCartButton"
-import NumberButton from "./NumberButton"
+const Product = ({ cart, setCart }) => {
+  const [showButton, setShowButton] = useState({});
+  const [products, setProducts] = useState([]);
 
-const Product = ({cart,setCart,products}) => {
-  const [showButton, setShowButton] = useState({})
-
-  //button show for adding item counter
+  // Toggle button visibility for item quantity
   function buttonShowNumber(index) {
     setShowButton((prev) => ({
       ...prev,
       [index]: !prev[index],
-    }))
+    }));
   }
 
-  //cart update
+  // Fetch product data from JSON
+  useEffect(() => {
+    fetch("/product-list-cart/json/data.json")
+      .then((response) => response.json())
+      .then((data) => setProducts(data));
+  }, []);
+
+  // Update cart
   const updateCart = (index, quantity) => {
     setCart((prevCart) => {
-      const newCart = {...prevCart}
+      const newCart = { ...prevCart };
       if (quantity === 0) {
-        delete newCart[index]
+        delete newCart[index];
       } else {
-        newCart[index] = quantity
+        newCart[index] = quantity;
       }
-      return newCart
-    })
-  }
+      return newCart;
+    });
+  };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {products.map((product, index) => (
         <div key={index} className="flex flex-col gap-10">
           <div
             className={`${
-              showButton[index] ? "ring-2 ring-plc-red rounded-lg " : ""
+              showButton[index] ? "ring-2 ring-plc-red rounded-lg" : ""
             } relative flex flex-col justify-center items-center`}
           >
             <picture>
@@ -56,7 +63,7 @@ const Product = ({cart,setCart,products}) => {
             </picture>
             <AddToCartButton
               buttonShowNumber={() => buttonShowNumber(index)}
-            ></AddToCartButton>
+            />
             {showButton[index] && (
               <NumberButton
                 initialCount={cart[index] || 0}
@@ -72,7 +79,7 @@ const Product = ({cart,setCart,products}) => {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;
