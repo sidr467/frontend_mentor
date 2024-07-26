@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { IoIosClose } from "react-icons/io";
 
 const YourCart = ({ cart, setCart, products, onConfirm }) => {
   const handleRemoveItem = (index) => {
@@ -46,13 +47,7 @@ const YourCart = ({ cart, setCart, products, onConfirm }) => {
                         </p>
                       </div>
                       <button onClick={() => handleRemoveItem(index)}>
-                        <Image
-                          src="/product-list-cart/icon-remove-item.svg"
-                          width={20}
-                          height={20}
-                          alt="Icon remove"
-                          className="lg:w-4 ring-1 rounded-full p-1 ring-plc-rose-300"
-                        />
+                        <IoIosClose size={15} className="ring-1 rounded-full hover:fill-black fill-plc-rose-400 hover:ring-black ring-plc-rose-400"/>
                       </button>
                     </div>
                     <hr />

@@ -50,6 +50,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Single Price Grid ](https://frontend-mentor-rsidd467.vercel.app/challenges/single-price-grid)
 - [Ping Coming Soon ](https://frontend-mentor-rsidd467.vercel.app/challenges/ping-coming-soon)
 - [Huddle Landing Page ](https://frontend-mentor-rsidd467.vercel.app/challenges/huddle-landing-page)
+- [Product List Cart ](https://frontend-mentor-rsidd467.vercel.app/challenges/product-list-cart)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 

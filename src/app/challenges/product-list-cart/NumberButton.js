@@ -25,13 +25,6 @@ const NumberButton = ({ initialCount, onCountChange }) => {
             size={20}
             className="rounded-full ring-1 ring-plc-rose-50 stroke-white hover:bg-white hover:stroke-plc-red"
           />
-          {/* <Image
-            src="/product-list-cart/icon-decrement-quantity.svg"
-            alt="decrement icon"
-            height={20}
-            width={20}
-            className="  "
-          ></Image> */}
         </button>
         <span className="text-plc-rose-50">{count}</span>
         <button onClick={increment}>
@@ -39,13 +32,6 @@ const NumberButton = ({ initialCount, onCountChange }) => {
             size={20}
             className="rounded-full ring-1 ring-plc-rose-50 stroke-white hover:bg-white hover:stroke-plc-red"
           />
-          {/* <Image
-            src="/product-list-cart/icon-increment-quantity.svg"
-            alt="increment icon"
-            height={20}
-            width={20}
-            className=" rounded-full ring-1 ring-plc-rose-50 p-1 hover:bg-white hover:fill-plc-red"
-          ></Image> */}
         </button>
       </div>
     </>

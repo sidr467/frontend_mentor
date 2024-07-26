@@ -7,8 +7,8 @@ const ConfirmationModal = ({ cart, products, onClose }) => {
   }, 0)
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center ">
-      <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col gap-6 w-[500px]">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center  ">
+      <div className="bg-white p-8 md:rounded-lg  rounded-t-lg shadow-lg flex flex-col gap-6 max-w-[500px] sm:w-[500px] fixed bottom-0 sm:relative ">
         <div>
           <Image
             src="/product-list-cart/icon-order-confirmed.svg"
