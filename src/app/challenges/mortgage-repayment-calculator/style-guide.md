@@ -13,8 +13,8 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Lime: hsl(61, 70%, 52%)
-- Red: hsl(4, 69%, 50%)
+"mrc-Lime":" hsl(61, 70%, 52%)",
+"mrc-Red": "hsl(4, 69%, 50%)",
 
 ### Neutral
 
@@ -29,7 +29,7 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size (paragraph): 16px 
+- Font size (paragraph): 16px
 
 ### Font
 

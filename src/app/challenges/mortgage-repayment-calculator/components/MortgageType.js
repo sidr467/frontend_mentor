@@ -1,15 +1,19 @@
 const MortgageType = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-2">
       <h2 className="text-sm text-mrc-Slate-700 font-medium">Mortgage Type</h2>
-      <div className="">
-        <div>
-          <input type="radio" name="" id="" />
-          <label htmlFor="">Repayment</label>
+      <div className="flex flex-col gap-2">
+        <div className="w-full ring-1 ring-mrc-Slate-500 h-10 rounded-md flex items-center px-4 gap-4">
+          <input type="radio" name="" id="" className="" />
+          <label htmlFor="" className="text-mrc-Slate-900 font-bold">
+            Repayment
+          </label>
         </div>
-        <div>
+        <div className="w-full ring-1 ring-mrc-Slate-500 h-10 rounded-md flex items-center px-4 gap-4">
           <input type="radio" name="" id="" />
-          <label htmlFor="">Interest Only</label>
+          <label htmlFor="" className="text-mrc-Slate-900 font-bold">
+            Interest Only
+          </label>
         </div>
       </div>
     </div>
