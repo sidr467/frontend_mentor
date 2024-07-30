@@ -203,6 +203,14 @@ module.exports = {
         "plc-rose-400": "hsl(7, 20%, 60%)",
         "plc-rose-500": "hsl(12, 20%, 44%)",
         "plc-rose-900": "hsl(14, 65%, 9%)",
+
+        //Mortgage repayment calculator
+        "mrc-White": "hsl(0, 0%, 100%)",
+        "mrc-Slate-100": "hsl(202, 86%, 94%)",
+        "mrc-Slate-300": "hsl(203, 41%, 72%)",
+        "mrc-Slate-500": "hsl(200, 26%, 54%)",
+        "mrc-Slate-700": "hsl(200, 24%, 40%)",
+        "mrc-Slate-900": "hsl(202, 55%, 16%)",
       },
       boxShadow: {
         //Blog Preview Card
