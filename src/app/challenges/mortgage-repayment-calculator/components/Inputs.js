@@ -13,7 +13,10 @@ const Inputs = ({
   return (
     <div className="flex flex-col gap-4 md:gap-8">
       <div className="flex flex-col gap-2 relative">
-        <label htmlFor="" className="text-sm text-mrc-Slate-700 font-medium">
+        <label
+          htmlFor="mortgageAmount"
+          className="text-sm text-mrc-Slate-700 font-medium"
+        >
           Mortgage Amount
         </label>
         <div
@@ -33,6 +36,7 @@ const Inputs = ({
             />
           </span>
           <input
+            id="mortgageAmount"
             type="number"
             ref={mortgageAmountRef}
             className="col-span-9 rounded-r-md px-4 focus:outline-none text-mrc-Slate-900 font-bold"
@@ -46,7 +50,10 @@ const Inputs = ({
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex flex-col gap-2 relative">
-          <label htmlFor="" className="text-sm text-mrc-Slate-700 font-medium">
+          <label
+            htmlFor="mortgageTerm"
+            className="text-sm text-mrc-Slate-700 font-medium"
+          >
             Mortgage Term
           </label>
           <div
@@ -56,6 +63,7 @@ const Inputs = ({
           >
             <input
               type="number"
+              id="mortgageTerm"
               ref={mortgageTermRef}
               className="col-span-8 md:col-span-7 rounded-l-md px-4 focus:outline-none text-mrc-Slate-900 font-bold"
             />
@@ -74,7 +82,10 @@ const Inputs = ({
           )}
         </div>
         <div className="flex flex-col gap-2 relative">
-          <label htmlFor="" className="text-sm text-mrc-Slate-700 font-medium">
+          <label
+            htmlFor="interestRate"
+            className="text-sm text-mrc-Slate-700 font-medium"
+          >
             Interest Rate
           </label>
           <div
@@ -84,6 +95,7 @@ const Inputs = ({
           >
             <input
               type="number"
+              id="interestRate"
               ref={interestRateRef}
               className="col-span-9 md:col-span-8 rounded-l-md focus:outline-none px-4 text-mrc-Slate-900 font-bold"
             />
