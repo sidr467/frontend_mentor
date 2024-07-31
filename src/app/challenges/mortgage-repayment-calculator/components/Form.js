@@ -10,22 +10,45 @@ const Form = () => {
   const mortgageAmountRef = useRef(null)
   const mortgageTermRef = useRef(null)
   const interestRateRef = useRef(null)
-  const [type, setType] = useState("Repayment")
+  const [type, setType] = useState("")  // Ensure this matches the radio values
   const [monthlyPayment, setMonthlyPayment] = useState(null)
   const [totalRepayment, setTotalRepayment] = useState(null)
   const [submitted, setSubmitted] = useState(false)
+  const [errors, setErrors] = useState({})
+
+  const validateForm = () => {
+    const errors = {}
+    if (!mortgageAmountRef.current.value) {
+      errors.mortgageAmount = "Mortgage amount is required"
+    }
+    if (!mortgageTermRef.current.value) {
+      errors.mortgageTerm = "Mortgage term is required"
+    }
+    if (!interestRateRef.current.value) {
+      errors.interestRate = "Interest rate is required"
+    }
+    if (!type) {
+      errors.type = "Mortgage type is required"
+    }
+    return errors
+  }
 
   const handleMortgageType = (e) => {
     setType(e.target.value)
   }
 
-  //calculation onsubmit
   const handleCalculate = (e) => {
     e.preventDefault()
 
-    const mortgageAmount = mortgageAmountRef.current.value
-    const mortgageTerm = mortgageTermRef.current.value
-    const interestRate = interestRateRef.current.value
+    const formErrors = validateForm()
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors)
+      return
+    }
+
+    const mortgageAmount = parseFloat(mortgageAmountRef.current.value)
+    const mortgageTerm = parseFloat(mortgageTermRef.current.value)
+    const interestRate = parseFloat(interestRateRef.current.value)
     const monthlyInterestRate = interestRate / 100 / 12
     const numberOfPayments = mortgageTerm * 12
 
@@ -41,15 +64,15 @@ const Form = () => {
       monthlyPayment = mortgageAmount * monthlyInterestRate
     }
 
-    let finalMonthlyPayment = monthlyPayment.toFixed(2)
-    let totalRepayment = (monthlyPayment * numberOfPayments).toFixed(2)
+    const finalMonthlyPayment = monthlyPayment.toFixed(2)
+    const totalRepayment = (monthlyPayment * numberOfPayments).toFixed(2)
 
     setMonthlyPayment(finalMonthlyPayment)
     setTotalRepayment(totalRepayment)
     setSubmitted(true)
+    setErrors({})
   }
 
-  //reset
   const resetForm = () => {
     mortgageAmountRef.current.value = ""
     mortgageTermRef.current.value = ""
@@ -57,6 +80,8 @@ const Form = () => {
     setMonthlyPayment(null)
     setTotalRepayment(null)
     setSubmitted(false)
+    setErrors({})
+    setType("")
   }
 
   return (
@@ -70,7 +95,7 @@ const Form = () => {
             Mortgage Calculator
           </h1>
           <button
-          type="button"
+            type="button"
             onClick={resetForm}
             className="text-sm text-mrc-Slate-700 underline decoration-mrc-Slate-500 underline-offset-2"
           >
@@ -81,8 +106,11 @@ const Form = () => {
           mortgageAmountRef={mortgageAmountRef}
           mortgageTermRef={mortgageTermRef}
           interestRateRef={interestRateRef}
+          errorsMA={errors.mortgageAmount}
+          errorsT={errors.mortgageTerm}
+          errorsIR={errors.interestRate}
         />
-        <MortgageType type={type} handleMortgageType={handleMortgageType} />
+        <MortgageType type={type} handleMortgageType={handleMortgageType} error={errors.type} />
         <button
           type="submit"
           className="bg-mrc-Lime rounded-full h-12 text-mrc-Slate-900 font-bold flex justify-center items-center gap-4 md:w-fit md:px-6"
