@@ -206,7 +206,7 @@ module.exports = {
 
         //Mortgage repayment calculator
         "mrc-Lime": " hsl(61, 70%, 52%)",
-        "mrc-Red": "hsl(4, 69%, 50%)",
+        "mrc-red": "hsl(4, 69%, 50%)",
         "mrc-White": "hsl(0, 0%, 100%)",
         "mrc-Slate-100": "hsl(202, 86%, 94%)",
         "mrc-Slate-300": "hsl(203, 41%, 72%)",
