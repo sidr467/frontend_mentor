@@ -1,25 +1,102 @@
+"use client"
+
+import { useRef, useState } from "react"
 import Inputs from "./Inputs"
 import MortgageType from "./MortgageType"
 import { FaCalculator } from "react-icons/fa"
+import Results from "./Results"
 
 const Form = () => {
+  const mortgageAmountRef = useRef(null)
+  const mortgageTermRef = useRef(null)
+  const interestRateRef = useRef(null)
+  const [type, setType] = useState("Repayment")
+  const [monthlyPayment, setMonthlyPayment] = useState(null)
+  const [totalRepayment, setTotalRepayment] = useState(null)
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleMortgageType = (e) => {
+    setType(e.target.value)
+  }
+
+  //calculation onsubmit
+  const handleCalculate = (e) => {
+    e.preventDefault()
+
+    const mortgageAmount = mortgageAmountRef.current.value
+    const mortgageTerm = mortgageTermRef.current.value
+    const interestRate = interestRateRef.current.value
+    const monthlyInterestRate = interestRate / 100 / 12
+    const numberOfPayments = mortgageTerm * 12
+
+    let monthlyPayment
+
+    if (type === "repayment") {
+      monthlyPayment =
+        (mortgageAmount *
+          monthlyInterestRate *
+          Math.pow(1 + monthlyInterestRate, numberOfPayments)) /
+        (Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1)
+    } else if (type === "interest-only") {
+      monthlyPayment = mortgageAmount * monthlyInterestRate
+    }
+
+    let finalMonthlyPayment = monthlyPayment.toFixed(2)
+    let totalRepayment = (monthlyPayment * numberOfPayments).toFixed(2)
+
+    setMonthlyPayment(finalMonthlyPayment)
+    setTotalRepayment(totalRepayment)
+    setSubmitted(true)
+  }
+
+  //reset
+  const resetForm = () => {
+    mortgageAmountRef.current.value = ""
+    mortgageTermRef.current.value = ""
+    interestRateRef.current.value = ""
+    setMonthlyPayment(null)
+    setTotalRepayment(null)
+    setSubmitted(false)
+  }
+
   return (
-    <form className="flex flex-col gap-4 md:p-8 py-6 px-6 w-full h-full md:justify-center">
-      <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center">
-        <h1 className="text-mrc-Slate-900 font-bold text-xl">
-          Mortgage Calculator
-        </h1>
-        <button className="text-sm text-mrc-Slate-700 underline decoration-mrc-Slate-500 underline-offset-2">
-          Clear All
+    <div className="grid grid-cols-1 md:grid-cols-2">
+      <form
+        onSubmit={handleCalculate}
+        className="flex flex-col gap-4 md:p-8 py-6 px-6 w-full h-full md:justify-center"
+      >
+        <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center">
+          <h1 className="text-mrc-Slate-900 font-bold text-xl">
+            Mortgage Calculator
+          </h1>
+          <button
+          type="button"
+            onClick={resetForm}
+            className="text-sm text-mrc-Slate-700 underline decoration-mrc-Slate-500 underline-offset-2"
+          >
+            Clear All
+          </button>
+        </div>
+        <Inputs
+          mortgageAmountRef={mortgageAmountRef}
+          mortgageTermRef={mortgageTermRef}
+          interestRateRef={interestRateRef}
+        />
+        <MortgageType type={type} handleMortgageType={handleMortgageType} />
+        <button
+          type="submit"
+          className="bg-mrc-Lime rounded-full h-12 text-mrc-Slate-900 font-bold flex justify-center items-center gap-4 md:w-fit md:px-6"
+        >
+          <FaCalculator />
+          <span>Calculate Repayments</span>
         </button>
-      </div>
-      <Inputs />
-      <MortgageType />
-      <button className="bg-mrc-Lime rounded-full h-12 text-mrc-Slate-900 font-bold flex justify-center items-center gap-4 md:w-fit md:px-6">
-        <FaCalculator />
-        <span>Calculate Repayments</span>
-      </button>
-    </form>
+      </form>
+      <Results
+        monthlyPayment={monthlyPayment}
+        totalRepayment={totalRepayment}
+        submitted={submitted}
+      />
+    </div>
   )
 }
 
