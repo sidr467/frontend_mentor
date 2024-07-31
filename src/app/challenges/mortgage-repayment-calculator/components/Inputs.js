@@ -11,8 +11,8 @@ const Inputs = ({
   errorsIR,
 }) => {
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-4 md:gap-8">
+      <div className="flex flex-col gap-2 relative">
         <label htmlFor="" className="text-sm text-mrc-Slate-700 font-medium">
           Mortgage Amount
         </label>
@@ -39,13 +39,13 @@ const Inputs = ({
           />
         </div>
         {errorsMA && (
-          <span className="text-xs mt-0 text-mrc-Red font-medium">
+          <span className="text-xs mt-0 absolute -bottom-4 text-mrc-Red font-medium">
             {errorsMA}
           </span>
         )}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 relative">
           <label htmlFor="" className="text-sm text-mrc-Slate-700 font-medium">
             Mortgage Term
           </label>
@@ -68,12 +68,12 @@ const Inputs = ({
             </span>
           </div>
           {errorsT && (
-            <span className="text-xs mt-0 text-mrc-Red font-medium">
+            <span className="absolute -bottom-4 text-xs mt-0 text-mrc-Red font-medium">
               {errorsT}
             </span>
           )}
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 relative">
           <label htmlFor="" className="text-sm text-mrc-Slate-700  font-medium">
             Interest Rate
           </label>
@@ -96,7 +96,7 @@ const Inputs = ({
             </span>
           </div>
           {errorsIR && (
-            <span className="text-xs mt-0 text-mrc-Red font-medium">
+            <span className="absolute -bottom-4 text-xs mt-0 text-mrc-Red font-medium">
               {errorsIR}
             </span>
           )}

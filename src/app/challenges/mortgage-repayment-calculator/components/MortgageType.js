@@ -1,8 +1,8 @@
 const MortgageType = ({ type, handleMortgageType, error }) => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 md:gap-4  ">
       <h2 className="text-sm text-mrc-Slate-700 font-medium">Mortgage Type</h2>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 md:gap-4 relative">
         <div
           className={`w-full ring-1 h-10 rounded-md flex items-center px-4 gap-4 ${
             type === "repayment"
@@ -46,7 +46,7 @@ const MortgageType = ({ type, handleMortgageType, error }) => {
             Interest Only
           </label>
         </div>
-        {error && <span className="text-xs text-mrc-Red">{error}</span>}
+        {error && <span className="text-xs absolute -bottom-5 text-mrc-Red">{error}</span>}
       </div>
     </div>
   )

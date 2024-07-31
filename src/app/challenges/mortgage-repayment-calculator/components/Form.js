@@ -88,7 +88,7 @@ const Form = () => {
     <div className="grid grid-cols-1 md:grid-cols-2">
       <form
         onSubmit={handleCalculate}
-        className="flex flex-col gap-4 md:p-8 py-6 px-6 w-full h-full md:justify-center"
+        className="flex flex-col gap-4 md:gap-8 md:p-8 py-6 px-6 w-full h-full md:justify-center"
       >
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center">
           <h1 className="text-mrc-Slate-900 font-bold text-xl">
