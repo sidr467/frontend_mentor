@@ -51,6 +51,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Ping Coming Soon ](https://frontend-mentor-rsidd467.vercel.app/challenges/ping-coming-soon)
 - [Huddle Landing Page ](https://frontend-mentor-rsidd467.vercel.app/challenges/huddle-landing-page)
 - [Product List Cart ](https://frontend-mentor-rsidd467.vercel.app/challenges/product-list-cart)
+- [Mortgage Calculator ](https://frontend-mentor-rsidd467.vercel.app/challenges/mortgage-repayment-calculator)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 

@@ -161,7 +161,7 @@ export const challenges = [
     image: "/product-list-cart/preview.png",
   },
   {
-    title: "Mortgage Repayment Calculator",
+    title: "Mortgage Repayment",
     link: "/challenges/mortgage-repayment-calculator",
     difficulty: 2,
     difficultyText: "Junior",
