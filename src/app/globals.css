@@ -30,3 +30,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .focus-within\:ring-mrc-Lime:focus-within {
+    --ring-color: rgb(215, 218, 47); /* Adjust as needed */
+  }
+  
+  .focus-within\:bg-mrc-Lime:focus-within .sibling-bg {
+    background-color: var(--ring-color); /* Adjust as needed */
+  }
+  

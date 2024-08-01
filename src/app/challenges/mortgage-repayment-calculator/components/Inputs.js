@@ -20,18 +20,20 @@ const Inputs = ({
           Mortgage Amount
         </label>
         <div
-          className={`grid grid-cols-10 group hover:ring-mrc-Slate-900 ring-1 ring-mrc-Slate-700 ${
-            errorsMA ? "ring-mrc-red" : ""
+          className={`grid grid-cols-10 hover:ring-mrc-Slate-900 ring-1 ring-mrc-Slate-700 ${
+            errorsMA
+              ? "ring-mrc-red"
+              : "focus-within:ring-mrc-Lime focus-within:bg-mrc-Lime"
           } rounded-md w-full h-10`}
         >
           <span
             className={`col-span-1 h-full rounded-l-md bg-mrc-Slate-100 ${
-              errorsMA ? "bg-mrc-red" : ""
+              errorsMA ? "bg-mrc-red" : "sibling-bg"
             } text-center flex items-center justify-center`}
           >
             <BsCurrencyPound
               className={`fill-mrc-Slate-700 ${
-                errorsMA ? "fill-mrc-White" : ""
+                errorsMA ? "fill-mrc-White" : "fill-mrc-Slate-900"
               }`}
             />
           </span>
@@ -58,7 +60,7 @@ const Inputs = ({
           </label>
           <div
             className={`grid grid-cols-10 hover:ring-mrc-Slate-900 ring-1 ring-mrc-Slate-700 ${
-              errorsT ? "ring-mrc-red" : ""
+              errorsT ? "ring-mrc-red" : "focus-within:ring-mrc-Lime focus-within:bg-mrc-Lime"
             } rounded-md w-full h-10`}
           >
             <input
@@ -69,7 +71,7 @@ const Inputs = ({
             />
             <span
               className={`col-span-2 md:col-span-3 h-full rounded-r-md bg-mrc-Slate-100 ${
-                errorsT ? "bg-mrc-red text-mrc-White" : ""
+                errorsT ? "bg-mrc-red text-mrc-White" : "sibling-bg text-mrc-Slate-900 "
               } text-center pt-2 text-sm font-bold text-mrc-Slate-700`}
             >
               years
@@ -90,7 +92,7 @@ const Inputs = ({
           </label>
           <div
             className={`ring-1 ring-mrc-Slate-700  hover:ring-mrc-Slate-900 ${
-              errorsIR ? "ring-mrc-red" : ""
+              errorsIR ? "ring-mrc-red" : "focus-within:ring-mrc-Lime focus-within:bg-mrc-Lime"
             } rounded-md w-full h-10 grid grid-cols-10`}
           >
             <input
@@ -101,7 +103,7 @@ const Inputs = ({
             />
             <span
               className={`col-span-1 md:col-span-2 h-full rounded-r-md bg-mrc-Slate-100 ${
-                errorsIR ? "bg-mrc-red text-mrc-White" : ""
+                errorsIR ? "bg-mrc-red text-mrc-White" : "sibling-bg text-mrc-Slate-900 "
               } text-center pt-2 text-sm font-bold text-mrc-Slate-700`}
             >
               %
