@@ -25,13 +25,17 @@ module.exports = {
         FontHanken: ["Hanken Grotesk", "sans-serif"],
       },
       colors: {
-        //main
-        almostBlack: "#212A31",
-        darkGray: "#2E3944",
-        darkBlue: "#124E66",
-        lightGray: "#748D92",
-        almostWhite: "#D3D9D4",
-
+        // //main
+        // almostBlack: "#212A31",
+        // darkGray: "#2E3944",
+        // darkBlue: "#124E66",
+        // lightGray: "#748D92",
+        // almostWhite: "#D3D9D4",
+        almostBlack: "#1C1C1C",
+        darkGray: "#595959",
+        darkBlue: "#003B5C",
+        lightGray: "#D0D0D0",
+        almostWhite: "#FCFCFC",
         //QR-code
         "qr-dark-navy": "#1F314F",
         "qr-gray": "#7D889E",

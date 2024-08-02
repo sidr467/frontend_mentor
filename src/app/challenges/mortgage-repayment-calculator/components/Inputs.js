@@ -22,7 +22,7 @@ const Inputs = ({
         <div
           className={`grid grid-cols-10 hover:ring-mrc-Slate-900 ring-1 ring-mrc-Slate-700 ${
             errorsMA
-              ? "ring-mrc-red"
+              ? "ring-mrc-red "
               : "focus-within:ring-mrc-Lime focus-within:bg-mrc-Lime"
           } rounded-md w-full h-10`}
         >
