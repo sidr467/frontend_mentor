@@ -217,6 +217,14 @@ module.exports = {
         "mrc-Slate-500": "hsl(200, 26%, 54%)",
         "mrc-Slate-700": "hsl(200, 24%, 40%)",
         "mrc-Slate-900": "hsl(202, 55%, 16%)",
+
+        //contact form
+        "contactform-Green200": "hsl(148, 38%, 91%)",
+        "contactform-Green600": "hsl(169, 82%, 27%)",
+        "contactform-Red": "hsl(0, 66%, 54%)",
+        "contactform-White": "hsl(0, 0%, 100%)",
+        "contactform-Grey500": "hsl(186, 15%, 59%)",
+        "contactform-Grey900": "hsl(187, 24%, 22%)",
       },
       boxShadow: {
         //Blog Preview Card

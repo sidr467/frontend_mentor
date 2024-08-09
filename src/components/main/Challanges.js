@@ -167,4 +167,11 @@ export const challenges = [
     difficultyText: "Junior",
     image: "/mortgage-repayment-calculator/preview.png",
   },
+  {
+    title: "Contact Form",
+    link: "/challenges/contact-form",
+    difficulty: 2,
+    difficultyText: "Junior",
+    image: "/contact-form/preview.png",
+  },
 ]
