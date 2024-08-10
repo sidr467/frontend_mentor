@@ -8,7 +8,7 @@ const page = () => {
     <div
       className={`${karla.className} min-h-screen bg-contactform-Green200 flex items-center justify-center`}
     >
-      <main className="bg-contactform-White mx-4 rounded-lg">
+      <main className="bg-contactform-White mx-4 rounded-lg my-8">
         <Form />
       </main>
     </div>

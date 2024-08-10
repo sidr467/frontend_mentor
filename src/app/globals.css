@@ -2,40 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
-/* recipe page */
+/* Mortgage calculation */
 
 .radio-custom {
-    appearance: none;
-    background-color: #fff;
-    border: 1px solid hsl(202, 55%, 16%);
-    border-radius: 50%;
-    cursor: pointer;
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    position: relative;
-  }
-  .radio-custom:checked {
-    border-color: rgb(215, 218, 47);
-  }
-  .radio-custom:checked::after {
-    content: '';
-    display: block;
-    border-radius: 50%;
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color:rgb(215, 218, 47);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid hsl(202, 55%, 16%);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: relative;
+}
+.radio-custom:checked {
+  border-color: rgb(215, 218, 47);
+}
+.radio-custom:checked::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgb(215, 218, 47);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .focus-within\:ring-mrc-Lime:focus-within {
-    --ring-color: rgb(215, 218, 47); /* Adjust as needed */
-  }
-  
-  .focus-within\:bg-mrc-Lime:focus-within .sibling-bg {
-    background-color: var(--ring-color); /* Adjust as needed */
-  }
-  
+.focus-within\:ring-mrc-Lime:focus-within {
+  --ring-color: rgb(215, 218, 47); /* Adjust as needed */
+}
+
+.focus-within\:bg-mrc-Lime:focus-within .sibling-bg {
+  background-color: var(--ring-color); /* Adjust as needed */
+}
+
+/* Contact form */
+.contact-form-radio {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid hsl(169, 82%, 27%);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  position: relative;
+  outline: 1px solid hsl(169, 82%, 27%);
+}
+
+.contact-form-radio:checked {
+  border-color: hsl(169, 82%, 27%);
+}
+.contact-form-radio:checked::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: hsl(169, 82%, 27%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-form-checkbox {
+  width: 1rem; /* Increased size */
+  height: 1rem; /* Increased size */
+  appearance: none;
+  border: 1px solid hsl(165, 2%, 58%);
+  position: relative;
+  cursor: pointer;
+  outline: 0.5px solid hsl(169, 82%, 27%);
+
+}
+
+.contact-form-checkbox:checked::after {
+  content: "";
+  display: block;
+  width: 1rem; /* Increased size */
+  height: 1rem; /* Increased size */
+  background-image: url("/contact-form/icon-checkbox-check.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
