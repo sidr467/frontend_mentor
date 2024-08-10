@@ -8,7 +8,7 @@ const SuccessModal = () => {
         <span>Message Sent!</span>
       </h3>
       <p className="text-sm font-medium">
-        Thanks for completing the form. We'll be in touch soon!
+        Thanks for completing the form. We&apos;ll be in touch soon!
       </p>
     </div>
   )
