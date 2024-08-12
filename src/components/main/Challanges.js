@@ -174,4 +174,11 @@ export const challenges = [
     difficultyText: "Junior",
     image: "/contact-form/preview.png",
   },
+  {
+    title: "Newsletter Sign Up",
+    link: "/challenges/newsletter-sign-up",
+    difficulty: 2,
+    difficultyText: "Junior",
+    image: "/newsletter-sign-up/preview.png",
+  },
 ]

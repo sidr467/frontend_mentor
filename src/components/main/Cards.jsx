@@ -3,7 +3,7 @@ import Link from "next/link"
 
 function Cards({ title, difficulty, image, link, difficultyText }) {
   return (
-    <div className="ring-1 ring-lightGray grid gap-2 px-4 py-4 rounded-md text-darkGray min-w-[320px] max-w-[450px]">
+    <div className="shadow-lightGray shadow-sm grid gap-2 px-4 py-4 rounded-md text-darkGray min-w-[320px] max-w-[450px]">
       <Link href={link}>
         <div className="overflow-hidden">
           <Image

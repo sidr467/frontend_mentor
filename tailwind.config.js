@@ -225,12 +225,21 @@ module.exports = {
         "contactform-White": "hsl(0, 0%, 100%)",
         "contactform-Grey500": "hsl(186, 15%, 59%)",
         "contactform-Grey900": "hsl(187, 24%, 22%)",
+
+        //newsetteler sign up page
+        "nsu-Tomato": "hsl(4, 100%, 67%)",
+        "nsu-Dark-Slate-Grey": "hsl(234, 29%, 20%)",
+        "nsu-Charcoal-Grey": "hsl(235, 18%, 26%)",
+        "nsu-Grey": "hsl(231, 7%, 60%)",
+        "nsu-White": "hsl(0, 0%, 100%)",
       },
       boxShadow: {
         //Blog Preview Card
         custom: "8px 8px 0 0 black",
         //base apparel
         bacs: "0 5px 20px 2px hsl(0, 36%, 70%)",
+        //nsu
+        nsu: "0 10px 30px 0 hsl(4, 100%, 67%);",
       },
     },
   },
