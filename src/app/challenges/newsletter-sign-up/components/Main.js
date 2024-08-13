@@ -11,6 +11,7 @@ const Main = ({ email, handleSubmit, error, onChange }) => {
           width={300}
           alt="Mobile-Illustration"
           className="w-full md:hidden"
+          priority={true}
         ></Image>
         <Image
           src="/newsletter-sign-up/illustration-sign-up-desktop.svg"
@@ -18,6 +19,7 @@ const Main = ({ email, handleSubmit, error, onChange }) => {
           width={300}
           alt="Desktop-Illustration"
           className="w-full hidden md:block"
+          priority={true}
         ></Image>
       </div>
       <div className="flex flex-col gap-6 px-6 text-nsu-Dark-Slate-Grey md:order-1 md:justify-center">
