@@ -16,7 +16,7 @@ const SuccessModal = ({ email, handleCloseModal }) => {
       </div>
       <button
         onClick={handleCloseModal}
-        className="mb-8 bg-nsu-Dark-Slate-Grey text-nsu-White rounded-lg h-12 w-full md:mb-0 hover:shadow-nsu hover:bg-gradient-to-r from-rose-500 to-orange-400"
+        className="mb-8 bg-nsu-Dark-Slate-Grey text-nsu-White rounded-lg h-12 w-full md:mb-0 hover:shadow-nsu hover:bg-gradient-to-r from-nsu-Tomato to-orange-400"
       >
         Dismiss message
       </button>

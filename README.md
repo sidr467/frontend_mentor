@@ -53,6 +53,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Product List Cart ](https://frontend-mentor-rsidd467.vercel.app/challenges/product-list-cart)
 - [Mortgage Calculator ](https://frontend-mentor-rsidd467.vercel.app/challenges/mortgage-repayment-calculator)
 - [Contact Form ](https://frontend-mentor-rsidd467.vercel.app/challenges/contact-form)
+- [Newsletter Sign Up ](https://frontend-mentor-rsidd467.vercel.app/challenges/newsletter-sign-up)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
