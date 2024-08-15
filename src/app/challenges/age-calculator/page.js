@@ -2,6 +2,9 @@
 
 import { Poppins } from "next/font/google"
 import { useState } from "react"
+import AgeDisplay from "./components/AgeDisplay"
+import Inputs from "./components/Inputs"
+import Image from "next/image"
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700", "800"] })
 
@@ -84,46 +87,51 @@ const Page = () => {
     <div
       className={`${poppins.className} min-h-screen bg-ageCalc-light-grey flex items-center justify-center`}
     >
-      <main>
+      <main className="bg-ageCalc-white px-4 py-8 rounded-br-[100px] w-full mx-4 max-w-[700px]">
         <form
           action=""
-          className="flex gap-2 items-center justify-center"
+          className="flex flex-col gap-12 justify-center"
           onSubmit={handleSubmit}
         >
-          <input
-            type="number"
-            value={day}
-            id="day"
-            min="1"
-            max="31"
-            className="ring-1 ring-black p-2 no-spinner"
-            onChange={handleInputChange(setDay, 2)}
-          />
-          <input
-            type="number"
-            value={month}
-            id="month"
-            min="1"
-            max="12"
-            className="ring-1 ring-black p-2 no-spinner"
-            onChange={handleInputChange(setMonth, 2)}
-          />
-          <input
-            type="number"
-            value={year}
-            id="year"
-            className="ring-1 ring-black p-2 no-spinner"
-            onChange={handleInputChange(setYear, 4)}
-          />
-          <button type="submit" className="ring-1 ring-black p-2">
-            Submit
-          </button>
+          <div className="grid grid-cols-3 gap-4">
+            <Inputs
+              onChange={handleInputChange(setDay, 2)}
+              value={day}
+              label="Day"
+              error={error.day}
+              placeholder="DD"
+            />
+            <Inputs
+              onChange={handleInputChange(setMonth, 2)}
+              value={month}
+              label="Month"
+              error={error.month}
+              placeholder="MM"
+            />
+            <Inputs
+              onChange={handleInputChange(setYear, 4)}
+              value={year}
+              label="Year"
+              error={error.year}
+              placeholder="YYYY"
+            />
+          </div>
+          <div className="relative flex items-center justify-center">
+            <button
+              type="submit"
+              className="bg-ageCalc-purple rounded-full p-4 z-10 place-content-center"
+            >
+              <Image
+                src="/age-calculator/icon-arrow.svg"
+                alt="Arrow-Icon"
+                height={20}
+                width={20}
+              ></Image>
+            </button>
+            <hr className="  w-full absolute top-[50%] z-1 " />
+          </div>
         </form>
-        <div>
-          <p>{age.year} years</p>
-          <p>{age.month} months</p>
-          <p>{age.day} days</p>
-        </div>
+        <AgeDisplay year={age.year} month={age.month} day={age.day} />
       </main>
     </div>
   )
