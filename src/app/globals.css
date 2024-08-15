@@ -94,6 +94,21 @@
   transform: translate(-50%, -50%);
 }
 
-.nsu-shadow {
+/* No spinner */
 
+.no-spinner {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  margin: 0;
+}
+
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner::-moz-spin-buttons {
+  display: none;
 }
