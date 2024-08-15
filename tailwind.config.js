@@ -232,6 +232,15 @@ module.exports = {
         "nsu-Charcoal-Grey": "hsl(235, 18%, 26%)",
         "nsu-Grey": "hsl(231, 7%, 60%)",
         "nsu-White": "hsl(0, 0%, 100%)",
+
+        //Age calculator
+        "ageCalc-purple": "#9b5de5",
+        "ageCalc-light-red": "#ff4d4d",
+        "ageCalc-white": "#ffffff",
+        "ageCalc-off-white": "#f0f0f0",
+        "ageCalc-light-grey": "#dbdbdb",
+        "ageCalc-smokey-grey": "#6f6f6f",
+        "ageCalc-off-black": "#141414",
       },
       boxShadow: {
         //Blog Preview Card
