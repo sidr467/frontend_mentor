@@ -54,6 +54,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Mortgage Calculator ](https://frontend-mentor-rsidd467.vercel.app/challenges/mortgage-repayment-calculator)
 - [Contact Form ](https://frontend-mentor-rsidd467.vercel.app/challenges/contact-form)
 - [Newsletter Sign Up ](https://frontend-mentor-rsidd467.vercel.app/challenges/newsletter-sign-up)
+- [Age Calculator ](https://frontend-mentor-rsidd467.vercel.app/challenges/age-calculator)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 

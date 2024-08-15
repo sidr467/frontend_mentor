@@ -24,10 +24,17 @@ const Page = () => {
 
   const handleErrors = () => {
     const errors = {}
-    //for day
+
+    const monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+      monthDays[1] = 29
+    }
+
     if (!day) {
+      //for day
       errors.day = "This field is required"
-    } else if (day < 1 || day > 31) {
+    } else if (day < 1 || day > monthDays[month - 1]) {
       errors.day = "Must be valid date"
     }
 
@@ -87,13 +94,13 @@ const Page = () => {
     <div
       className={`${poppins.className} min-h-screen bg-ageCalc-light-grey flex items-center justify-center`}
     >
-      <main className="bg-ageCalc-white px-4 py-8 rounded-br-[100px] w-full mx-4 max-w-[700px]">
+      <main className="bg-ageCalc-white px-4 py-8 rounded-br-[100px] rounded-2xl w-full mx-4 max-w-[700px] flex flex-col gap-8">
         <form
           action=""
           className="flex flex-col gap-12 justify-center"
           onSubmit={handleSubmit}
         >
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-4 lg:grid-cols-4 lg:gap-8">
             <Inputs
               onChange={handleInputChange(setDay, 2)}
               value={day}
@@ -119,16 +126,17 @@ const Page = () => {
           <div className="relative flex items-center justify-center">
             <button
               type="submit"
-              className="bg-ageCalc-purple rounded-full p-4 z-10 place-content-center"
+              className="bg-ageCalc-purple h-12 w-12 lg:w-20 lg:h-20 flex lg:absolute lg:right-0 items-center justify-center rounded-full z-10 place-content-center focus:outline-none focus:bg-ageCalc-off-black hover:bg-ageCalc-off-black"
             >
               <Image
                 src="/age-calculator/icon-arrow.svg"
                 alt="Arrow-Icon"
                 height={20}
                 width={20}
+                className="w-6 lg:w-10"
               ></Image>
             </button>
-            <hr className="  w-full absolute top-[50%] z-1 " />
+            <hr className="w-full absolute top-[50%] z-1 border-t-2 border-ageCalc-light-grey " />
           </div>
         </form>
         <AgeDisplay year={age.year} month={age.month} day={age.day} />
