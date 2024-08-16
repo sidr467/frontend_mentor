@@ -94,7 +94,7 @@ const Page = () => {
     <div
       className={`${poppins.className} min-h-screen bg-ageCalc-light-grey flex items-center justify-center`}
     >
-      <main className="bg-ageCalc-white px-4 py-8 rounded-br-[100px] rounded-2xl w-full mx-4 max-w-[700px] flex flex-col gap-8">
+      <main className="bg-ageCalc-white px-4 py-8 md:px-8 lg:px-12 rounded-br-[100px] rounded-2xl w-full mx-4 max-w-[700px] flex flex-col gap-8">
         <form
           action=""
           className="flex flex-col gap-12 justify-center"
