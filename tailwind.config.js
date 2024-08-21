@@ -241,6 +241,14 @@ module.exports = {
         "ageCalc-light-grey": "#dbdbdb",
         "ageCalc-smokey-grey": "#6f6f6f",
         "ageCalc-off-black": "#141414",
+
+        //news homepage
+        "nh-SoftOrange": " hsl(35, 77%, 62%)",
+        "nh-SoftRed": "hsl(5, 85%, 63%)",
+        "nh-OffWhite": "hsl(36, 100%, 99%)",
+        "nh-GrayishBlue": " hsl(233, 8%, 79%)",
+        "nh-DarkGrayishBlue": " hsl(236, 13%, 42%)",
+        "nh-VeryDarkblue": " hsl(240, 100%, 5%)",
       },
       boxShadow: {
         //Blog Preview Card

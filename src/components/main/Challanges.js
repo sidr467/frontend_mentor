@@ -188,4 +188,11 @@ export const challenges = [
     difficultyText: "Junior",
     image: "/age-calculator/preview.png",
   },
+  {
+    title: "News Homepage",
+    link: "/challenges/news-homepage",
+    difficulty: 2,
+    difficultyText: "Junior",
+    image: "/news-homepage/preview.png",
+  },
 ]
