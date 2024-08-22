@@ -12,7 +12,7 @@ const inter = Inter({
 const NewsHompage = () => {
   return (
     <div
-      className={`${inter.className} min-h-screenx p-6 md:p-12 lg:px-20 xl:px-40`}
+      className={`${inter.className} min-h-screenx p-6 md:p-12 lg:px-20 xl:px-28`}
     >
       <main className="grid gap-8 md:gap-12 lg:gap-16 grid-cols-1">
         <Header></Header>

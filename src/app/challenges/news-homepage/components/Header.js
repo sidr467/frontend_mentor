@@ -53,11 +53,11 @@ const Header = () => {
         {menu && <Menu onClick={() => SetMenu(!menu)} />}
       </div>
       <div className="hidden md:flex gap-12 text-sm text-nh-DarkGrayishBlue">
-        <Link href="/">Home</Link>
-        <Link href="/">New</Link>
-        <Link href="/">Popular</Link>
-        <Link href="/">Trending</Link>
-        <Link href="/">Categories</Link>
+        <Link href="/" className="hover:text-nh-SoftRed">Home</Link>
+        <Link href="/" className="hover:text-nh-SoftRed">New</Link>
+        <Link href="/" className="hover:text-nh-SoftRed">Popular</Link>
+        <Link href="/" className="hover:text-nh-SoftRed">Trending</Link>
+        <Link href="/" className="hover:text-nh-SoftRed">Categories</Link>
       </div>
     </section>
   )
