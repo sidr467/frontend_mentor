@@ -11,6 +11,7 @@ const Hero = () => {
           alt="Web3 Image"
           className="w-full sm:hidden max-w-[350px]"
           quality={100}
+          unoptimized
         ></Image>
         <Image
           src="/news-homepage/image-web-3-desktop.jpg"
@@ -19,6 +20,7 @@ const Hero = () => {
           alt="Web3 Image"
           className="w-full hidden sm:block"
           quality={100}
+          unoptimized
         ></Image>
       </div>
       <div className="pr-8 xl:col-span-3">

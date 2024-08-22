@@ -12,6 +12,7 @@ const Popular = () => {
             alt="Image of retro PC"
             className="w-full "
             quality={100}
+            unoptimized
           ></Image>
         </div>
         <div className="col-span-4 flex flex-col gap-2 justify-center">
@@ -33,6 +34,7 @@ const Popular = () => {
             quality={100}
             alt="Image of top laptops"
             className="w-full"
+            unoptimized
           ></Image>
         </div>
         <div className="col-span-4 flex flex-col gap-2 justify-center">
@@ -54,6 +56,7 @@ const Popular = () => {
             quality={100}
             alt="Image of gaming growth"
             className="w-full"
+            unoptimized
           ></Image>
         </div>
         <div className="col-span-4 flex flex-col gap-2 justify-center">
