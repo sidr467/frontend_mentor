@@ -51,7 +51,10 @@ const FAQ = () => {
       </article>
       <article className="max-w-[600px] w-full">
         {faqData.map((faq) => (
-          <div className="border-b-2 lg:first-of-type:border-t-2 cursor-pointer py-6">
+          <div
+            key={faq.id}
+            className="border-b-2 lg:first-of-type:border-t-2 cursor-pointer py-6"
+          >
             <div className="flex justify-between group ">
               <p className="text-base md:text-lg lg:text-xl text-blp-Very-Dark-Blue group-hover:text-blp-Soft-Red">
                 {faq.question}
