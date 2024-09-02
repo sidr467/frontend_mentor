@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import { CSSTransition, SwitchTransition } from "react-transition-group"
 
 const featuretabs = [
   {
@@ -31,7 +32,10 @@ const Features = () => {
   const [activeTab, setActiveTab] = useState(1)
 
   return (
-    <section className="w-full px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 flex flex-col items-center justify-center gap-10 md:gap-12 lg:gap-16 xl:gap-20">
+    <section
+      id="Features"
+      className="w-full px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 flex flex-col items-center justify-center gap-10 md:gap-12 lg:gap-16 xl:gap-20"
+    >
       <article className="flex items-center justify-center flex-col gap-6 md:gap-8 lg:gap-10">
         <h2 className="text-blp-Very-Dark-Blue font-medium text-2xl lg:text-3xl xl:text-4xl text-center">
           Features
@@ -48,13 +52,17 @@ const Features = () => {
             {featuretabs.map((tab) => (
               <li
                 key={tab.id}
-                className="border-b-2 first-of-type:border-t-2 md:border-none flex items-center justify-center w-full"
+                className={`border-b-2 first-of-type:border-t-2 md:first-of-type:border-t-0 flex items-center justify-center w-full ${
+                  activeTab === tab.id
+                    ? "md:border-b-4 md:border-blp-Soft-Red md:-mb-[0.5px]"
+                    : "md:border-none"
+                } `}
               >
                 <button
                   onClick={() => setActiveTab(tab.id)}
-                  className={`py-4 -mb-[0.5px] text-base lg:text-lg ${
+                  className={`py-4 -mb-[0.5px] text-base lg:text-lg hover:text-blp-Soft-Red transition-colors duration-300 ${
                     activeTab === tab.id
-                      ? "border-b-4 border-blp-Soft-Red text-blp-Very-Dark-Blue font-medium "
+                      ? "border-b-4 border-blp-Soft-Red md:border-none text-blp-Very-Dark-Blue hover:text-blp-Very-Dark-Blue font-medium"
                       : "text-blp-Grayish-Blue font-normal"
                   }  `}
                 >
@@ -64,29 +72,33 @@ const Features = () => {
             ))}
           </ul>
         </div>
-        <div className="grid grid-col-1 lg:grid-cols-2 gap-16 mb-20">
-          <div className="relative flex items-center justify-center lg:px-8 xl:px-16">
-            <Image
-              src={featuretabs[activeTab - 1].image}
-              width={500}
-              height={500}
-              alt={featuretabs[activeTab - 1].title}
-              className="object-contain w-full "
-            ></Image>
-            <div className="absolute w-[350px] h-[180px] sm:w-[600px] sm:h-[250px] md:w-[650px] md:h-[300px] lg:w-[400px] lg:h-[200px] xl:w-[600px] xl:h-[300px] bg-blp-Soft-Blue -left-16 sm:-left-20 md:-left-24 lg:-left-28 xl:-left-32 -bottom-8 md:-bottom-10 lg:-bottom-14 xl:-bottom-20 -z-10 rounded-e-full"></div>
-          </div>
-          <div className="flex flex-col gap-6 items-center justify-center lg:items-start md:gap-8 lg:gap-10 lg:px-4 xl:px-8">
-            <h2 className="text-blp-Very-Dark-Blue font-medium text-2xl lg:text-3xl xl:text-4xl">
-              {featuretabs[activeTab - 1].title}
-            </h2>
-            <p className="text-blp-Grayish-Blue text-center text-base md:text-lg lg:text-xl lg:text-start lg:pr-20">
-              {featuretabs[activeTab - 1].desc}
-            </p>
-            <button className="h-12 bg-blp-Soft-Blue px-4 lg:px-6 rounded-lg text-white shadow-xl transition-colors duration-300 lg:text-base text-sm ">
-              More info
-            </button>
-          </div>
-        </div>
+        <SwitchTransition>
+          <CSSTransition key={activeTab} timeout={300} classNames="fade">
+            <div className="grid grid-col-1 lg:grid-cols-2 gap-16 mb-20 transition-opacity duration-300 ease-in-out">
+              <div className="relative flex items-center justify-center lg:px-8 xl:px-16">
+                <Image
+                  src={featuretabs[activeTab - 1].image}
+                  width={500}
+                  height={500}
+                  alt={featuretabs[activeTab - 1].title}
+                  className="object-contain w-full "
+                ></Image>
+                <div className="absolute w-[350px] h-[180px] sm:w-[600px] sm:h-[250px] md:w-[650px] md:h-[300px] lg:w-[400px] lg:h-[200px] xl:w-[600px] xl:h-[300px] bg-blp-Soft-Blue -left-16 sm:-left-20 md:-left-24 lg:-left-28 xl:-left-32 -bottom-8 md:-bottom-10 lg:-bottom-14 xl:-bottom-20 -z-10 rounded-e-full"></div>
+              </div>
+              <div className="flex flex-col gap-6 items-center justify-center lg:items-start md:gap-8 lg:gap-10 lg:px-4 xl:px-8">
+                <h2 className="text-blp-Very-Dark-Blue font-medium text-2xl lg:text-3xl xl:text-4xl">
+                  {featuretabs[activeTab - 1].title}
+                </h2>
+                <p className="text-blp-Grayish-Blue text-center text-base md:text-lg lg:text-xl lg:text-start lg:pr-20">
+                  {featuretabs[activeTab - 1].desc}
+                </p>
+                <button className="h-12 bg-blp-Soft-Blue px-4 lg:px-6 rounded-lg text-white shadow-xl hover:bg-white hover:text-blp-Soft-Blue hover:ring-1 ring-blp-Soft-Blue transition-colors duration-300 lg:text-base text-sm ">
+                  More info
+                </button>
+              </div>
+            </div>
+          </CSSTransition>
+        </SwitchTransition>
       </article>
     </section>
   )

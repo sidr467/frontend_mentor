@@ -196,7 +196,7 @@ export const challenges = [
     image: "/news-homepage/preview.png",
   },
   {
-    title: "Bookmark Landing Page",
+    title: "Bookmark Page",
     link: "/challenges/bookmark-landing-page",
     difficulty: 3,
     difficultyText: "Intermediate",

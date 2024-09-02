@@ -56,6 +56,7 @@ A Frontend Mentor challanges page where all of my challanges will be showcased. 
 - [Newsletter Sign Up ](https://frontend-mentor-rsidd467.vercel.app/challenges/newsletter-sign-up)
 - [Age Calculator ](https://frontend-mentor-rsidd467.vercel.app/challenges/age-calculator)
 - [News Homepage ](https://frontend-mentor-rsidd467.vercel.app/challenges/news-homepage)
+- [Bookmark Landing Page ](https://frontend-mentor-rsidd467.vercel.app/challenges/bookmark-landing-page)
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
