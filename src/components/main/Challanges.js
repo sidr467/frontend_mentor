@@ -195,4 +195,11 @@ export const challenges = [
     difficultyText: "Junior",
     image: "/news-homepage/preview.png",
   },
+  {
+    title: "Bookmark Landing Page",
+    link: "/challenges/bookmark-landing-page",
+    difficulty: 3,
+    difficultyText: "Intermediate",
+    image: "/bookmark-landing-page/preview.png",
+  },
 ]

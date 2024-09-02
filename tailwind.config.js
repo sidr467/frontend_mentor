@@ -249,6 +249,12 @@ module.exports = {
         "nh-GrayishBlue": " hsl(233, 8%, 79%)",
         "nh-DarkGrayishBlue": " hsl(236, 13%, 42%)",
         "nh-VeryDarkblue": " hsl(240, 100%, 5%)",
+
+        //Bookmark landing page
+        "blp-Soft-Blue": "hsl(231, 69%, 60%)",
+        "blp-Soft-Red": "hsl(0, 94%, 66%)",
+        "blp-Grayish-Blue": " hsl(229, 8%, 60%)",
+        "blp-Very-Dark-Blue": "hsl(229, 31%, 21%)",
       },
       boxShadow: {
         //Blog Preview Card
