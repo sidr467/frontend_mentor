@@ -45,21 +45,14 @@ const ContactUs = () => {
               placeholder="Enter your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              aria-describedby="email-error"
-              aria-invalid={!!error}
             />
             {error && (
               <>
                 <MdError
                   size={25}
                   className="absolute top-3 right-2 fill-blp-Soft-Red"
-                  aria-hidden="true"
                 />
-                <p
-                  id="email-error"
-                  className="bg-blp-Soft-Red text-xs italic font-medium py-1 px-2 text-white rounded-b-md ring-2 ring-blp-Soft-Red absolute top-full w-full mt-[1px] z-10"
-                  aria-live="assertive"
-                >
+                <p className="bg-blp-Soft-Red text-xs italic font-medium py-1 px-2 text-white rounded-b-md ring-2 ring-blp-Soft-Red absolute top-full w-full mt-[1px] z-10">
                   {error}
                 </p>
               </>
