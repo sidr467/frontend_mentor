@@ -50,7 +50,7 @@ const Features = () => {
         <div className="w-full flex items-center justify-center flex-col">
           <ul
             className="w-full flex flex-col md:flex-row items-center justify-center md:gap-8 lg:w-[800px] md:border-b-2"
-            role="tab-list"
+            role="tablist"
           >
             {featuretabs.map((tab) => (
               <li
@@ -60,6 +60,7 @@ const Features = () => {
                     ? "md:border-b-4 md:border-blp-Soft-Red md:-mb-[0.5px]"
                     : "md:border-none"
                 } `}
+                role="presentation"
               >
                 <button
                   onClick={() => setActiveTab(tab.id)}
