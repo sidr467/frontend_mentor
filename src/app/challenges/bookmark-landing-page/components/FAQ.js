@@ -77,7 +77,7 @@ const FAQ = () => {
                   : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-sm md:text-base lg:text-lg pt-4 text-blp-Grayish-Blue leading-10">
+              <p className="text-sm md:text-base lg:text-lg pt-4 text-blp-Grayish-Blue ">
                 {faq.answer}
               </p>
             </div>

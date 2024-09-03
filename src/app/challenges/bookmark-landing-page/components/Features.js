@@ -81,7 +81,7 @@ const Features = () => {
                   width={500}
                   height={500}
                   alt={featuretabs[activeTab - 1].title}
-                  className="object-contain w-full "
+                  className="object-contain w-full max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl"
                 ></Image>
                 <div className="absolute w-[350px] h-[180px] sm:w-[600px] sm:h-[250px] md:w-[650px] md:h-[300px] lg:w-[400px] lg:h-[200px] xl:w-[600px] xl:h-[300px] bg-blp-Soft-Blue -left-16 sm:-left-20 md:-left-24 lg:-left-28 xl:-left-32 -bottom-8 md:-bottom-10 lg:-bottom-14 xl:-bottom-20 -z-10 rounded-e-full"></div>
               </div>
