@@ -1,7 +1,6 @@
 "use client"
 
 import { IoIosArrowDown } from "react-icons/io"
-import Image from "next/image"
 import { useState } from "react"
 
 const faqData = [
@@ -39,9 +38,15 @@ const FAQ = () => {
   }
 
   return (
-    <section className="py-8 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 flex flex-col items-center justify-center gap-10 md:gap-12 lg:gap-14 xl:gap-16">
+    <section
+      aria-labelledby="faq-title"
+      className="py-8 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 flex flex-col items-center justify-center gap-10 md:gap-12 lg:gap-14 xl:gap-16"
+    >
       <article className="flex flex-col gap-6 items-center justify-center md:gap-8 lg:gap-10 lg:px-4 xl:px-8">
-        <h2 className="text-blp-Very-Dark-Blue font-medium text-2xl lg:text-3xl xl:text-4xl">
+        <h2
+          id="faq-title"
+          className="text-blp-Very-Dark-Blue font-medium text-2xl lg:text-3xl xl:text-4xl"
+        >
           Frequently Asked Questions
         </h2>
         <p className="text-blp-Grayish-Blue text-center text-base md:text-lg lg:text-xl max-w-[600px]">
@@ -53,31 +58,33 @@ const FAQ = () => {
         {faqData.map((faq) => (
           <div
             key={faq.id}
-            className="border-b-2 lg:first-of-type:border-t-2 cursor-pointer py-6"
+            className="border-b-2 lg:first-of-type:border-t-2 py-6"
           >
-            <div className="flex justify-between group ">
-              <p className="text-base md:text-lg lg:text-xl text-blp-Very-Dark-Blue group-hover:text-blp-Soft-Red">
+            <button
+              onClick={() => toggleAnswer(faq.id)}
+              aria-expanded={answer === faq.id}
+              aria-controls={`faq-answer-${faq.id}`}
+              className="flex justify-between items-center w-full group cursor-pointer"
+            >
+              <span className="text-base md:text-lg lg:text-xl text-blp-Very-Dark-Blue group-hover:text-blp-Soft-Red">
                 {faq.question}
-              </p>
-              <button onClick={() => toggleAnswer(faq.id)} className="">
-                <IoIosArrowDown
-                  size={20}
-                  className={` transition-transform transform duration-300 ease-in-out md:size-7 ${
-                    answer === faq.id
-                      ? "rotate-180 fill-blp-Soft-Red "
-                      : "fill-blp-Soft-Blue"
-                  }`}
-                />
-              </button>
-            </div>
+              </span>
+              <IoIosArrowDown
+                size={20}
+                className={`transition-transform duration-300 ease-in-out ${
+                  answer === faq.id
+                    ? "rotate-180 fill-blp-Soft-Red"
+                    : "fill-blp-Soft-Blue"
+                }`}
+              />
+            </button>
             <div
+              id={`faq-answer-${faq.id}`}
               className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                answer === faq.id
-                  ? " max-h-80 opacity-100"
-                  : "max-h-0 opacity-0"
+                answer === faq.id ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-sm md:text-base lg:text-lg pt-4 text-blp-Grayish-Blue ">
+              <p className="text-sm md:text-base lg:text-lg pt-4 text-blp-Grayish-Blue">
                 {faq.answer}
               </p>
             </div>

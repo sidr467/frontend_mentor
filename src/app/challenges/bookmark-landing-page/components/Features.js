@@ -48,7 +48,10 @@ const Features = () => {
       </article>
       <article className="flex flex-col gap-16">
         <div className="w-full flex items-center justify-center flex-col">
-          <ul className="w-full flex flex-col md:flex-row items-center justify-center md:gap-8 lg:w-[800px] md:border-b-2">
+          <ul
+            className="w-full flex flex-col md:flex-row items-center justify-center md:gap-8 lg:w-[800px] md:border-b-2"
+            role="tab-list"
+          >
             {featuretabs.map((tab) => (
               <li
                 key={tab.id}
@@ -65,6 +68,10 @@ const Features = () => {
                       ? "border-b-4 border-blp-Soft-Red md:border-none text-blp-Very-Dark-Blue hover:text-blp-Very-Dark-Blue font-medium"
                       : "text-blp-Grayish-Blue font-normal"
                   }  `}
+                  aria-selected={activeTab === tab.id}
+                  role="tab"
+                  aria-controls={`tabpanel-${tab.id}`}
+                  id={`tab-${tab.id}`}
                 >
                   {tab.name}
                 </button>
@@ -74,7 +81,12 @@ const Features = () => {
         </div>
         <SwitchTransition>
           <CSSTransition key={activeTab} timeout={300} classNames="fade">
-            <div className="grid grid-col-1 lg:grid-cols-2 gap-16 mb-20 transition-opacity duration-300 ease-in-out">
+            <div
+              className="grid grid-col-1 lg:grid-cols-2 gap-16 mb-20 transition-opacity duration-300 ease-in-out"
+              id={`tabpanel-${activeTab}`}
+              role="tabpanel"
+              aria-labelledby={`tab-${activeTab}`}
+            >
               <div className="relative flex items-center justify-center lg:px-8 xl:px-16">
                 <Image
                   src={featuretabs[activeTab - 1].image}

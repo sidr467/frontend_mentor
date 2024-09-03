@@ -22,10 +22,16 @@ const Hero = () => {
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
         <div className="flex items-center justify-center md:justify-start text-sm font-medium gap-4 md:gap-6 lg:gap-8">
-          <button className="h-12 bg-blp-Soft-Blue px-4 sm:px-6 lg:px-8 rounded-lg text-white shadow-xl hover:text-blp-Soft-Blue hover:ring-1 ring-blp-Soft-Blue hover:bg-white transition-colors duration-300">
+          <button
+            className="h-12 bg-blp-Soft-Blue px-4 sm:px-6 lg:px-8 rounded-lg text-white shadow-xl hover:text-blp-Soft-Blue hover:ring-1 ring-blp-Soft-Blue hover:bg-white transition-colors duration-300"
+            aria-label="Get on Chrome"
+          >
             Get it on Chrome
           </button>
-          <button className="h-12 bg-blp-Grayish-Blue px-4 sm:px-6 lg:px-8 rounded-lg bg-opacity-20 text-gray-500 shadow-xl hover:bg-white hover:text-blp-Very-Dark-Blue hover:ring-1 ring-blp-Very-Dark-Blue transition-colors duration-300">
+          <button
+            className="h-12 bg-blp-Grayish-Blue px-4 sm:px-6 lg:px-8 rounded-lg bg-opacity-20 text-gray-500 shadow-xl hover:bg-white hover:text-blp-Very-Dark-Blue hover:ring-1 ring-blp-Very-Dark-Blue transition-colors duration-300"
+            aria-label="Get on Firefox"
+          >
             Get it on Firefox
           </button>
         </div>

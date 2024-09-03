@@ -13,7 +13,7 @@ const ContactUs = () => {
     if (!email) {
       setError("This field is required")
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      setError("whoops, make sure it's an email")
+      setError("Whoops, make sure it's an email")
     } else {
       setEmail("")
       setError("")
@@ -23,13 +23,13 @@ const ContactUs = () => {
   return (
     <section
       id="Contact"
-      className="w-full bg-blp-Soft-Blue py-16 px-8 lg:py-20 xl:py-24 flex flex-col items-center justify-center "
+      className="w-full bg-blp-Soft-Blue py-16 px-8 lg:py-20 xl:py-24 flex flex-col items-center justify-center"
     >
-      <article className="lg:max-w-[500px] gap-8 flex items-center justify-center flex-col ">
+      <article className="lg:max-w-[500px] gap-8 flex items-center justify-center flex-col">
         <p className="uppercase text-white text-xs md:text-sm tracking-[4px]">
           35,000+ already joined
         </p>
-        <h3 className="font-medium text-2xl lg:text-3xl xl:text-4xl text-white  text-center">
+        <h3 className="font-medium text-2xl lg:text-3xl xl:text-4xl text-white text-center">
           Stay up-to-date with what we&apos;re doing
         </h3>
         <form
@@ -45,16 +45,20 @@ const ContactUs = () => {
               placeholder="Enter your email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              aria-describedby="email-error"
+              aria-invalid={!!error}
             />
             {error && (
               <>
-                <MdError size={25} className="absolute top-3 right-2 fill-blp-Soft-Red"/>
+                <MdError
+                  size={25}
+                  className="absolute top-3 right-2 fill-blp-Soft-Red"
+                  aria-hidden="true"
+                />
                 <p
-                  className={`${
-                    error
-                      ? "bg-blp-Soft-Red text-xs italic font-medium py-1 px-2 text-white rounded-b-md ring-2 ring-blp-Soft-Red "
-                      : ""
-                  }`}
+                  id="email-error"
+                  className="bg-blp-Soft-Red text-xs italic font-medium py-1 px-2 text-white rounded-b-md ring-2 ring-blp-Soft-Red absolute top-full w-full mt-[1px] z-10"
+                  aria-live="assertive"
                 >
                   {error}
                 </p>

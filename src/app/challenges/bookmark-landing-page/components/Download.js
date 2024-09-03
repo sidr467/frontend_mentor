@@ -33,14 +33,19 @@ const Download = () => {
           you&apos;ve got a favourite you&apos;d like us to prioritize.
         </p>
       </article>
-      <article className="flex items-center justify-center flex-col lg:flex-row gap-8">
+      <article className="flex items-center justify-center flex-col md:grid md:grid-cols-3 gap-8">
         {download.map((d) => (
           <div
             key={d.id}
             className="shadow-xl rounded-2xl flex items-center justify-center flex-col gap-8 w-[280px] py-2 lg:even:mt-20 lg:last-of-type:mt-40"
           >
             <div className="">
-              <Image src={d.image} width={90} height={90} alt={d.name}></Image>
+              <Image
+                src={d.image}
+                width={90}
+                height={90}
+                alt={`${d.name} logo`}
+              ></Image>
             </div>
             <div className="w-full text-center border-b-4 border-dotted pb-8">
               <h3 className="text-lg lg:text-xl text-blp-Very-Dark-Blue font-medium">
@@ -50,7 +55,10 @@ const Download = () => {
                 Minimum version {d.minVersion}
               </p>
             </div>
-            <button className="h-12 bg-blp-Soft-Blue hover:bg-white hover:ring-1 ring-blp-Soft-Blue hover:text-blp-Soft-Blue transition-colors duration-300 px-4 sm:px-6 lg:px-8 rounded-lg text-white shadow-xl lg:text-base text-sm mb-4 font-medium">
+            <button
+              aria-label={`Add and install extension for ${d.name}`}
+              className="h-12 bg-blp-Soft-Blue hover:bg-white hover:ring-1 ring-blp-Soft-Blue hover:text-blp-Soft-Blue transition-colors duration-300 px-4 sm:px-6 lg:px-8 rounded-lg text-white shadow-xl lg:text-base text-sm mb-4 font-medium"
+            >
               Add & Install Extension
             </button>
           </div>
