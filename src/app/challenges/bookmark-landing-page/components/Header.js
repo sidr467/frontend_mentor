@@ -64,9 +64,7 @@ const Header = () => {
             alt="Hamburger Icon"
           />
         </button>
-        {menu && (
-          <Menu menu={menu} setMenu={() => setMenu(false)} />
-        )}
+        {menu && <Menu menu={menu} setMenu={() => setMenu(false)} />}
         <ul
           id="menu-list"
           className="hidden md:flex items-center justify-center md:gap-8 lg:gap-16"
